@@ -3,6 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- The app lives at /web but is served at / on Netlify, so relative paths
+     would otherwise resolve against the site root and 404. This anchors them
+     to /web/, and leaves ../data pointing at /data as it does locally. -->
+<base href="/web/" />
 <title>Sauron &middot; mySecurity</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +19,7 @@
 <body data-split="rows">
 
 <header class="topbar">
-  <a class="brand" href="#" aria-label="Sauron">
+  <span class="brand" aria-label="Sauron">
     <!-- The mySecurity mark: shield, aperture, signal sweep. -->
     <svg class="brand__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
       <path d="M16 2.5 4.5 7.1v8.6c0 6.9 4.7 12.9 11.5 14.8 6.8-1.9 11.5-7.9 11.5-14.8V7.1L16 2.5Z"
@@ -25,7 +29,7 @@
       <path d="M16 21.6v4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
     </svg>
     <span class="brand__word">Sauron <em>society intelligence</em></span>
-  </a>
+  </span>
 
   <div class="picker picker--city">
     <svg class="ic picker__icon"><use href="icons.svg#icon-pin"/></svg>
