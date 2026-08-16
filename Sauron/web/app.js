@@ -1191,16 +1191,6 @@ function openDetail(s) {
       `;
     })()}
 
-    <h3>Sources</h3>
-    <ul class="srcs">
-      ${s.source?.spatial ? `<li><a href="${esc(s.source.spatial)}" target="_blank" rel="noopener">OpenStreetMap record</a> <span>ODbL</span></li>` : ''}
-      ${r ? `<li><a href="https://github.com/Vonter/karnataka-rera-projects" target="_blank" rel="noopener">Karnataka RERA register</a> <span>ODbL mirror</span></li>` : ''}
-      <li>Ward from the Government of Karnataka GBA notification, 7 March 2026 <span>public domain</span></li>
-      ${s.units_total == null && s.units_estimated ? `<li>Unit count derived from footprint and floors <span>estimate</span></li>` : ''}
-    </ul>
-    ${photos.length ? '' : `<p class="detail__note">No photographs stored for this society yet. Run
-      <code>node scrape/06-images.js</code> with a Google Places key, or drop files into
-      <code>web/assets/img/societies/</code>.</p>`}
   `;
 }
 

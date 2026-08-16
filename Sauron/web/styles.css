@@ -652,17 +652,6 @@ body:not([data-view="detail"]) .detail { display: none; }
 .addr__maps:hover { color: var(--display); border-color: var(--border-strong); }
 .addr__maps .ic { width: 12px; height: 12px; }
 .detail__note { margin: 1.2rem 0 0; font-size: .76rem; color: var(--faint); line-height: 1.6; }
-.detail__note code {
-  font-family: var(--mono); font-size: .7rem; background: var(--surface-2);
-  border: 1px solid var(--border); border-radius: 3px; padding: 0 .25rem;
-}
-
-.srcs { margin: 0; padding: 0; list-style: none; font-size: .82rem; }
-.srcs li {
-  display: flex; gap: .5rem; align-items: baseline; justify-content: space-between;
-  padding: .3rem 0; border-bottom: 1px solid var(--border-subtle); color: var(--text);
-}
-.srcs span { font-family: var(--mono); font-size: .6rem; text-transform: uppercase; color: var(--faint); }
 
 .news { margin: 0 0 .5rem; padding: 0; list-style: none; display: flex; flex-direction: column; gap: .4rem; }
 .news__item {
