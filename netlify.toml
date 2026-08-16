@@ -1,0 +1,30 @@
+# Netlify serves the Sauron folder as the site root, so the app at /web can
+# still reach its data at /data with the same relative paths it uses locally.
+# No build step: the front end is plain HTML, CSS and JavaScript.
+
+[build]
+  publish = "Sauron"
+  command = ""
+
+[[redirects]]
+  from = "/"
+  to = "/web/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# The datasets change whenever a scrape runs, so they are never cached.
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "no-store"
+
+[[headers]]
+  for = "/web/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

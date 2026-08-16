@@ -1,0 +1,337 @@
+{
+  "note": "Every external dataset Sauron pulls from, with its link, licence and what it gives us. Add a row here before adding a field to the pipeline.",
+  "updated": "2026-08-16",
+  "sources": [
+    {
+      "id": "osm-overpass",
+      "name": "OpenStreetMap, via the Overpass API",
+      "url": "https://overpass-api.de/api/interpreter",
+      "mirrors": [
+        "https://overpass.kumi.systems/api/interpreter",
+        "https://overpass.private.coffee/api/interpreter"
+      ],
+      "docs": "https://wiki.openstreetmap.org/wiki/Overpass_API",
+      "licence": "ODbL 1.0, OpenStreetMap contributors",
+      "gives": [
+        "society name",
+        "GPS",
+        "polygon",
+        "plot area",
+        "building footprints",
+        "floor counts",
+        "police stations",
+        "fire stations",
+        "hospitals"
+      ],
+      "used_by": [
+        "scrape/01-osm-candidates.js",
+        "scrape/02-gba-wards.js",
+        "scrape/03-societies.js"
+      ],
+      "cost": "free, no key",
+      "caveats": "Uneven coverage. Strong on large older townships, thin on recent launches. Police and fire station coverage is incomplete."
+    },
+    {
+      "id": "gba-wards",
+      "name": "Greater Bengaluru Authority ward boundaries and reservations, 2026",
+      "url": "https://data.opencity.in/dataset/gba-ward-wise-reservations-2026",
+      "file": "https://data.opencity.in/dataset/e6356d29-ce41-4bc7-8292-bbd790070e14/resource/aa77fba2-689b-43f2-a3d6-a737a42d63bd/download/gba-369-wards-december-2025-appended.kml",
+      "api": "https://data.opencity.in/api/3/action/package_show?id=gba-ward-wise-reservations-2026",
+      "origin": "Government of Karnataka final ward notification, 7 March 2026",
+      "licence": "Public domain",
+      "gives": [
+        "369 ward polygons",
+        "ward number",
+        "ward name in English and Kannada",
+        "corporation",
+        "assembly constituency"
+      ],
+      "used_by": [
+        "scrape/02-gba-wards.js",
+        "scrape/04-boundary.js"
+      ],
+      "cost": "free",
+      "caveats": "Reservation status changes with each election cycle. Boundaries are the March 2026 final set."
+    },
+    {
+      "id": "karnataka-rera",
+      "name": "Karnataka RERA project register",
+      "url": "https://github.com/Vonter/karnataka-rera-projects",
+      "file": "https://raw.githubusercontent.com/Vonter/karnataka-rera-projects/main/data/rera-projects.csv.zip",
+      "alternatives": [
+        "https://raw.githubusercontent.com/Vonter/karnataka-rera-projects/main/data/rera-projects.parquet",
+        "https://raw.githubusercontent.com/Vonter/karnataka-rera-projects/main/data/rera-projects-full.parquet"
+      ],
+      "fields_doc": "https://github.com/Vonter/karnataka-rera-projects/blob/main/DATA.md",
+      "origin": "https://rera.karnataka.gov.in, scraped into 8,791 projects and 174 columns",
+      "licence": "ODbL 1.0, some content copyright Karnataka RERA",
+      "gives": [
+        "promoter",
+        "registration number and status",
+        "total units",
+        "tower count",
+        "land and covered area",
+        "FAR",
+        "parking counts",
+        "coordinates",
+        "completion date",
+        "project cost",
+        "fire fighting status"
+      ],
+      "used_by": [
+        "scrape/05-rera.js"
+      ],
+      "cost": "free",
+      "caveats": "Post 2017 registrations only. Unit counts populated on 34 percent of rows, coordinates on 46 percent. The official portal is slow and often unreachable, which is why the mirror is used."
+    },
+    {
+      "id": "carto-basemaps",
+      "name": "CARTO basemaps",
+      "url": "https://basemaps.cartocdn.com/",
+      "docs": "https://github.com/CartoDB/basemap-styles",
+      "licence": "Free with attribution to OpenStreetMap contributors and CARTO",
+      "gives": [
+        "dark and light map tiles"
+      ],
+      "used_by": [
+        "web/app.js"
+      ],
+      "cost": "free for reasonable use"
+    },
+    {
+      "id": "esri-world-imagery",
+      "name": "Esri World Imagery",
+      "url": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+      "licence": "Free to display with attribution. Bulk download and storage are not permitted.",
+      "gives": [
+        "satellite basemap",
+        "site and context aerials saved per society"
+      ],
+      "used_by": [
+        "web/app.js",
+        "scrape/06-images.js"
+      ],
+      "cost": "free",
+      "endpoint": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/export"
+    },
+    {
+      "id": "wikimedia-commons",
+      "name": "Wikimedia Commons geosearch",
+      "url": "https://commons.wikimedia.org/w/api.php",
+      "licence": "CC, per file. Author and licence recorded in the image index.",
+      "gives": [
+        "ground photographs near a society"
+      ],
+      "used_by": [
+        "scrape/06-images.js"
+      ],
+      "cost": "free, no key",
+      "caveats": "Thin coverage of Bengaluru societies. A file is kept only when its name or description mentions the society or its builder."
+    },
+    {
+      "id": "bbmp-streetlights",
+      "name": "BBMP street lights by ward",
+      "url": "https://data.opencity.in/dataset/bengaluru-streetlights",
+      "file": "https://data.opencity.in/dataset/68bab2e1-a94b-4ad5-b1b5-dc9658e462e4/resource/17cafe43-76ac-47fb-b893-fd2d2f0ebd0c/download/streetlights-in-bengaluru-wards.csv",
+      "licence": "OpenCity, no licence stated. Treat as public sector information.",
+      "gives": [
+        "street light count for each of the 198 old BBMP wards"
+      ],
+      "used_by": [
+        "scrape/11-streetlights.js"
+      ],
+      "cost": "free",
+      "caveats": "Counted against the old 198 ward map, so it is apportioned onto the 369 GBA wards by area. 64 new wards fall outside the counted area and are left null. Undated in the source."
+    },
+    {
+      "id": "bbmp-ward-boundaries",
+      "name": "BBMP ward boundaries, 2022 and 2023",
+      "url": "https://data.opencity.in/dataset/bbmp-ward-information",
+      "file": "https://data.opencity.in/dataset/87b978d1-352e-4b90-aa2c-9991e55d3425/resource/9423dbca-db2b-47df-823e-8546f4fb8f2a/download/53418b48-c08d-43bd-be0e-31b46cd0f798.kml",
+      "licence": "Public domain",
+      "gives": [
+        "old ward polygons, needed to move ward level data onto the new map"
+      ],
+      "used_by": [
+        "scrape/11-streetlights.js"
+      ],
+      "cost": "free"
+    },
+    {
+      "id": "blr-crime",
+      "name": "Bengaluru crime data, city totals",
+      "url": "https://data.opencity.in/dataset/bengaluru-crime-data-2023",
+      "origin": "Bengaluru City Police, from FIRs filed",
+      "licence": "Public domain",
+      "gives": [
+        "reported and detected counts by crime type for 2021, 2022 and 2023",
+        "separate tables for crimes against women, crimes against children, cyber crime, accidental and suicide deaths"
+      ],
+      "used_by": [
+        "planned: scrape/12-crime.js"
+      ],
+      "cost": "free",
+      "caveats": "City wide totals only. No ward, station or point geography, so it cannot drive a heat map on its own."
+    },
+    {
+      "id": "karnataka-crime",
+      "name": "Karnataka State Police crime data, 2022 to 2025",
+      "url": "https://data.opencity.in/dataset/karnataka-crime-data-2025",
+      "licence": "Public domain",
+      "gives": [
+        "IPC and BNS crimes",
+        "crimes under special local laws",
+        "crimes against women, children and SC/ST",
+        "district and commissionerate level tables",
+        "monthly Crime Review PDFs"
+      ],
+      "used_by": [
+        "planned: scrape/12-crime.js"
+      ],
+      "cost": "free",
+      "caveats": "District and commissionerate granularity at best. Station level tables exist only inside the Crime Review PDFs."
+    },
+    {
+      "id": "gdelt",
+      "name": "GDELT 2.0 Document API",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc",
+      "licence": "Free for research and non commercial use",
+      "gives": [
+        "news articles by keyword and date, back to 2017, with publisher, date and URL"
+      ],
+      "used_by": [
+        "planned: scrape/13-news.js"
+      ],
+      "cost": "free, no key",
+      "caveats": "One request every 5 seconds. Results are noisy: a Bengaluru query returned Delhi stories, so every hit has to be re-checked against the society name and the city before it is kept."
+    },
+    {
+      "id": "google-news-rss",
+      "name": "Google News RSS",
+      "url": "https://news.google.com/rss/search",
+      "licence": "Headlines and links only, no full text",
+      "gives": [
+        "headline, publisher, date and link for a query"
+      ],
+      "used_by": [
+        "planned: scrape/13-news.js"
+      ],
+      "cost": "free, no key",
+      "caveats": "Rate limited in practice. Use as a second opinion alongside GDELT rather than the only source."
+    },
+    {
+      "id": "bcp-contacts",
+      "name": "Bengaluru City Police station contacts",
+      "url": "https://data.opencity.in/dataset/bengaluru-city-police-contact-info",
+      "licence": "Public domain",
+      "gives": [
+        "police station names, jurisdictions and phone numbers"
+      ],
+      "used_by": [
+        "planned: cross check of the OSM station list"
+      ],
+      "cost": "free"
+    },
+    {
+      "id": "btp-road-crashes",
+      "name": "Bengaluru Traffic Police, station wise road crashes",
+      "url": "https://data.opencity.in/dataset/bengaluru-road-crashes-data",
+      "licence": "Public domain",
+      "gives": [
+        "crashes, fatal crashes, killed and injured per traffic police station, 2018 to 2025",
+        "city totals 2007 to 2025"
+      ],
+      "used_by": [
+        "scrape/12-road-crashes.js"
+      ],
+      "cost": "free",
+      "caveats": "Road safety, not crime. Station names are abbreviated and spelled inconsistently between years, so the join runs through an alias list. Stations created after 2022 have no polygon."
+    },
+    {
+      "id": "btp-jurisdictions",
+      "name": "Bengaluru Traffic Police jurisdictions",
+      "url": "https://data.opencity.in/dataset/bengaluru-traffic-police-jurisdictions",
+      "licence": "Public domain",
+      "gives": [
+        "45 traffic police jurisdiction polygons, 2022"
+      ],
+      "used_by": [
+        "scrape/12-road-crashes.js"
+      ],
+      "cost": "free",
+      "caveats": "2022 vintage, so it predates the stations added since."
+    },
+    {
+      "id": "blr-cctv",
+      "name": "Bengaluru CCTV camera locations",
+      "url": "https://data.opencity.in/dataset/bengaluru-cctv-cameras",
+      "licence": "Creative Commons non commercial",
+      "gives": [
+        "camera points owned by traffic police, city police and BBMP, crowdsourced from OSM"
+      ],
+      "used_by": [
+        "not yet built"
+      ],
+      "cost": "free",
+      "caveats": "Non commercial licence, so check before it goes into anything sold. Crowdsourced, so coverage is partial."
+    },
+    {
+      "id": "blr-fire-stations",
+      "name": "Bengaluru and Karnataka fire stations",
+      "url": "https://data.opencity.in/dataset/bengaluru-and-karnataka-fire-stations",
+      "licence": "Public domain",
+      "gives": [
+        "official fire station locations"
+      ],
+      "used_by": [
+        "not yet built"
+      ],
+      "cost": "free",
+      "caveats": "Worth swapping in for the 29 stations OSM knows about."
+    }
+  ],
+  "considered_not_used": [
+    {
+      "name": "Property portals: Housing, 99acres, MagicBricks, NoBroker, CommonFloor",
+      "why_not": "Terms forbid scraping and the sites run bot protection. Needs a licence or partnership.",
+      "status": "needs a commercial route"
+    },
+    {
+      "name": "Licensed project data: PropEquity, Liases Foras, CRE Matrix, PropTiger",
+      "why_not": "Would close the coverage gap on recent launches and give unit mix and pricing. Roughly ₹1 lakh to ₹5 lakh a year for Bengaluru.",
+      "status": "your call"
+    },
+    {
+      "name": "News for security incidents: Google News RSS, GDELT 2.0, Deccan Herald, TOI Bengaluru, The Hindu, Bangalore Mirror",
+      "url": "https://api.gdeltproject.org/api/v2/doc/doc",
+      "why_not": "Not built yet. Planned as step 7, with publisher, date, URL and snippet kept per incident and nothing asserted without a link.",
+      "status": "planned"
+    },
+    {
+      "name": "Bengaluru City Police",
+      "url": "https://bcp.karnataka.gov.in",
+      "why_not": "Station and ward level statistics only, not society level. Useful to cross check the OSM station list.",
+      "status": "reference"
+    },
+    {
+      "name": "Google Places photos",
+      "url": "https://developers.google.com/maps/documentation/places/web-service/place-photos",
+      "why_not": "Needs a billed key, and the terms treat photo bytes as content you may not store. Script parked at scrape/optional/google-images.js.",
+      "status": "dropped, paid"
+    },
+    {
+      "name": "Station level crime counts",
+      "why_not": "Not published anywhere reachable. The Bengaluru 2023 press note and the 54 page Karnataka Crime Review both stop at city and district level: the finest geography in the Review is commissionerate and range. ksp.karnataka.gov.in and bcp.karnataka.gov.in do not respond from this network. The realistic route is an RTI to the Commissioner for station wise FIR counts by head and year.",
+      "status": "blocked, checked directly"
+    }
+  ],
+  "review": {
+    "how_to_refresh": "Run the numbered scripts in scrape/ in order. Each one caches its download in data/.cache-*; delete the cache file to force a fresh pull.",
+    "watch_for": [
+      "GBA ward boundaries change with each delimitation. Re-pull the KML and rerun 02 and 04.",
+      "Karnataka RERA mirror updates when its maintainer reruns the scrape. Check the repo's last commit before trusting the unit counts as current.",
+      "Crime data is published annually. A 2026 Bengaluru release would replace the 2023 file.",
+      "Builder websites move project pages. 08 records what it could not find in data/images-missing.json."
+    ]
+  }
+}

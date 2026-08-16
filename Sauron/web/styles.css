@@ -1,0 +1,842 @@
+/* ==========================================================================
+   Sauron
+   Palette, type and radii lifted from the website's assets/css/tokens.css, the
+   icon sprite is the site's own, and the component idiom follows
+   Research/viewer, so the three read as one product. Dark is the default
+   there, so it is the default here.
+   ========================================================================== */
+
+:root {
+  --brand-400: #F0605B;
+  --brand-500: #D92D20;
+  --brand-600: #B42318;
+  --brand-700: #912018;
+
+  --sans: 'Inter Tight', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --ls-tight: -0.015em;
+  --ls-label: 0.14em;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur: 220ms;
+  --header-h: 56px;
+}
+
+/* Theme: dark, the site's default */
+:root, [data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0D0D0D; --surface: #161616; --surface-2: #1C1C1C; --surface-hover: #202020;
+  --display: #EDEAE8; --text: #C9C5C2; --muted: #8E8A87; --faint: #6A6764;
+  --border: #272727; --border-subtle: #1E1E1E; --border-strong: #383838;
+  --accent: var(--brand-500); --accent-hover: var(--brand-400); --accent-text: var(--brand-400);
+  --accent-tint: rgba(217, 45, 32, 0.13); --accent-ring: rgba(217, 45, 32, 0.45);
+  --on-accent: #04150E;
+  --warn-tint: rgba(214, 108, 74, 0.15); --warn-text: #E08E6F;
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.55);
+  --selection-bg: rgba(217, 45, 32, 0.28); --selection-text: #EAFFF6;
+
+  --boundary: #4A4A4A;
+  --map-bg: #07100C;
+  --map-filter: saturate(0.42) brightness(0.82) contrast(1.12) hue-rotate(96deg);
+  --map-veil: radial-gradient(ellipse at 50% 45%, rgba(217,45,32,0.06), transparent 62%);
+  --glow: drop-shadow(0 0 5px rgba(23, 201, 138, 0.55));
+  --scan-opacity: 0.16;
+}
+
+/* Theme: light */
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #FFFFFF; --surface: #FAFAF9; --surface-2: #F4F4F2; --surface-hover: #EFEFED;
+  --display: #131313; --text: #3E3D3B; --muted: #6B6966; --faint: #8B8986;
+  --border: #E3E3E0; --border-subtle: #EDEDEA; --border-strong: #CFCFCB;
+  --accent: var(--brand-500); --accent-hover: var(--brand-600); --accent-text: var(--brand-700);
+  --accent-tint: rgba(217, 45, 32, 0.10); --accent-ring: rgba(217, 45, 32, 0.40);
+  --on-accent: #FFFFFF;
+  --warn-tint: rgba(190, 78, 40, 0.10); --warn-text: #9C4A28;
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.10);
+  --selection-bg: rgba(217, 45, 32, 0.20); --selection-text: #00432C;
+
+  --boundary: #C2C0BD;
+  --map-bg: #F2F4F2;
+  --map-filter: saturate(0.9) contrast(0.98);
+  --map-veil: none;
+  --glow: none;
+  --scan-opacity: 0;
+}
+
+::selection { background: var(--selection-bg); color: var(--selection-text); }
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg); color: var(--text);
+  font-family: var(--body); font-size: 15px; line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: grid; grid-template-rows: var(--header-h) minmax(0, 1fr);
+  overflow: hidden;
+}
+
+a { color: var(--accent); text-decoration: none; }
+
+.ic {
+  width: 1.05em; height: 1.05em; flex: none;
+  fill: none; stroke: currentColor; stroke-width: 1.6;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* ---------------------------------------------------------------- topbar */
+
+.topbar {
+  display: flex; align-items: center; gap: 1rem;
+  padding: 0 1rem;
+  background: var(--surface); border-bottom: 1px solid var(--border);
+}
+.spacer { flex: 1; }
+
+.brand { display: flex; align-items: center; gap: .6rem; color: inherit; }
+.brand__mark { width: 24px; height: 24px; color: var(--accent); flex: none; }
+.brand__word {
+  font-family: var(--sans); font-size: 1.0625rem; font-weight: 600;
+  letter-spacing: var(--ls-tight); color: var(--display); white-space: nowrap;
+}
+.brand__word em { font-style: normal; font-weight: 400; color: var(--muted); }
+
+.readout {
+  display: flex; align-items: center; gap: .45rem;
+  font-family: var(--mono); font-size: .6875rem; font-weight: 500;
+  letter-spacing: var(--ls-label); text-transform: uppercase; color: var(--muted);
+}
+.readout b { color: var(--display); font-weight: 500; font-size: .8rem; }
+
+.icon-btn {
+  background: none; border: 1px solid var(--border); border-radius: var(--r-sm);
+  color: var(--muted); cursor: pointer; padding: .35rem; line-height: 0;
+  display: inline-flex;
+  transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.icon-btn:hover { color: var(--display); border-color: var(--border-strong); }
+.icon-btn .ic { width: 16px; height: 16px; }
+[data-theme="dark"] .ic-moon { display: none; }
+[data-theme="light"] .ic-sun { display: none; }
+[data-split="rows"] .ic-rows { display: none; }
+[data-split="cols"] .ic-cols { display: none; }
+
+/* ------------------------------------------------------- selects & inputs */
+
+.picker { position: relative; display: inline-flex; align-items: center; }
+.picker__icon { position: absolute; left: .6rem; width: 15px; height: 15px; color: var(--muted); pointer-events: none; }
+.picker__chev { position: absolute; right: .5rem; width: 14px; height: 14px; color: var(--muted); pointer-events: none; }
+
+.select {
+  appearance: none; -webkit-appearance: none;
+  background: var(--bg); color: var(--display);
+  font-family: var(--body); font-size: .85rem;
+  border: 1px solid var(--border); border-radius: var(--r-md);
+  padding: .42rem 1.8rem .42rem .7rem;
+  transition: border-color var(--dur) var(--ease);
+}
+.picker--city .select { padding-left: 2rem; font-size: .9rem; }
+.picker--layer .select {
+  padding-left: 1.9rem; padding-right: 1.7rem;
+  font-family: var(--mono); font-size: .72rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--display);
+}
+.picker--layer .select:hover { border-color: var(--muted); }
+.select:hover { border-color: var(--muted); }
+.select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-tint); }
+
+.field { display: inline-flex; align-items: center; gap: .45rem; }
+.field__label, .check span {
+  font-family: var(--mono); font-size: .6875rem; font-weight: 500;
+  letter-spacing: var(--ls-label); text-transform: uppercase; color: var(--muted);
+}
+.check { display: inline-flex; align-items: center; gap: .4rem; cursor: pointer; }
+.check input { accent-color: var(--accent); width: 14px; height: 14px; margin: 0; }
+.check:hover span { color: var(--text); }
+
+.btn-ghost {
+  display: inline-flex; align-items: center; gap: .35rem; margin-left: auto; cursor: pointer;
+  background: none; border: 1px solid var(--border); border-radius: var(--r-md);
+  color: var(--muted); font-family: var(--body); font-size: .8rem; padding: .4rem .7rem;
+  transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.btn-ghost:hover { color: var(--display); border-color: var(--border-strong); }
+.btn-ghost .ic { width: 13px; height: 13px; }
+
+/* ------------------------------------------------------- split and divider */
+
+.split { display: grid; min-height: 0; min-width: 0; }
+.mapwrap { position: relative; min-height: 0; min-width: 0; overflow: hidden; }
+#map { position: absolute; inset: 0; background: var(--map-bg); }
+
+.divider {
+  background: var(--border); position: relative; z-index: 500;
+  display: flex; align-items: center; justify-content: center;
+  transition: background var(--dur) var(--ease);
+}
+[data-split="rows"] .divider { cursor: row-resize; }
+[data-split="cols"] .divider { cursor: col-resize; }
+.divider:hover, body.dragging .divider { background: var(--accent); }
+.divider span { background: var(--faint); border-radius: 2px; }
+[data-split="rows"] .divider span { width: 34px; height: 2px; }
+[data-split="cols"] .divider span { width: 2px; height: 34px; }
+.divider:hover span { background: var(--on-accent); }
+body.dragging { cursor: grabbing; user-select: none; }
+
+/* ------------------------------------------------------------------- map */
+
+.leaflet-container { font-family: var(--body); background: var(--map-bg); }
+.tiles { filter: var(--map-filter); }
+
+/* A faint green wash and scan lines over the tiles. Both sit under every
+   control and marker, and neither takes pointer events, so nothing about
+   reading or clicking the map changes. */
+.scanlines {
+  position: absolute; inset: 0; z-index: 400; pointer-events: none;
+  background:
+    var(--map-veil),
+    repeating-linear-gradient(0deg, rgba(0,0,0,.5) 0 1px, transparent 1px 3px);
+  opacity: var(--scan-opacity);
+  mix-blend-mode: soft-light;
+}
+
+.leaflet-bar { border: 1px solid var(--border) !important; border-radius: var(--r-sm) !important; overflow: hidden; }
+.leaflet-bar a, .leaflet-bar a:hover {
+  background: var(--surface); color: var(--display); border-bottom-color: var(--border);
+}
+.leaflet-bar a:hover { background: var(--surface-hover); }
+
+/* Map controls sit over photographic imagery, so a hairline icon disappears.
+   These are drawn heavier and larger than icons in the panels. */
+.leaflet-bar .ic { width: 19px; height: 19px; stroke-width: 1.9; }
+.leaflet-bar a { color: var(--display); }
+.satbtn.on a { color: var(--on-accent); background: var(--accent); }
+.satbtn.on a .ic { stroke-width: 2.1; }
+
+.leaflet-control-scale-line {
+  background: rgba(0,0,0,.35); border-color: var(--border-strong) !important;
+  color: var(--muted); font-family: var(--mono); font-size: 10px;
+}
+.leaflet-control-attribution {
+  background: var(--surface) !important; color: var(--faint) !important;
+  font-size: 10px !important; border-top-left-radius: var(--r-sm);
+}
+.leaflet-control-attribution a { color: var(--muted) !important; }
+
+/* Society outlines and pins, with the glow that gives the map its look. */
+.leaflet-overlay-pane path.shape { filter: var(--glow); }
+.leaflet-overlay-pane path.shape--on { filter: drop-shadow(0 0 10px var(--accent-ring)); }
+.leaflet-overlay-pane path.pin { filter: var(--glow); }
+
+.tip.leaflet-tooltip {
+  background: var(--surface); color: var(--display);
+  border: 1px solid var(--border-strong); border-radius: var(--r-sm);
+  box-shadow: var(--shadow-lg);
+  font-family: var(--sans); font-size: .78rem; font-weight: 600; padding: .25rem .5rem;
+}
+.tip.leaflet-tooltip::before { border-top-color: var(--border-strong); }
+
+/* The jurisdiction tooltip carries the same little stat block as the society
+   card, so it gets the same width and spacing rather than running together. */
+.tip.leaflet-tooltip {
+  width: 210px; padding: .5rem .6rem; white-space: normal;
+  font-family: var(--body); font-weight: 400; line-height: 1.35;
+  background: rgba(13, 13, 13, .94); backdrop-filter: blur(8px);
+}
+[data-theme="light"] .tip.leaflet-tooltip { background: rgba(255, 255, 255, .96); }
+.tip em { margin-bottom: .1rem; }
+
+/* --- clusters --- */
+
+.cl { background: none; overflow: visible; }
+.cl__flats {
+  position: absolute; left: 50%; top: 100%; transform: translate(-50%, 4px);
+  white-space: nowrap; pointer-events: none;
+  padding: .05rem .3rem; border-radius: 999px;
+  background: rgba(0, 0, 0, .74); border: 1px solid var(--accent-ring);
+  font-family: var(--mono); font-size: .55rem; letter-spacing: .04em;
+  color: var(--display);
+}
+[data-theme="light"] .cl__flats { background: rgba(255, 255, 255, .9); }
+.cl__ring {
+  width: var(--s); height: var(--s); border-radius: 50%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(0, 0, 0, .72) 0 62%, transparent 64%),
+    radial-gradient(circle at 50% 50%, var(--accent-tint) 0 58%, transparent 60%);
+  border: 1.5px solid var(--accent);
+  box-shadow: 0 0 0 4px rgba(217, 45, 32, 0.08), 0 0 16px var(--accent-ring);
+  color: var(--display); font-family: var(--mono); line-height: 1;
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.cl:hover .cl__ring { transform: scale(1.08); box-shadow: 0 0 0 5px var(--accent-tint), 0 0 26px var(--accent-ring); }
+
+/* Leaflet stacks markers by latitude with an inline z-index, so overlapping
+   clusters bury each other. A stylesheet !important outranks that inline value
+   and lifts whichever one the pointer is on, pill and all. */
+.leaflet-marker-icon.cl:hover { z-index: 10000 !important; }
+.cl__ring b { font-size: .95rem; font-weight: 500; letter-spacing: -.01em; }
+
+
+
+/* --- map footer legend --- */
+
+.mapfoot {
+  position: absolute; left: 12px; bottom: 10px; z-index: 500; max-width: calc(100% - 90px);
+  display: flex; gap: .7rem; align-items: center; flex-wrap: wrap;
+  padding: .3rem .6rem; border-radius: var(--r-sm);
+  background: rgba(0,0,0,.42); backdrop-filter: blur(6px);
+  border: 1px solid var(--border);
+  font-family: var(--mono); font-size: .6rem; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--muted); pointer-events: none;
+}
+[data-theme="light"] .mapfoot { background: rgba(255,255,255,.78); }
+.legend { display: inline-flex; align-items: center; gap: .35rem; }
+/* The legend spells out what the two numbers in a cluster mean. */
+.legend b, .legend em {
+  font-style: normal; font-weight: 500; color: var(--display);
+  border: 1px solid var(--accent); border-radius: 999px; padding: 0 .3rem;
+}
+.legend em { color: var(--accent-text); }
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.dot--known { background: var(--accent); box-shadow: 0 0 6px var(--accent-ring); }
+.dot--unknown { background: var(--muted); }
+.legend--zoom { color: var(--accent-text); }
+.legend--heat { color: #E8A13C; }
+.leaflet-overlay-pane path.heat { filter: none; }
+
+/* ------------------------------------------------------------ omni search */
+
+.omni { position: absolute; top: 12px; left: 56px; right: 12px; z-index: 600; max-width: 560px; }
+
+.omni__box {
+  display: flex; align-items: center; gap: .45rem; flex-wrap: wrap;
+  padding: .4rem .5rem .4rem .7rem;
+  background: rgba(13,13,13,.82); backdrop-filter: blur(10px);
+  border: 1px solid var(--border-strong); border-radius: var(--r-md);
+  box-shadow: var(--shadow-lg);
+}
+[data-theme="light"] .omni__box { background: rgba(255,255,255,.9); }
+.omni__box:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-tint), var(--shadow-lg); }
+.omni__icon { width: 15px; height: 15px; color: var(--muted); }
+
+.omni__box input {
+  flex: 1; min-width: 120px;
+  background: none; border: none; outline: none;
+  color: var(--display); font-family: var(--body); font-size: .85rem;
+}
+.omni__box input::placeholder { color: var(--faint); }
+
+.omni__clear {
+  background: none; border: none; color: var(--faint); cursor: pointer;
+  line-height: 0; padding: .2rem;
+}
+.omni__clear:hover { color: var(--display); }
+
+.chips { display: inline-flex; gap: .3rem; flex-wrap: wrap; }
+.chip {
+  display: inline-flex; align-items: center; gap: .3rem; cursor: pointer;
+  padding: .1rem .4rem; border-radius: var(--r-sm);
+  background: var(--accent-tint); border: 1px solid var(--accent-ring);
+  font-family: var(--mono); font-size: .62rem; letter-spacing: .06em;
+  text-transform: uppercase; color: var(--muted);
+}
+.chip b { color: var(--accent-text); font-weight: 500; text-transform: none; letter-spacing: 0; }
+.chip .ic { width: 11px; height: 11px; }
+.chip:hover { border-color: var(--accent); color: var(--display); }
+.chip--pending { background: none; border-style: dashed; }
+
+.omni__list {
+  margin: .35rem 0 0; padding: .25rem; list-style: none;
+  max-height: min(46vh, 340px); overflow-y: auto;
+  background: rgba(13,13,13,.94); backdrop-filter: blur(10px);
+  border: 1px solid var(--border-strong); border-radius: var(--r-md);
+  box-shadow: var(--shadow-lg);
+}
+[data-theme="light"] .omni__list { background: rgba(255,255,255,.97); }
+.omni__list li {
+  display: flex; align-items: center; gap: .5rem; cursor: pointer;
+  padding: .32rem .5rem; border-radius: var(--r-sm); font-size: .82rem;
+}
+.omni__list li .ic { width: 14px; height: 14px; color: var(--faint); }
+.omni__list li.on { background: var(--accent-tint); }
+.omni__list li:hover { background: var(--accent-tint); }
+.omni__list li:hover .ic { color: var(--accent-text); }
+/* The list scrolls, so the highlighted row has to be scrolled to, not just
+   marked. scroll-margin keeps it off the very edge when it is. */
+.omni__list li { scroll-margin: .35rem; }
+.omni__list li.on .ic { color: var(--accent-text); }
+.om-label { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--display); }
+.om-meta { font-family: var(--mono); font-size: .62rem; color: var(--muted); }
+kbd {
+  font-family: var(--mono); font-size: .55rem; text-transform: uppercase; letter-spacing: .08em;
+  padding: .1rem .25rem; border-radius: 3px;
+  background: var(--surface-2); border: 1px solid var(--border); color: var(--muted);
+}
+.omni__hint {
+  margin: .3rem 0 0 .2rem;
+  font-family: var(--mono); font-size: .6rem; letter-spacing: .07em;
+  text-transform: uppercase; color: var(--faint);
+}
+
+/* ----------------------------------------------------------------- panel */
+
+.panel {
+  display: grid; grid-template-rows: auto minmax(0, 1fr);
+  min-height: 0; min-width: 0;
+  background: var(--surface);
+}
+.filters {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1rem;
+  padding: .6rem 1rem; border-bottom: 1px solid var(--border);
+}
+.provenance {
+  margin: 0; font-family: var(--mono); font-size: .62rem;
+  letter-spacing: .06em; text-transform: uppercase; color: var(--faint);
+}
+
+/* ----------------------------------------------------------------- table */
+
+.tablewrap { overflow: auto; min-height: 0; }
+
+/* Fixed layout plus an explicit width, set from the columns in script, so each
+   column keeps the width it is given and the wrapper scrolls sideways. */
+table { border-collapse: separate; border-spacing: 0; table-layout: fixed; font-size: .85rem; }
+
+.hrow th {
+  position: sticky; top: 0; z-index: 3;
+  background: var(--surface-2);
+  font-family: var(--sans); font-weight: 650; font-size: .78rem;
+  color: var(--display); text-align: left; white-space: nowrap;
+  padding: .5rem .7rem; border-bottom: 1px solid var(--border);
+  cursor: pointer; user-select: none;
+}
+.hrow th:hover { background: var(--surface-hover); }
+.hrow th.sorted { color: var(--accent-text); }
+.hrow th.num .th-in { justify-content: flex-end; }
+
+.th-in { display: flex; align-items: center; gap: .3rem; overflow: hidden; }
+.th-label { overflow: hidden; text-overflow: ellipsis; }
+.th-sort { width: 12px; height: 12px; color: var(--faint); flex: none; opacity: .55; }
+.hrow th:hover .th-sort { color: var(--muted); opacity: 1; }
+.th-sort.asc, .th-sort.desc { color: var(--accent); opacity: 1; }
+
+/* The sprite's filled dots, which used to be set by a style block inside the
+   sprite itself. That block is gone, so the rule lives here. */
+.ic .solid { fill: currentColor; stroke: none; }
+.th-grip { position: absolute; top: 0; right: 0; width: 7px; height: 100%; cursor: col-resize; z-index: 4; }
+.th-grip:hover { background: var(--accent); opacity: .5; }
+body.resizing { cursor: col-resize; user-select: none; }
+
+.frow th {
+  position: sticky; top: 34px; z-index: 3;
+  background: var(--surface); padding: .25rem .35rem;
+  border-bottom: 1px solid var(--border);
+}
+.cf {
+  width: 100%; min-width: 0;
+  background: var(--bg); color: var(--text);
+  border: 1px solid var(--border-subtle); border-radius: var(--r-sm);
+  font-family: var(--mono); font-size: .68rem; padding: .2rem .35rem;
+}
+.cf::placeholder { color: var(--faint); }
+.cf:focus { outline: none; border-color: var(--accent); }
+
+tbody td {
+  padding: .5rem .7rem; border-bottom: 1px solid var(--border-subtle);
+  vertical-align: top; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+tbody tr { cursor: pointer; transition: background var(--dur) var(--ease); }
+tbody tr:hover { background: var(--surface-2); }
+tbody tr.on { background: var(--accent-tint); }
+tbody tr.on td:first-child { box-shadow: inset 2px 0 0 var(--accent); }
+
+.soc { font-family: var(--sans); font-weight: 600; color: var(--display); letter-spacing: var(--ls-tight); }
+.num { text-align: right; font-family: var(--mono); font-size: .78rem; font-variant-numeric: tabular-nums; }
+.dim { color: var(--muted); }
+.none { color: var(--faint); }
+.none::after { content: "\2013"; }
+
+.wardno {
+  font-family: var(--mono); font-size: .7rem; color: var(--accent-text);
+  background: var(--accent-tint); border-radius: 3px; padding: 0 .25rem; margin-right: .2rem;
+}
+
+.tag {
+  display: inline-block; margin: 0 .25rem .2rem 0; padding: .05rem .35rem;
+  font-family: var(--mono); font-size: .65rem; color: var(--muted);
+  border: 1px solid var(--border); border-radius: var(--r-sm); white-space: nowrap;
+}
+.tag--sub { border-style: dashed; color: var(--faint); }
+
+.badge {
+  display: inline-block; padding: .08rem .4rem;
+  font-family: var(--mono); font-size: .62rem; font-weight: 500;
+  letter-spacing: .08em; text-transform: uppercase; border-radius: var(--r-sm);
+}
+.badge.spatial { background: var(--surface-2); color: var(--faint); border: 1px solid var(--border); }
+.badge.estimated { background: var(--surface-2); color: var(--accent-text); border: 1px solid var(--border); }
+.badge.enriched { background: var(--accent-tint); color: var(--accent-text); }
+.badge.incident { background: var(--warn-tint); color: var(--warn-text); }
+
+.empty { padding: 2.5rem 1rem; text-align: center; color: var(--muted); font-size: .85rem; }
+
+@media (max-width: 900px) {
+  .brand__word em { display: none; }
+  .omni { left: 52px; }
+}
+
+/* The city outline sits under the societies but over the tiles. */
+.leaflet-overlay-pane path.cityline { filter: var(--glow); }
+
+
+/* The city outline is a boundary, not a finding, so it stays grey and flat. */
+.leaflet-overlay-pane path.cityline { filter: none; }
+
+/* Satellite base needs none of the green treatment. */
+.tiles--sat { filter: none; }
+.satbtn a { display: flex; align-items: center; justify-content: center; position: relative; }
+
+/* Leaflet clips its bar controls, which silently swallowed the hover label.
+   This control keeps the bar's look but lets the label out. */
+.satbtn { overflow: visible !important; }
+
+.satbtn a[data-label]::after {
+  content: attr(data-label);
+  position: absolute; left: calc(100% + 8px); top: 0; height: 100%;
+  display: flex; align-items: center;
+  white-space: nowrap; pointer-events: none; z-index: 1;
+  padding: 0 .5rem; border-radius: var(--r-sm);
+  background: var(--surface); border: 1px solid var(--border-strong);
+  color: var(--display); font-family: var(--mono); font-size: .62rem;
+  letter-spacing: .07em; text-transform: uppercase;
+  box-shadow: var(--shadow-lg);
+  opacity: 0; transition: opacity var(--dur) var(--ease);
+}
+.satbtn a[data-label]::before {
+  content: ""; position: absolute; left: calc(100% + 3px); top: 50%;
+  transform: translateY(-50%); width: 0; height: 0; pointer-events: none; z-index: 1;
+  border: 5px solid transparent; border-right-color: var(--border-strong);
+  opacity: 0; transition: opacity var(--dur) var(--ease);
+}
+.satbtn a[data-label]:hover::after,
+.satbtn a[data-label]:hover::before { opacity: 1; }
+
+/* Leaflet fixes its bar controls at 26px square, which a labelled control
+   cannot live inside. */
+
+/* Credits fold into an (i) until hovered, which frees the corner. */
+.credit { display: flex; align-items: center; }
+.credit button {
+  background: rgba(0,0,0,.45); border: 1px solid var(--border);
+  color: var(--muted); border-radius: 50%; cursor: help;
+  width: 20px; height: 20px; display: grid; place-items: center; padding: 0;
+}
+[data-theme="light"] .credit button { background: rgba(255,255,255,.8); }
+.credit .ic { width: 12px; height: 12px; }
+.credit span {
+  max-width: 0; overflow: hidden; white-space: nowrap;
+  font-family: var(--mono); font-size: 9px; color: var(--faint);
+  transition: max-width var(--dur) var(--ease), padding var(--dur) var(--ease);
+}
+.credit:hover span { max-width: 60vw; padding: 0 .4rem; }
+
+/* ---------------------------------------------------------- detail view */
+
+.detail {
+  display: grid; grid-template-rows: auto minmax(0, 1fr);
+  min-height: 0; min-width: 0;
+  background: var(--surface); border-left: 1px solid var(--border);
+}
+body[data-view="detail"] .panel { display: none; }
+body:not([data-view="detail"]) .detail { display: none; }
+
+.detail__top {
+  display: flex; align-items: center; gap: .5rem;
+  padding: .6rem 1rem; border-bottom: 1px solid var(--border);
+}
+.detail__top .btn-ghost { margin-left: 0; }
+.detail__top .icon-btn { margin-left: auto; }
+
+.detail__body { overflow-y: auto; padding: 1.1rem 1.25rem 2.5rem; }
+
+.detail__name {
+  margin: 0 0 .4rem; font-family: var(--sans); font-size: 1.5rem; font-weight: 600;
+  letter-spacing: var(--ls-tight); color: var(--display); line-height: 1.15;
+}
+.detail__sub { margin: 0 0 1rem; display: flex; flex-wrap: wrap; gap: .3rem; align-items: center; }
+.detail__sub .tag { margin: 0; display: inline-flex; align-items: center; gap: .3rem; }
+.tag__k {
+  font-style: normal; font-size: .58rem; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--faint);
+}
+
+.enclaves { display: flex; flex-wrap: wrap; gap: .35rem; }
+.enclave {
+  display: inline-flex; align-items: center; gap: .4rem; cursor: pointer;
+  padding: .28rem .5rem; border-radius: var(--r-sm);
+  background: var(--bg); border: 1px solid var(--border);
+  color: var(--text); font-family: var(--body); font-size: .8rem;
+  transition: border-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+.enclave:hover { border-color: var(--accent); color: var(--display); }
+.enclave i {
+  font-style: normal; font-family: var(--mono); font-size: .62rem; color: var(--accent-text);
+}
+.detail h3 b {
+  font-family: var(--mono); font-weight: 500; color: var(--accent-text); margin-left: .2rem;
+}
+
+.detail h3 {
+  margin: 1.5rem 0 .5rem; font-family: var(--mono); font-size: .62rem;
+  font-weight: 500; letter-spacing: var(--ls-label); text-transform: uppercase;
+  color: var(--muted); padding-bottom: .3rem; border-bottom: 1px solid var(--border-subtle);
+}
+
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: .5rem; }
+.stats--wide { grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+.stat {
+  padding: .5rem .6rem; border: 1px solid var(--border-subtle);
+  border-radius: var(--r-sm); background: var(--bg); min-width: 0;
+}
+.stat__k {
+  display: block; font-family: var(--mono); font-size: .58rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--faint); margin-bottom: .2rem;
+}
+.stat__v { display: block; color: var(--display); font-size: .88rem; overflow-wrap: anywhere; }
+.stat__v b { color: var(--accent-text); }
+.stat__v em {
+  display: block; font-style: normal; font-size: .72rem; color: var(--muted); margin-top: .1rem;
+}
+.stat__v .none::after { content: "\2013"; color: var(--faint); }
+
+/* A strip you can drag, wheel or swipe through, rather than a wall of thumbs. */
+.shots {
+  display: flex; gap: .4rem; margin-bottom: .6rem;
+  overflow-x: auto; overflow-y: hidden;
+  scroll-snap-type: x proximity; scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain;
+  padding-bottom: .4rem; cursor: grab;
+}
+.shots.dragging { cursor: grabbing; scroll-behavior: auto; scroll-snap-type: none; }
+.shots img {
+  height: 130px; flex: none; scroll-snap-align: start;
+  border-radius: var(--r-sm); border: 1px solid var(--border); object-fit: cover;
+  user-select: none; -webkit-user-drag: none;
+}
+.shots::-webkit-scrollbar { height: 6px; }
+.shots::-webkit-scrollbar-track { background: var(--surface-2); border-radius: 3px; }
+.shots::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
+.shots::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+.detail__list { margin: 0; font-size: .85rem; color: var(--text); }
+.detail__note { margin: 1.2rem 0 0; font-size: .76rem; color: var(--faint); line-height: 1.6; }
+.detail__note code {
+  font-family: var(--mono); font-size: .7rem; background: var(--surface-2);
+  border: 1px solid var(--border); border-radius: 3px; padding: 0 .25rem;
+}
+
+.srcs { margin: 0; padding: 0; list-style: none; font-size: .82rem; }
+.srcs li {
+  display: flex; gap: .5rem; align-items: baseline; justify-content: space-between;
+  padding: .3rem 0; border-bottom: 1px solid var(--border-subtle); color: var(--text);
+}
+.srcs span { font-family: var(--mono); font-size: .6rem; text-transform: uppercase; color: var(--faint); }
+
+/* ------------------------------------------------------------ hover card */
+
+.hovercard {
+  position: absolute; z-index: 620; width: 224px; padding: .55rem .65rem;
+  background: rgba(13,13,13,.94); backdrop-filter: blur(8px);
+  border: 1px solid var(--border-strong); border-radius: var(--r-md);
+  box-shadow: var(--shadow-lg);
+  opacity: 0; transform: translateY(4px);
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+  pointer-events: auto;
+}
+.hovercard.on { opacity: 1; transform: none; }
+[data-theme="light"] .hovercard { background: rgba(255,255,255,.97); }
+
+/* The little stem, flipped when the card sits under the dot. */
+.hovercard::after {
+  content: ""; position: absolute; left: 50%; margin-left: -5px;
+  border: 5px solid transparent; border-top-color: var(--border-strong); bottom: -10px;
+}
+.hovercard.below::after { bottom: auto; top: -10px; border-top-color: transparent; border-bottom-color: var(--border-strong); }
+/* Beside the dot there is no sensible place for a stem. */
+.hovercard.beside::after { display: none; }
+.tip__shots {
+  display: flex; gap: 3px; margin: -.15rem -.15rem .5rem;
+  overflow: hidden; border-radius: var(--r-sm);
+}
+.tip__shots img {
+  width: 0; flex: 1 1 0; height: 54px; object-fit: cover;
+  border-radius: 3px; background: var(--surface-2);
+}
+
+.hovercard b, .tip b {
+  display: block; font-family: var(--sans); font-size: .88rem; font-weight: 600;
+  color: var(--display); letter-spacing: var(--ls-tight); line-height: 1.25;
+}
+.hovercard em, .tip em {
+  display: block; font-style: normal; font-size: .72rem; color: var(--muted); margin-top: .1rem;
+}
+.hovercard .tip__grid, .tip .tip__grid { display: grid; gap: .1rem; margin: .45rem 0 .4rem; }
+.hovercard .tip__grid span, .tip .tip__grid span {
+  display: flex; justify-content: space-between; gap: .8rem; white-space: nowrap;
+  font-family: var(--mono); font-size: .66rem; color: var(--display);
+}
+.hovercard .tip__grid i, .tip .tip__grid i { font-style: normal; color: var(--faint); }
+.tip__go {
+  display: block; width: 100%; margin-top: .35rem; padding: .32rem .5rem;
+  cursor: pointer; border-radius: var(--r-sm);
+  background: var(--accent-tint); border: 1px solid var(--accent-ring);
+  color: var(--accent-text);
+  font-family: var(--mono); font-size: .62rem; letter-spacing: .09em;
+  text-transform: uppercase;
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+.tip__go:hover { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
+
+/* Clusters and pins fade in rather than popping when the camera settles. */
+.leaflet-marker-icon.cl, .leaflet-interactive.pin {
+  transition: opacity var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+.leaflet-fade-anim .leaflet-tile { transition: opacity .35s linear; }
+.shots__by {
+  margin: -.6rem 0 1rem; font-family: var(--mono); font-size: .6rem;
+  letter-spacing: .06em; text-transform: uppercase; color: var(--faint);
+}
+.shots img { cursor: zoom-in; transition: transform var(--dur) var(--ease); }
+.shots img:hover { transform: scale(1.03); }
+
+/* ------------------------------------------------- selected society marker */
+
+/* Answers "which one am I looking at" without hunting: a pulsing ring at the
+   society, its name pinned beside it, and the underlying dot pushed to accent. */
+.selmark { overflow: visible; }
+
+.selmark__ring,
+.selmark__pulse {
+  position: absolute; left: 0; top: 0; border-radius: 50%;
+  transform: translate(-50%, -50%); pointer-events: none;
+}
+
+.selmark__ring {
+  width: 26px; height: 26px;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-tint), 0 0 18px var(--accent-ring);
+  background: var(--accent-tint);
+}
+
+.selmark__pulse {
+  width: 26px; height: 26px;
+  border: 2px solid var(--accent);
+  animation: selpulse 1.8s var(--ease, cubic-bezier(.22,.61,.36,1)) infinite;
+}
+
+@keyframes selpulse {
+  0%   { opacity: .75; transform: translate(-50%, -50%) scale(1); }
+  70%  { opacity: 0;   transform: translate(-50%, -50%) scale(2.6); }
+  100% { opacity: 0;   transform: translate(-50%, -50%) scale(2.6); }
+}
+
+/* Label text on a solid accent fill fails whenever the accent is mid-tone, so
+   it reads as page text on the panel surface, with the accent as the border. */
+.selmark__label {
+  position: absolute; left: 20px; top: -9px; white-space: nowrap;
+  font-family: var(--mono); font-size: .62rem; letter-spacing: .07em;
+  text-transform: uppercase; color: var(--display);
+  background: var(--surface); border: 1px solid var(--accent);
+  padding: .18rem .42rem; border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .45); pointer-events: none;
+}
+
+/* The society's own dot, when it is the selected one. */
+path.pin--on {
+  stroke: var(--accent) !important;
+  stroke-width: 3 !important;
+  fill: var(--accent) !important;
+  fill-opacity: 1 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .selmark__pulse { animation: none; opacity: .35; }
+}
+
+/* Cross-link to the research library, and its twin in Research/viewer. */
+.xlink {
+  display: inline-flex; align-items: center; gap: .35rem;
+  padding: .3rem .55rem; border: 1px solid var(--border); border-radius: var(--r-sm, 6px);
+  font-size: .78rem; color: var(--muted); white-space: nowrap;
+}
+.xlink:hover { color: var(--display); border-color: var(--accent); text-decoration: none; }
+.xlink .ic { width: 15px; height: 15px; }
+@media (max-width: 760px) { .xlink span { display: none; } }
+
+/* ---------------------------------------------------------------- lightbox */
+
+.lightbox {
+  /* Above Leaflet's own control panes, which sit at 1000. */
+  position: fixed; inset: 0; z-index: 2000;
+  display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 1rem;
+  padding: 2.5rem 1rem;
+  background: rgba(6, 6, 6, .92); backdrop-filter: blur(8px);
+  opacity: 0; transition: opacity var(--dur) var(--ease);
+}
+.lightbox.on { opacity: 1; }
+/* A class that sets display beats the browser's rule for [hidden], so without
+   this the overlay sits over the page at opacity 0 and eats every click. */
+.lightbox[hidden] { display: none; }
+
+.lb__frame {
+  margin: 0; min-width: 0; height: 100%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .7rem;
+}
+.lb__frame img {
+  max-width: 100%; max-height: calc(100vh - 9rem);
+  object-fit: contain; border-radius: var(--r-md);
+  border: 1px solid var(--border); box-shadow: var(--shadow-lg);
+}
+.lb__frame figcaption {
+  display: flex; align-items: baseline; gap: .6rem; flex-wrap: wrap; justify-content: center;
+  font-size: .8rem; color: var(--muted); text-align: center;
+}
+.lb__frame figcaption b {
+  font-family: var(--sans); font-size: .95rem; font-weight: 600; color: var(--display);
+}
+.lb__frame figcaption span {
+  font-family: var(--mono); font-size: .62rem; letter-spacing: .07em; text-transform: uppercase;
+}
+.lb__frame figcaption a { font-family: var(--mono); font-size: .62rem; text-transform: uppercase; }
+
+.lb__nav, .lb__close {
+  background: rgba(255, 255, 255, .06); border: 1px solid var(--border-strong);
+  color: var(--display); cursor: pointer; border-radius: 50%;
+  width: 42px; height: 42px; display: grid; place-items: center; padding: 0;
+  transition: background var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.lb__nav:hover, .lb__close:hover { background: var(--accent-tint); border-color: var(--accent); }
+.lb__nav .ic, .lb__close .ic { width: 18px; height: 18px; }
+.lb__close { position: absolute; top: 1rem; right: 1rem; z-index: 2; }
+
+@media (max-width: 700px) {
+  .lightbox { grid-template-columns: 1fr; }
+  .lb__nav { position: absolute; bottom: 1rem; }
+  .lb__prev { left: 25%; }
+  .lb__next { right: 25%; }
+}
+
+/* The clipped satellite pane. Lifted a little so it reads against the dark
+   basemap, and never touched by the vector treatment. The opacity override
+   defeats Leaflet's fade-in, which otherwise leaves the imagery washed out
+   whenever the tab is not painting frames. */
+.leaflet-spotlight-pane img.leaflet-tile {
+  filter: brightness(1.08) saturate(1.06) contrast(1.02);
+  opacity: 1 !important;
+}

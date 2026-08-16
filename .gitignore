@@ -1,0 +1,18 @@
+# This repository carries the Sauron map only. The business planning material
+# lives alongside it on disk and is deliberately not published: the plan and the
+# questionnaires are confidential, and Research holds several hundred megabytes
+# of other people's PDFs.
+/Business Plan/
+/Questionnaires/
+/Research/
+/build/
+/CLAUDE.md
+/.claude/
+
+# Downloaded source files the scripts cache. All re-fetchable, 34 MB of nothing
+# worth versioning. Delete one to force a fresh pull.
+Sauron/data/.cache-*
+
+.DS_Store
+node_modules/
+*.log

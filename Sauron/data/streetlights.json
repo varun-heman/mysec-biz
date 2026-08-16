@@ -1,0 +1,3708 @@
+{
+  "generated_at": "2026-08-16T11:56:41.697Z",
+  "source": {
+    "counts": "BBMP street lights by ward, via OpenCity",
+    "counts_url": "https://data.opencity.in/dataset/bengaluru-streetlights",
+    "old_boundaries": "BBMP Ward Map 2022, via OpenCity",
+    "new_boundaries": "Government of Karnataka GBA ward notification, 7 March 2026"
+  },
+  "method": "area apportionment by 4000 samples per new ward. A new ward keeps a figure only where more than 5 percent of it falls inside the old BBMP wards that were counted.",
+  "caveat": "BBMP counted 198 wards. The GBA area is larger, so wards in the added belt have no source figure and are left null rather than estimated.",
+  "old_wards_counted": 198,
+  "lights_in_source": 421113,
+  "lights_placed": 418548,
+  "new_wards_with_a_figure": 369,
+  "new_wards_without": 0,
+  "wards": [
+    {
+      "ward_no": 1,
+      "name": "K Narayanapura",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 4.79,
+      "lights": 1078,
+      "lights_per_sqkm": 225,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 1,
+      "name": "Padmanabhanagara",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.9,
+      "lights": 946,
+      "lights_per_sqkm": 1050,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 1,
+      "name": "Raja Kempegowda ward",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.81,
+      "lights": 463,
+      "lights_per_sqkm": 256,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 1,
+      "name": "Ramaswamy Palya",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.7,
+      "lights": 1191,
+      "lights_per_sqkm": 1694,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 1,
+      "name": "Nagasandra",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.92,
+      "lights": 993,
+      "lights_per_sqkm": 517,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 2,
+      "name": "Aerocity",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 10.31,
+      "lights": 2305,
+      "lights_per_sqkm": 224,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 2,
+      "name": "Kadirenahalli",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.66,
+      "lights": 689,
+      "lights_per_sqkm": 1050,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 2,
+      "name": "Horamavu",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 7.86,
+      "lights": 1981,
+      "lights_per_sqkm": 252,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 2,
+      "name": "Jayamahal",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.43,
+      "lights": 2702,
+      "lights_per_sqkm": 1889,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 2,
+      "name": "Chokkasandra",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.1,
+      "lights": 571,
+      "lights_per_sqkm": 521,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 3,
+      "name": "Chowdeshwari ward",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 6.46,
+      "lights": 2166,
+      "lights_per_sqkm": 335,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 3,
+      "name": "Yarab nagar",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.28,
+      "lights": 630,
+      "lights_per_sqkm": 2212,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 3,
+      "name": "Nelagadaranahalli",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 2.18,
+      "lights": 1031,
+      "lights_per_sqkm": 473,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 3,
+      "name": "Chellakere",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1.68,
+      "lights": 378,
+      "lights_per_sqkm": 225,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 3,
+      "name": "Vasanth Nagar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.96,
+      "lights": 1403,
+      "lights_per_sqkm": 718,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 4,
+      "name": "Babusab Palya",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1.84,
+      "lights": 415,
+      "lights_per_sqkm": 225,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 4,
+      "name": "Banashankari Temple Ward",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.4,
+      "lights": 880,
+      "lights_per_sqkm": 2213,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 4,
+      "name": "Sampangirama Nagar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 4.7,
+      "lights": 2228,
+      "lights_per_sqkm": 474,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 4,
+      "name": "Nyayanga Badavane",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 2.56,
+      "lights": 1875,
+      "lights_per_sqkm": 731,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 4,
+      "name": "Parvathi Nagar",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.47,
+      "lights": 658,
+      "lights_per_sqkm": 447,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 5,
+      "name": "Kane Muneshwara Ward",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.14,
+      "lights": 1190,
+      "lights_per_sqkm": 1045,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 5,
+      "name": "Yelahanka Satellite Town",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 2.92,
+      "lights": 1887,
+      "lights_per_sqkm": 646,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 5,
+      "name": "Hoysala Nagara East",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1.62,
+      "lights": 365,
+      "lights_per_sqkm": 225,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 5,
+      "name": "Shivajinagar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.17,
+      "lights": 1460,
+      "lights_per_sqkm": 1249,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 5,
+      "name": "Rajeshwarinagar",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.47,
+      "lights": 350,
+      "lights_per_sqkm": 739,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 6,
+      "name": "Gowdanapalya",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.91,
+      "lights": 958,
+      "lights_per_sqkm": 1048,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 6,
+      "name": "Doddabettahalli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 5.11,
+      "lights": 2094,
+      "lights_per_sqkm": 410,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 6,
+      "name": "Kalkere",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 3.86,
+      "lights": 1457,
+      "lights_per_sqkm": 377,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 6,
+      "name": "Bharathi Nagar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.34,
+      "lights": 986,
+      "lights_per_sqkm": 2919,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 6,
+      "name": "Shivapura",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 2.7,
+      "lights": 1371,
+      "lights_per_sqkm": 509,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 7,
+      "name": "Byrasandra",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.15,
+      "lights": 1922,
+      "lights_per_sqkm": 1673,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 7,
+      "name": "Attur",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 2.54,
+      "lights": 1028,
+      "lights_per_sqkm": 405,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 7,
+      "name": "Rajagopala Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.01,
+      "lights": 1024,
+      "lights_per_sqkm": 1018,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 7,
+      "name": "K Chennasandra",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 2.13,
+      "lights": 751,
+      "lights_per_sqkm": 352,
+      "covered": 0.94,
+      "reason": null
+    },
+    {
+      "ward_no": 7,
+      "name": "K Kamaraj Ward",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.99,
+      "lights": 2822,
+      "lights_per_sqkm": 1415,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 8,
+      "name": "Tilak Nagara",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.01,
+      "lights": 1661,
+      "lights_per_sqkm": 1640,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 8,
+      "name": "Halasuru",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.52,
+      "lights": 785,
+      "lights_per_sqkm": 1519,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 8,
+      "name": "Singapura",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 2.46,
+      "lights": 700,
+      "lights_per_sqkm": 285,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 8,
+      "name": "Anandapura",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 2.22,
+      "lights": 1023,
+      "lights_per_sqkm": 460,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 8,
+      "name": "Hegganahalli",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.89,
+      "lights": 884,
+      "lights_per_sqkm": 999,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 9,
+      "name": "Hoysala Nagara Central",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.98,
+      "lights": 1643,
+      "lights_per_sqkm": 829,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 9,
+      "name": "N.A.L Layout",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.35,
+      "lights": 634,
+      "lights_per_sqkm": 1827,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 9,
+      "name": "Srigandhanagar",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.76,
+      "lights": 728,
+      "lights_per_sqkm": 964,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 9,
+      "name": "Kuvempunagara",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 5.51,
+      "lights": 1501,
+      "lights_per_sqkm": 272,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 9,
+      "name": "Bhattarahalli",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 2.58,
+      "lights": 1076,
+      "lights_per_sqkm": 417,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 10,
+      "name": "Abdul Kalam Nagar",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.41,
+      "lights": 705,
+      "lights_per_sqkm": 1716,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 10,
+      "name": "Basavanapura",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 3.96,
+      "lights": 1418,
+      "lights_per_sqkm": 358,
+      "covered": 0.99,
+      "reason": null
+    },
+    {
+      "ward_no": 10,
+      "name": "Cox Town",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.25,
+      "lights": 347,
+      "lights_per_sqkm": 278,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 10,
+      "name": "Vidyaranyapura",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.76,
+      "lights": 566,
+      "lights_per_sqkm": 322,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 10,
+      "name": "Sunkadakatte",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.77,
+      "lights": 725,
+      "lights_per_sqkm": 937,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 11,
+      "name": "Old Baiyappanahalli",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.55,
+      "lights": 202,
+      "lights_per_sqkm": 367,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 11,
+      "name": "Krishnanagar",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1.24,
+      "lights": 422,
+      "lights_per_sqkm": 341,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 11,
+      "name": "Jayanagar East",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.46,
+      "lights": 708,
+      "lights_per_sqkm": 1537,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 11,
+      "name": "Doddabommasandra",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 4.23,
+      "lights": 1658,
+      "lights_per_sqkm": 392,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 11,
+      "name": "Dodda Bidarakallu",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 4.26,
+      "lights": 1247,
+      "lights_per_sqkm": 293,
+      "covered": 0.99,
+      "reason": null
+    },
+    {
+      "ward_no": 12,
+      "name": "Kasturi Nagar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 3.52,
+      "lights": 1498,
+      "lights_per_sqkm": 425,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 12,
+      "name": "Pattabhirama Nagara",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.5,
+      "lights": 1431,
+      "lights_per_sqkm": 952,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 12,
+      "name": "Thindlu",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 7.44,
+      "lights": 2284,
+      "lights_per_sqkm": 307,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 12,
+      "name": "Devasandra",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1.29,
+      "lights": 410,
+      "lights_per_sqkm": 317,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 12,
+      "name": "Andrahalli",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 5.61,
+      "lights": 1538,
+      "lights_per_sqkm": 274,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 13,
+      "name": "Marenahalli South",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.76,
+      "lights": 735,
+      "lights_per_sqkm": 965,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 13,
+      "name": "Krishnaiahnapalya",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.19,
+      "lights": 496,
+      "lights_per_sqkm": 415,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 13,
+      "name": "Kodigehalli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.35,
+      "lights": 829,
+      "lights_per_sqkm": 613,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 13,
+      "name": "Rajarajeshwari Temple ward",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1.36,
+      "lights": 351,
+      "lights_per_sqkm": 257,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 13,
+      "name": "Nada prabhu Kempegowda Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 4.23,
+      "lights": 1607,
+      "lights_per_sqkm": 380,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 14,
+      "name": "K.R Pura",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 0.89,
+      "lights": 358,
+      "lights_per_sqkm": 402,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 14,
+      "name": "J.P Nagar",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.28,
+      "lights": 1428,
+      "lights_per_sqkm": 1118,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 14,
+      "name": "Rajiv Gandhi Nagar",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 2.9,
+      "lights": 1418,
+      "lights_per_sqkm": 488,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 14,
+      "name": "Nagavarapalya",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.97,
+      "lights": 901,
+      "lights_per_sqkm": 457,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 14,
+      "name": "Herohalli",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.5,
+      "lights": 701,
+      "lights_per_sqkm": 466,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 15,
+      "name": "Ramamurthy Nagara",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 0.81,
+      "lights": 285,
+      "lights_per_sqkm": 353,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 15,
+      "name": "Shakambarinagara",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.73,
+      "lights": 1937,
+      "lights_per_sqkm": 1117,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 15,
+      "name": "Byatarayanapura",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 5.11,
+      "lights": 1658,
+      "lights_per_sqkm": 324,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 15,
+      "name": "Byadarahalli",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 4.18,
+      "lights": 1849,
+      "lights_per_sqkm": 443,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 15,
+      "name": "Indiranagar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 3,
+      "lights": 2397,
+      "lights_per_sqkm": 800,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 16,
+      "name": "Kotthur",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1.24,
+      "lights": 591,
+      "lights_per_sqkm": 476,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 16,
+      "name": "Amruthahalli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.32,
+      "lights": 382,
+      "lights_per_sqkm": 289,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 16,
+      "name": "Sarakki",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.68,
+      "lights": 917,
+      "lights_per_sqkm": 1343,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 16,
+      "name": "New Thippasandra",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.99,
+      "lights": 1252,
+      "lights_per_sqkm": 629,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 16,
+      "name": "Ullal",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 5.61,
+      "lights": 2933,
+      "lights_per_sqkm": 523,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 17,
+      "name": "Kaggadasapura",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.16,
+      "lights": 532,
+      "lights_per_sqkm": 459,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 17,
+      "name": "Vijinapura",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 0.33,
+      "lights": 293,
+      "lights_per_sqkm": 890,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 17,
+      "name": "N.S Palya",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.73,
+      "lights": 831,
+      "lights_per_sqkm": 1145,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 17,
+      "name": "Jakkur",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 7.85,
+      "lights": 2645,
+      "lights_per_sqkm": 337,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 17,
+      "name": "Nagadevanahalli",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 2.5,
+      "lights": 1344,
+      "lights_per_sqkm": 538,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 18,
+      "name": "Viswamanava Kuvempu Ward",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.4,
+      "lights": 1598,
+      "lights_per_sqkm": 1144,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 18,
+      "name": "Kempapura",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 5.34,
+      "lights": 2048,
+      "lights_per_sqkm": 384,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 18,
+      "name": "Dooravaninagar",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1.25,
+      "lights": 990,
+      "lights_per_sqkm": 791,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 18,
+      "name": "G.M Palya",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.84,
+      "lights": 441,
+      "lights_per_sqkm": 523,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 18,
+      "name": "Kengal Hanumanthaiah West",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 2.34,
+      "lights": 1523,
+      "lights_per_sqkm": 651,
+      "covered": 0.82,
+      "reason": null
+    },
+    {
+      "ward_no": 19,
+      "name": "K.S. Nissar Ahmed Ward",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 0.84,
+      "lights": 1046,
+      "lights_per_sqkm": 1243,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 19,
+      "name": "New Tavarekere",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.55,
+      "lights": 671,
+      "lights_per_sqkm": 1218,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 19,
+      "name": "Thanisandra",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 2.74,
+      "lights": 1279,
+      "lights_per_sqkm": 467,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 19,
+      "name": "Jeevan Bhimanagar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.41,
+      "lights": 1280,
+      "lights_per_sqkm": 907,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 19,
+      "name": "Shivanapalya",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.69,
+      "lights": 1259,
+      "lights_per_sqkm": 744,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 20,
+      "name": "Kengeri Kote ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 15.31,
+      "lights": 4962,
+      "lights_per_sqkm": 324,
+      "covered": 0.98,
+      "reason": null
+    },
+    {
+      "ward_no": 20,
+      "name": "Madiwala",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.69,
+      "lights": 815,
+      "lights_per_sqkm": 1176,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 20,
+      "name": "Sampigehalli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 8.83,
+      "lights": 1900,
+      "lights_per_sqkm": 215,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 20,
+      "name": "A Narayanapura",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1.31,
+      "lights": 1194,
+      "lights_per_sqkm": 912,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 20,
+      "name": "Kodihalli",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.3,
+      "lights": 1166,
+      "lights_per_sqkm": 896,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 21,
+      "name": "Kogilu",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 11.92,
+      "lights": 2100,
+      "lights_per_sqkm": 176,
+      "covered": 0.98,
+      "reason": null
+    },
+    {
+      "ward_no": 21,
+      "name": "Chikka Adugodi",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.72,
+      "lights": 685,
+      "lights_per_sqkm": 952,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 21,
+      "name": "Uday Nagar",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 0.78,
+      "lights": 1071,
+      "lights_per_sqkm": 1373,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 21,
+      "name": "Kengeri",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 6.13,
+      "lights": 2191,
+      "lights_per_sqkm": 357,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 21,
+      "name": "Konena Agrahara",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.49,
+      "lights": 1644,
+      "lights_per_sqkm": 1106,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 22,
+      "name": "Bangarappa Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 6.79,
+      "lights": 3513,
+      "lights_per_sqkm": 517,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 22,
+      "name": "S.G Palya",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.25,
+      "lights": 1167,
+      "lights_per_sqkm": 936,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 22,
+      "name": "Nagavara",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.97,
+      "lights": 344,
+      "lights_per_sqkm": 356,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 22,
+      "name": "Mahadevapura",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 2.72,
+      "lights": 1104,
+      "lights_per_sqkm": 406,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 22,
+      "name": "Domluru",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.16,
+      "lights": 1299,
+      "lights_per_sqkm": 1118,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 23,
+      "name": "Lakkasandra",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.69,
+      "lights": 610,
+      "lights_per_sqkm": 885,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 23,
+      "name": "Hennur",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.94,
+      "lights": 435,
+      "lights_per_sqkm": 224,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 23,
+      "name": "Sangama Ward",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 2,
+      "lights": 757,
+      "lights_per_sqkm": 379,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 23,
+      "name": "Jogpalya",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.09,
+      "lights": 2187,
+      "lights_per_sqkm": 1999,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 23,
+      "name": "Rajarajeshwari Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 4.15,
+      "lights": 2112,
+      "lights_per_sqkm": 509,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 24,
+      "name": "Agaram",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 11.1,
+      "lights": 2166,
+      "lights_per_sqkm": 195,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 24,
+      "name": "HBR Layout",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.79,
+      "lights": 401,
+      "lights_per_sqkm": 224,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 24,
+      "name": "A Adugodi",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.75,
+      "lights": 1542,
+      "lights_per_sqkm": 883,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 24,
+      "name": "Vignananagara",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1.33,
+      "lights": 522,
+      "lights_per_sqkm": 391,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 24,
+      "name": "Jnana Bharathi Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 6.65,
+      "lights": 2964,
+      "lights_per_sqkm": 446,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 25,
+      "name": "Vinayaka Layout",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 2.59,
+      "lights": 2007,
+      "lights_per_sqkm": 776,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 25,
+      "name": "L.B Shastri Nagar",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 0.42,
+      "lights": 157,
+      "lights_per_sqkm": 372,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 25,
+      "name": "Govindapura",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.57,
+      "lights": 209,
+      "lights_per_sqkm": 370,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 25,
+      "name": "National Games Village",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.52,
+      "lights": 505,
+      "lights_per_sqkm": 977,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 25,
+      "name": "Ashokanagar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 3.95,
+      "lights": 1527,
+      "lights_per_sqkm": 387,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 26,
+      "name": "Ejipura",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.51,
+      "lights": 491,
+      "lights_per_sqkm": 963,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 26,
+      "name": "Vannarpet",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.52,
+      "lights": 401,
+      "lights_per_sqkm": 768,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 26,
+      "name": "Jagadish Nagar",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1.42,
+      "lights": 524,
+      "lights_per_sqkm": 368,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 26,
+      "name": "Mallathahalli",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 2.63,
+      "lights": 1172,
+      "lights_per_sqkm": 445,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 26,
+      "name": "Samadhana Nagar",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.58,
+      "lights": 259,
+      "lights_per_sqkm": 450,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 27,
+      "name": "Sri Lakshmi Devi Ward",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.73,
+      "lights": 596,
+      "lights_per_sqkm": 819,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 27,
+      "name": "Ambedkarnagar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.39,
+      "lights": 615,
+      "lights_per_sqkm": 1563,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 27,
+      "name": "Vibhootipura",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 4.74,
+      "lights": 1704,
+      "lights_per_sqkm": 360,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 27,
+      "name": "Srigandada Kaval",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 2.25,
+      "lights": 1075,
+      "lights_per_sqkm": 477,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 27,
+      "name": "K.G.Halli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.4,
+      "lights": 721,
+      "lights_per_sqkm": 1793,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 28,
+      "name": "Kottegepalya",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 2.41,
+      "lights": 2049,
+      "lights_per_sqkm": 851,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 28,
+      "name": "Byrathi",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 5.77,
+      "lights": 1289,
+      "lights_per_sqkm": 223,
+      "covered": 0.97,
+      "reason": null
+    },
+    {
+      "ward_no": 28,
+      "name": "Kormangala East",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 2.3,
+      "lights": 1460,
+      "lights_per_sqkm": 636,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 28,
+      "name": "Venkateshpuram",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.37,
+      "lights": 810,
+      "lights_per_sqkm": 2216,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 28,
+      "name": "Neelasandra",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.27,
+      "lights": 492,
+      "lights_per_sqkm": 1851,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 29,
+      "name": "Lingarajpura",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.93,
+      "lights": 792,
+      "lights_per_sqkm": 853,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 29,
+      "name": "Kormangala West",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 2.46,
+      "lights": 2023,
+      "lights_per_sqkm": 824,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 29,
+      "name": "Chowdeshwari Nagar",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.18,
+      "lights": 1008,
+      "lights_per_sqkm": 853,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 29,
+      "name": "Hoodi",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 4.21,
+      "lights": 951,
+      "lights_per_sqkm": 226,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 29,
+      "name": "Austin Town",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.43,
+      "lights": 354,
+      "lights_per_sqkm": 831,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 30,
+      "name": "Kacharakanahalli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.42,
+      "lights": 1108,
+      "lights_per_sqkm": 778,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 30,
+      "name": "Vinayakanagar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.28,
+      "lights": 631,
+      "lights_per_sqkm": 491,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 30,
+      "name": "Jakkasandra",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.8,
+      "lights": 721,
+      "lights_per_sqkm": 905,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 30,
+      "name": "Belathur",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 7.69,
+      "lights": 1949,
+      "lights_per_sqkm": 254,
+      "covered": 0.99,
+      "reason": null
+    },
+    {
+      "ward_no": 30,
+      "name": "Kempegowda Layout",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.64,
+      "lights": 1445,
+      "lights_per_sqkm": 2267,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 31,
+      "name": "Kasavanahalli",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 7.72,
+      "lights": 1419,
+      "lights_per_sqkm": 184,
+      "covered": 0.94,
+      "reason": null
+    },
+    {
+      "ward_no": 31,
+      "name": "Shanthinagar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.55,
+      "lights": 647,
+      "lights_per_sqkm": 419,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 31,
+      "name": "Kadugodi",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 4.53,
+      "lights": 1315,
+      "lights_per_sqkm": 290,
+      "covered": 0.99,
+      "reason": null
+    },
+    {
+      "ward_no": 31,
+      "name": "Freedom Fighter Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.5,
+      "lights": 1133,
+      "lights_per_sqkm": 2265,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 31,
+      "name": "Kalyan Nagar",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.46,
+      "lights": 1189,
+      "lights_per_sqkm": 812,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 32,
+      "name": "Kudlu",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 3.37,
+      "lights": 1084,
+      "lights_per_sqkm": 322,
+      "covered": 0.99,
+      "reason": null
+    },
+    {
+      "ward_no": 32,
+      "name": "Banaswadi",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 2.03,
+      "lights": 1594,
+      "lights_per_sqkm": 787,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 32,
+      "name": "Channasandra",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 2.28,
+      "lights": 619,
+      "lights_per_sqkm": 271,
+      "covered": 0.99,
+      "reason": null
+    },
+    {
+      "ward_no": 32,
+      "name": "SilverJubilee Park Ward",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.63,
+      "lights": 893,
+      "lights_per_sqkm": 1418,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 32,
+      "name": "Laggere",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.51,
+      "lights": 1072,
+      "lights_per_sqkm": 2087,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 33,
+      "name": "Naganathapura",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 3.37,
+      "lights": 1063,
+      "lights_per_sqkm": 315,
+      "covered": 0.99,
+      "reason": null
+    },
+    {
+      "ward_no": 33,
+      "name": "Dharmaraya Swamy Temple Ward",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.77,
+      "lights": 1156,
+      "lights_per_sqkm": 1511,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 33,
+      "name": "Lakshmi Devi Nagar",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.53,
+      "lights": 858,
+      "lights_per_sqkm": 1628,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 33,
+      "name": "HRBR Layout",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.75,
+      "lights": 822,
+      "lights_per_sqkm": 1102,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 33,
+      "name": "S.M Krishna Ward",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 4.94,
+      "lights": 1746,
+      "lights_per_sqkm": 354,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 34,
+      "name": "Subbayanapalya",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.48,
+      "lights": 604,
+      "lights_per_sqkm": 1255,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 34,
+      "name": "Chikkathoguru",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 5.81,
+      "lights": 1015,
+      "lights_per_sqkm": 175,
+      "covered": 0.92,
+      "reason": null
+    },
+    {
+      "ward_no": 34,
+      "name": "D.V Gundappa Ward",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.72,
+      "lights": 1082,
+      "lights_per_sqkm": 1514,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 34,
+      "name": "Peenya",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 4.02,
+      "lights": 1410,
+      "lights_per_sqkm": 351,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 34,
+      "name": "Kaveri Nagara",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 2.9,
+      "lights": 1473,
+      "lights_per_sqkm": 509,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 35,
+      "name": "Kammanahalli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.52,
+      "lights": 729,
+      "lights_per_sqkm": 1415,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 35,
+      "name": "Goraguntepalya",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 2.12,
+      "lights": 1839,
+      "lights_per_sqkm": 865,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 35,
+      "name": "Vishwapriya Nagara",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 2.34,
+      "lights": 428,
+      "lights_per_sqkm": 183,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 35,
+      "name": "Garudachar Palya",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1.32,
+      "lights": 704,
+      "lights_per_sqkm": 534,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 35,
+      "name": "Hombegowda Nagara",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.97,
+      "lights": 1237,
+      "lights_per_sqkm": 1280,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 36,
+      "name": "Beguru",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 2.9,
+      "lights": 532,
+      "lights_per_sqkm": 183,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 36,
+      "name": "Someshwara Nagara",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.62,
+      "lights": 938,
+      "lights_per_sqkm": 1517,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 36,
+      "name": "Maruthi Seva Nagara",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.21,
+      "lights": 1123,
+      "lights_per_sqkm": 932,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 36,
+      "name": "Bharath Aikya Ward",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 3.95,
+      "lights": 1514,
+      "lights_per_sqkm": 383,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 36,
+      "name": "Nalwadi Krishnaraja Wadiyar Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.8,
+      "lights": 1297,
+      "lights_per_sqkm": 722,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 37,
+      "name": "Yelenahalli",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 5.06,
+      "lights": 1233,
+      "lights_per_sqkm": 243,
+      "covered": 0.99,
+      "reason": null
+    },
+    {
+      "ward_no": 37,
+      "name": "Jeevanahalli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.53,
+      "lights": 1122,
+      "lights_per_sqkm": 731,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 37,
+      "name": "Kundalahalli",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 5.68,
+      "lights": 1613,
+      "lights_per_sqkm": 284,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 37,
+      "name": "BHEL Ward",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.06,
+      "lights": 834,
+      "lights_per_sqkm": 784,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 37,
+      "name": "Dr. Puneeth Rajkumar Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.56,
+      "lights": 803,
+      "lights_per_sqkm": 1427,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 38,
+      "name": "Doddakammanahalli",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 4.91,
+      "lights": 1100,
+      "lights_per_sqkm": 224,
+      "covered": 0.92,
+      "reason": null
+    },
+    {
+      "ward_no": 38,
+      "name": "Kanakanapalya",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.97,
+      "lights": 955,
+      "lights_per_sqkm": 980,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 38,
+      "name": "Shampura",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.87,
+      "lights": 1026,
+      "lights_per_sqkm": 1177,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 38,
+      "name": "Nandini Layout",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.37,
+      "lights": 751,
+      "lights_per_sqkm": 2013,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 38,
+      "name": "Whitefield",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 4.47,
+      "lights": 990,
+      "lights_per_sqkm": 221,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 39,
+      "name": "Gottigere",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 2.07,
+      "lights": 1197,
+      "lights_per_sqkm": 579,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 39,
+      "name": "Hagaduru",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 5.83,
+      "lights": 1076,
+      "lights_per_sqkm": 185,
+      "covered": 0.99,
+      "reason": null
+    },
+    {
+      "ward_no": 39,
+      "name": "Kaval Byrasandra",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.73,
+      "lights": 847,
+      "lights_per_sqkm": 1160,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 39,
+      "name": "Venkat Reddy Nagara",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.2,
+      "lights": 373,
+      "lights_per_sqkm": 1833,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 39,
+      "name": "Jai Maruthi Nagar",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.91,
+      "lights": 1838,
+      "lights_per_sqkm": 2012,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 40,
+      "name": "Anjanapura",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 12.23,
+      "lights": 4896,
+      "lights_per_sqkm": 400,
+      "covered": 0.98,
+      "reason": null
+    },
+    {
+      "ward_no": 40,
+      "name": "Varthur",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 9.2,
+      "lights": 1022,
+      "lights_per_sqkm": 111,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 40,
+      "name": "Ashoka Pillar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.55,
+      "lights": 1034,
+      "lights_per_sqkm": 665,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 40,
+      "name": "Shakthi Nagar",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.34,
+      "lights": 514,
+      "lights_per_sqkm": 1533,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 40,
+      "name": "Mahalakshmipuram",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.52,
+      "lights": 1233,
+      "lights_per_sqkm": 2350,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 41,
+      "name": "V.V Puram",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.08,
+      "lights": 774,
+      "lights_per_sqkm": 715,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 41,
+      "name": "Periyar Nagar",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.25,
+      "lights": 351,
+      "lights_per_sqkm": 1410,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 41,
+      "name": "Kothanur",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 3.47,
+      "lights": 2254,
+      "lights_per_sqkm": 650,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 41,
+      "name": "Munnenkolalu",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 2.5,
+      "lights": 329,
+      "lights_per_sqkm": 132,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 41,
+      "name": "Nagapura",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.97,
+      "lights": 1591,
+      "lights_per_sqkm": 1635,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 42,
+      "name": "RBI Layout",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 2.03,
+      "lights": 2291,
+      "lights_per_sqkm": 1130,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 42,
+      "name": "Priyadarshini Ward",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1.6,
+      "lights": 525,
+      "lights_per_sqkm": 328,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 42,
+      "name": "Aruna Asif Ali Ward",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.36,
+      "lights": 414,
+      "lights_per_sqkm": 1164,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 42,
+      "name": "Sunkenahalli",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.58,
+      "lights": 1497,
+      "lights_per_sqkm": 950,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 42,
+      "name": "Raja Mayura Varma Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.48,
+      "lights": 960,
+      "lights_per_sqkm": 1994,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 43,
+      "name": "Bheereshwara Nagar",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.84,
+      "lights": 945,
+      "lights_per_sqkm": 1129,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 43,
+      "name": "Varalakshmi Nagar",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.69,
+      "lights": 1349,
+      "lights_per_sqkm": 799,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 43,
+      "name": "Dodda Nekkundi",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 3.66,
+      "lights": 1227,
+      "lights_per_sqkm": 335,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 43,
+      "name": "Devaraj Urs Ward",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.54,
+      "lights": 549,
+      "lights_per_sqkm": 1025,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 43,
+      "name": "Kethamaranahalli",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.44,
+      "lights": 2228,
+      "lights_per_sqkm": 1543,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 44,
+      "name": "Harinagar",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.78,
+      "lights": 801,
+      "lights_per_sqkm": 450,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 44,
+      "name": "Doddanna Nagar",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.46,
+      "lights": 335,
+      "lights_per_sqkm": 729,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 44,
+      "name": "Ashwath Nagar",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1.28,
+      "lights": 503,
+      "lights_per_sqkm": 394,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 44,
+      "name": "Chamarajpet",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.89,
+      "lights": 1802,
+      "lights_per_sqkm": 2021,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 44,
+      "name": "Shankar Mutt",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.5,
+      "lights": 926,
+      "lights_per_sqkm": 1846,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 45,
+      "name": "Marathahalli",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1,
+      "lights": 414,
+      "lights_per_sqkm": 413,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 45,
+      "name": "Konanakunte",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.65,
+      "lights": 964,
+      "lights_per_sqkm": 583,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 45,
+      "name": "Kushal Nagar",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.28,
+      "lights": 406,
+      "lights_per_sqkm": 1458,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 45,
+      "name": "K.R Market",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.74,
+      "lights": 1003,
+      "lights_per_sqkm": 1358,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 45,
+      "name": "Shakthi Ganapathi Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.4,
+      "lights": 644,
+      "lights_per_sqkm": 1628,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 46,
+      "name": "Yamalur",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 7.09,
+      "lights": 1731,
+      "lights_per_sqkm": 244,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 46,
+      "name": "Yelachenahalli",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.93,
+      "lights": 1873,
+      "lights_per_sqkm": 2020,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 46,
+      "name": "Sagayapuram",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.66,
+      "lights": 873,
+      "lights_per_sqkm": 1315,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 46,
+      "name": "Cheluvadi Palya",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.22,
+      "lights": 331,
+      "lights_per_sqkm": 1525,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 46,
+      "name": "Kamalanagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.46,
+      "lights": 578,
+      "lights_per_sqkm": 1262,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 47,
+      "name": "Pulakeshi Nagar",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.3,
+      "lights": 1712,
+      "lights_per_sqkm": 1314,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 47,
+      "name": "Chandranagara",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.62,
+      "lights": 1246,
+      "lights_per_sqkm": 2021,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 47,
+      "name": "Bellanduru",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 1.92,
+      "lights": 384,
+      "lights_per_sqkm": 200,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 47,
+      "name": "Vrishabhavathi Nagar",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.59,
+      "lights": 691,
+      "lights_per_sqkm": 1164,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 47,
+      "name": "IPD Salappa Ward",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.5,
+      "lights": 918,
+      "lights_per_sqkm": 1851,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 48,
+      "name": "Vasanthapura",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.59,
+      "lights": 1420,
+      "lights_per_sqkm": 895,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 48,
+      "name": "S.K Garden",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.99,
+      "lights": 968,
+      "lights_per_sqkm": 976,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 48,
+      "name": "Mathikere",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.68,
+      "lights": 1718,
+      "lights_per_sqkm": 2543,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 48,
+      "name": "Panathur",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 8.7,
+      "lights": 1326,
+      "lights_per_sqkm": 152,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 48,
+      "name": "Azad Nagar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.41,
+      "lights": 792,
+      "lights_per_sqkm": 1939,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 49,
+      "name": "Uttarahalli",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 2.16,
+      "lights": 1380,
+      "lights_per_sqkm": 638,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 49,
+      "name": "Aramane Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.88,
+      "lights": 885,
+      "lights_per_sqkm": 1006,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 49,
+      "name": "Kasturbha Nagar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.37,
+      "lights": 706,
+      "lights_per_sqkm": 1895,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 49,
+      "name": "Jaya Chamarajendra Nagara",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.67,
+      "lights": 1685,
+      "lights_per_sqkm": 2522,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 49,
+      "name": "Shivanasamudra Ward",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 4.6,
+      "lights": 860,
+      "lights_per_sqkm": 187,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 50,
+      "name": "Dinnur",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.51,
+      "lights": 1210,
+      "lights_per_sqkm": 2366,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 50,
+      "name": "Sarvabhouma Nagar",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.02,
+      "lights": 757,
+      "lights_per_sqkm": 740,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 50,
+      "name": "JJR Nagara",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.54,
+      "lights": 799,
+      "lights_per_sqkm": 1492,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 50,
+      "name": "Gunjur",
+      "corporation": "Bengaluru East",
+      "area_sqkm": 12.8,
+      "lights": 1513,
+      "lights_per_sqkm": 118,
+      "covered": 0.93,
+      "reason": null
+    },
+    {
+      "ward_no": 50,
+      "name": "Sadashiva Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 4.99,
+      "lights": 1918,
+      "lights_per_sqkm": 384,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 51,
+      "name": "Old Guddadahalli",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.21,
+      "lights": 517,
+      "lights_per_sqkm": 2429,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 51,
+      "name": "Subramanyapura",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 7.74,
+      "lights": 4076,
+      "lights_per_sqkm": 526,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 51,
+      "name": "Manorayanapalya",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.53,
+      "lights": 1035,
+      "lights_per_sqkm": 1940,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 51,
+      "name": "Rajamahal",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 2.45,
+      "lights": 2118,
+      "lights_per_sqkm": 865,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 52,
+      "name": "Talagattapura",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 18.16,
+      "lights": 2266,
+      "lights_per_sqkm": 125,
+      "covered": 0.52,
+      "reason": null
+    },
+    {
+      "ward_no": 52,
+      "name": "Padarayanapura",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.23,
+      "lights": 555,
+      "lights_per_sqkm": 2378,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 52,
+      "name": "Vishwanatha Nagenahalli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.97,
+      "lights": 1878,
+      "lights_per_sqkm": 1930,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 52,
+      "name": "Kodandarampura",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.5,
+      "lights": 704,
+      "lights_per_sqkm": 1398,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 53,
+      "name": "Rayapuram",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.21,
+      "lights": 441,
+      "lights_per_sqkm": 2092,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 53,
+      "name": "R.T Nagar",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.63,
+      "lights": 1262,
+      "lights_per_sqkm": 1999,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 53,
+      "name": "Jaraganahalli",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.86,
+      "lights": 944,
+      "lights_per_sqkm": 1092,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 53,
+      "name": "Malleshwaram",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 2.15,
+      "lights": 2015,
+      "lights_per_sqkm": 937,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 54,
+      "name": "Gangenahalli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.08,
+      "lights": 1855,
+      "lights_per_sqkm": 1714,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 54,
+      "name": "Kengal Hanumanthaiah South",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.84,
+      "lights": 700,
+      "lights_per_sqkm": 834,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 54,
+      "name": "Subedarpalya",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.53,
+      "lights": 584,
+      "lights_per_sqkm": 1100,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 54,
+      "name": "Binnypete",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.48,
+      "lights": 519,
+      "lights_per_sqkm": 1082,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 55,
+      "name": "Ganganagar",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.75,
+      "lights": 656,
+      "lights_per_sqkm": 878,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 55,
+      "name": "Puttenahalli",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.04,
+      "lights": 587,
+      "lights_per_sqkm": 563,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 55,
+      "name": "Bhuvaneshwari Nagar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.24,
+      "lights": 219,
+      "lights_per_sqkm": 919,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 55,
+      "name": "Subramanyanagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.83,
+      "lights": 1746,
+      "lights_per_sqkm": 2094,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 56,
+      "name": "Hebbal",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.1,
+      "lights": 1275,
+      "lights_per_sqkm": 1158,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 56,
+      "name": "Doresanipalya",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 2.53,
+      "lights": 1511,
+      "lights_per_sqkm": 597,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 56,
+      "name": "Gayathri Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.44,
+      "lights": 909,
+      "lights_per_sqkm": 2064,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 56,
+      "name": "Gopalpura",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.28,
+      "lights": 1515,
+      "lights_per_sqkm": 1186,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 57,
+      "name": "Bhoopasandra",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 2.65,
+      "lights": 2344,
+      "lights_per_sqkm": 883,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 57,
+      "name": "Hulimavu",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.34,
+      "lights": 861,
+      "lights_per_sqkm": 643,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 57,
+      "name": "Kuvempu Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.47,
+      "lights": 914,
+      "lights_per_sqkm": 1945,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 57,
+      "name": "Cottonpete",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.96,
+      "lights": 1074,
+      "lights_per_sqkm": 1119,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 58,
+      "name": "Nagashettyhalli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.96,
+      "lights": 1077,
+      "lights_per_sqkm": 1122,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 58,
+      "name": "Dayanand Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.27,
+      "lights": 701,
+      "lights_per_sqkm": 2572,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 58,
+      "name": "Arakere",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.27,
+      "lights": 820,
+      "lights_per_sqkm": 647,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 58,
+      "name": "Chickpete",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.62,
+      "lights": 823,
+      "lights_per_sqkm": 1333,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 59,
+      "name": "Vijaya Bank Layout",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 4.26,
+      "lights": 2979,
+      "lights_per_sqkm": 700,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 59,
+      "name": "Geddalahalli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.46,
+      "lights": 1654,
+      "lights_per_sqkm": 1129,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 59,
+      "name": "Bandi Reddy Circle Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.26,
+      "lights": 590,
+      "lights_per_sqkm": 2268,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 59,
+      "name": "Nehru Nagar",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 1.81,
+      "lights": 1827,
+      "lights_per_sqkm": 1010,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 60,
+      "name": "Jalahalli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.99,
+      "lights": 730,
+      "lights_per_sqkm": 367,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 60,
+      "name": "Bilekahalli",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 2.49,
+      "lights": 1825,
+      "lights_per_sqkm": 733,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 60,
+      "name": "Prakash Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.4,
+      "lights": 632,
+      "lights_per_sqkm": 1586,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 60,
+      "name": "Seshadripuram",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.39,
+      "lights": 964,
+      "lights_per_sqkm": 2501,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 61,
+      "name": "HMT Ward",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 4.19,
+      "lights": 2072,
+      "lights_per_sqkm": 494,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 61,
+      "name": "Kodi Chikkanahalli",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.13,
+      "lights": 1051,
+      "lights_per_sqkm": 927,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 61,
+      "name": "Dattatreya Ward",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.5,
+      "lights": 1050,
+      "lights_per_sqkm": 2097,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 61,
+      "name": "Da.Ra. Bendre Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.53,
+      "lights": 953,
+      "lights_per_sqkm": 1800,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 62,
+      "name": "Brundavana Nagara",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.67,
+      "lights": 670,
+      "lights_per_sqkm": 994,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 62,
+      "name": "Swatantra Palya Ward",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.36,
+      "lights": 382,
+      "lights_per_sqkm": 1059,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 62,
+      "name": "Devarachikkanahalli",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.2,
+      "lights": 1153,
+      "lights_per_sqkm": 965,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 62,
+      "name": "Rama Mandira",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.66,
+      "lights": 1265,
+      "lights_per_sqkm": 1902,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 63,
+      "name": "J.P PARK",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.84,
+      "lights": 861,
+      "lights_per_sqkm": 1028,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 63,
+      "name": "Okalipuram",
+      "corporation": "Bengaluru Central",
+      "area_sqkm": 0.43,
+      "lights": 738,
+      "lights_per_sqkm": 1731,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 63,
+      "name": "Bommanahalli",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.89,
+      "lights": 1003,
+      "lights_per_sqkm": 1128,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 63,
+      "name": "Rajajinagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.88,
+      "lights": 1297,
+      "lights_per_sqkm": 1468,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 64,
+      "name": "Yeshwanthpura",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.35,
+      "lights": 441,
+      "lights_per_sqkm": 1253,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 64,
+      "name": "Hongasandra",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.5,
+      "lights": 404,
+      "lights_per_sqkm": 806,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 64,
+      "name": "Shivanagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.3,
+      "lights": 391,
+      "lights_per_sqkm": 1325,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 65,
+      "name": "Abbigere",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 4.61,
+      "lights": 1248,
+      "lights_per_sqkm": 271,
+      "covered": 0.8,
+      "reason": null
+    },
+    {
+      "ward_no": 65,
+      "name": "Garvebavi Palya",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.28,
+      "lights": 732,
+      "lights_per_sqkm": 573,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 65,
+      "name": "Manjunath Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.29,
+      "lights": 453,
+      "lights_per_sqkm": 1583,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 66,
+      "name": "Kammagondanahalli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.4,
+      "lights": 476,
+      "lights_per_sqkm": 341,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 66,
+      "name": "Singasandra",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.87,
+      "lights": 579,
+      "lights_per_sqkm": 310,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 66,
+      "name": "Sane Guruvana Halli",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.35,
+      "lights": 485,
+      "lights_per_sqkm": 1368,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 67,
+      "name": "Shettihalli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 3.72,
+      "lights": 1302,
+      "lights_per_sqkm": 350,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 67,
+      "name": "Bandepalya",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.77,
+      "lights": 714,
+      "lights_per_sqkm": 403,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 67,
+      "name": "Basaveshwara Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.87,
+      "lights": 1305,
+      "lights_per_sqkm": 1494,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 68,
+      "name": "Mallasandra",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.2,
+      "lights": 1363,
+      "lights_per_sqkm": 1140,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 68,
+      "name": "Mangammana Palya",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 0.59,
+      "lights": 248,
+      "lights_per_sqkm": 418,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 68,
+      "name": "Kamakshipalya",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.67,
+      "lights": 1150,
+      "lights_per_sqkm": 1711,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 69,
+      "name": "Bagalagunte",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 2.53,
+      "lights": 1968,
+      "lights_per_sqkm": 779,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 69,
+      "name": "Hosapalya",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.32,
+      "lights": 571,
+      "lights_per_sqkm": 431,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 69,
+      "name": "Agrahara Dasarahalli",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.53,
+      "lights": 907,
+      "lights_per_sqkm": 1724,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 70,
+      "name": "Manjunatha Nagar",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 1.5,
+      "lights": 1162,
+      "lights_per_sqkm": 776,
+      "covered": 0.99,
+      "reason": null
+    },
+    {
+      "ward_no": 70,
+      "name": "Iblur",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 2.81,
+      "lights": 1774,
+      "lights_per_sqkm": 631,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 70,
+      "name": "Dr Rajkumar Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.99,
+      "lights": 1472,
+      "lights_per_sqkm": 1489,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 71,
+      "name": "Nele Maheshwaramma Temple Ward",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.59,
+      "lights": 767,
+      "lights_per_sqkm": 1294,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 71,
+      "name": "Agara",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 1.87,
+      "lights": 1175,
+      "lights_per_sqkm": 629,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 71,
+      "name": "Thimmenahalli",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.7,
+      "lights": 1054,
+      "lights_per_sqkm": 1514,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 72,
+      "name": "Dasarahalli",
+      "corporation": "Bengaluru North",
+      "area_sqkm": 0.75,
+      "lights": 1067,
+      "lights_per_sqkm": 1430,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 72,
+      "name": "HSR Layout",
+      "corporation": "Bengaluru South",
+      "area_sqkm": 2.68,
+      "lights": 1797,
+      "lights_per_sqkm": 670,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 72,
+      "name": "Kaveripura",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.02,
+      "lights": 1219,
+      "lights_per_sqkm": 1195,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 73,
+      "name": "Dr. Vishnuvardhan Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.9,
+      "lights": 1039,
+      "lights_per_sqkm": 1155,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 74,
+      "name": "Pattegar Palya",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.43,
+      "lights": 503,
+      "lights_per_sqkm": 1184,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 75,
+      "name": "Marenahalli West",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.49,
+      "lights": 637,
+      "lights_per_sqkm": 1304,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 76,
+      "name": "Moodalapalya",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.4,
+      "lights": 812,
+      "lights_per_sqkm": 2012,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 77,
+      "name": "Maruthi Mandira Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.55,
+      "lights": 1288,
+      "lights_per_sqkm": 2323,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 78,
+      "name": "Anubhava Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.62,
+      "lights": 1322,
+      "lights_per_sqkm": 2125,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 79,
+      "name": "Nagarbhavi",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 2.19,
+      "lights": 2583,
+      "lights_per_sqkm": 1178,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 80,
+      "name": "Chandra Layout",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.68,
+      "lights": 1075,
+      "lights_per_sqkm": 1587,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 81,
+      "name": "Nayanda Halli",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.88,
+      "lights": 679,
+      "lights_per_sqkm": 770,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 82,
+      "name": "Attigupe",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.85,
+      "lights": 1433,
+      "lights_per_sqkm": 1676,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 83,
+      "name": "Hampi Nagar",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.9,
+      "lights": 1422,
+      "lights_per_sqkm": 1573,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 84,
+      "name": "Hosahalli",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.63,
+      "lights": 1000,
+      "lights_per_sqkm": 1583,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 85,
+      "name": "Adi Chunchanagiri Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.71,
+      "lights": 1252,
+      "lights_per_sqkm": 1766,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 86,
+      "name": "Vidyaranyanagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.31,
+      "lights": 617,
+      "lights_per_sqkm": 2011,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 87,
+      "name": "K.P Agrahara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.34,
+      "lights": 685,
+      "lights_per_sqkm": 2022,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 88,
+      "name": "Sangolli Rayanna Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.2,
+      "lights": 353,
+      "lights_per_sqkm": 1787,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 89,
+      "name": "Bapuji Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.35,
+      "lights": 509,
+      "lights_per_sqkm": 1452,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 90,
+      "name": "Krishnadevaraya ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.48,
+      "lights": 684,
+      "lights_per_sqkm": 1432,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 91,
+      "name": "Gali Anjaneya Temple Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.78,
+      "lights": 977,
+      "lights_per_sqkm": 1254,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 92,
+      "name": "Muneshwara Block",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.64,
+      "lights": 675,
+      "lights_per_sqkm": 1059,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 93,
+      "name": "Avalahalli",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.45,
+      "lights": 429,
+      "lights_per_sqkm": 944,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 94,
+      "name": "Deepanjali Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.78,
+      "lights": 1543,
+      "lights_per_sqkm": 866,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 95,
+      "name": "Swamy Vivekananda Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.53,
+      "lights": 1849,
+      "lights_per_sqkm": 1209,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 96,
+      "name": "Kathriguppe",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.01,
+      "lights": 1335,
+      "lights_per_sqkm": 1318,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 97,
+      "name": "Srinivasa Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.43,
+      "lights": 564,
+      "lights_per_sqkm": 1312,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 98,
+      "name": "Ashoka Nagara",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.73,
+      "lights": 1015,
+      "lights_per_sqkm": 1392,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 99,
+      "name": "T.R Shamanna Nagar",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.35,
+      "lights": 533,
+      "lights_per_sqkm": 1513,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 100,
+      "name": "Srinagar",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.29,
+      "lights": 472,
+      "lights_per_sqkm": 1606,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 101,
+      "name": "Kempambudhi Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.61,
+      "lights": 973,
+      "lights_per_sqkm": 1605,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 102,
+      "name": "Hanumanthanagar",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.69,
+      "lights": 1062,
+      "lights_per_sqkm": 1547,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 103,
+      "name": "N.R Colony",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.06,
+      "lights": 1901,
+      "lights_per_sqkm": 1790,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 104,
+      "name": "Thyagarajnagar",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.43,
+      "lights": 646,
+      "lights_per_sqkm": 1514,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 105,
+      "name": "Yediyuru",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.04,
+      "lights": 1400,
+      "lights_per_sqkm": 1340,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 106,
+      "name": "Devagiri Temple Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.85,
+      "lights": 1387,
+      "lights_per_sqkm": 1630,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 107,
+      "name": "Dharmagiri Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.64,
+      "lights": 961,
+      "lights_per_sqkm": 1505,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 108,
+      "name": "Ganesh Mandira Ward",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 1.44,
+      "lights": 1471,
+      "lights_per_sqkm": 1022,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 109,
+      "name": "Kamakya Layout",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.95,
+      "lights": 1672,
+      "lights_per_sqkm": 1758,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 110,
+      "name": "Chikkalasandra",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.39,
+      "lights": 726,
+      "lights_per_sqkm": 1872,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 111,
+      "name": "Ittamadu",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.46,
+      "lights": 642,
+      "lights_per_sqkm": 1394,
+      "covered": 1,
+      "reason": null
+    },
+    {
+      "ward_no": 112,
+      "name": "Hosakerehalli",
+      "corporation": "Bengaluru West",
+      "area_sqkm": 0.65,
+      "lights": 910,
+      "lights_per_sqkm": 1399,
+      "covered": 1,
+      "reason": null
+    }
+  ]
+}

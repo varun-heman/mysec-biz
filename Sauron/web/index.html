@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sauron &middot; mySecurity</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+<link rel="stylesheet" href="vendor/leaflet.css" />
+<link rel="stylesheet" href="vendor/markercluster.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body data-split="rows">
+
+<header class="topbar">
+  <a class="brand" href="#" aria-label="Sauron">
+    <!-- The mySecurity mark: shield, aperture, signal sweep. -->
+    <svg class="brand__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+      <path d="M16 2.5 4.5 7.1v8.6c0 6.9 4.7 12.9 11.5 14.8 6.8-1.9 11.5-7.9 11.5-14.8V7.1L16 2.5Z"
+            stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <circle cx="16" cy="14.6" r="4.4" stroke="currentColor" stroke-width="2"/>
+      <circle cx="16" cy="14.6" r="1.5" fill="currentColor"/>
+      <path d="M16 21.6v4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+    <span class="brand__word">Sauron <em>society intelligence</em></span>
+  </a>
+
+  <div class="picker picker--city">
+    <svg class="ic picker__icon"><use href="icons.svg#icon-pin"/></svg>
+    <select id="city" class="select" aria-label="City">
+      <option value="bengaluru" selected>Bangalore</option>
+    </select>
+    <svg class="ic picker__chev"><use href="icons.svg#icon-chevron-down"/></svg>
+  </div>
+
+  <div class="spacer"></div>
+
+  <span class="picker picker--layer">
+    <svg class="ic picker__icon"><use href="icons.svg#icon-layers"/></svg>
+    <!-- The count rides inside the selected option's label. The value stays
+         "societies" so nothing downstream depends on the number. -->
+    <select id="layer" class="select" aria-label="Layer">
+      <option value="societies" selected>Societies</option>
+      <option value="itparks" disabled>IT parks</option>
+      <option value="sites" disabled>Sites</option>
+      <option value="commercial" disabled>Commercial</option>
+    </select>
+    <svg class="ic picker__chev"><use href="icons.svg#icon-chevron-down"/></svg>
+  </span>
+
+  <a class="xlink" href="http://localhost:4321/" target="_blank" rel="noreferrer"
+     title="Open the research library">
+    <svg class="ic"><use href="icons.svg#icon-book"/></svg><span>Research</span>
+  </a>
+
+  <button id="orient" class="icon-btn" type="button" aria-label="Switch split direction" title="Split left and right">
+    <svg class="ic ic-rows"><use href="icons.svg#icon-split-h"/></svg>
+    <svg class="ic ic-cols"><use href="icons.svg#icon-split-v"/></svg>
+  </button>
+
+  <button id="theme" class="icon-btn" type="button" aria-label="Toggle theme">
+    <svg class="ic ic-sun"><use href="icons.svg#icon-sun"/></svg>
+    <svg class="ic ic-moon"><use href="icons.svg#icon-moon"/></svg>
+  </button>
+</header>
+
+<main class="split" id="split">
+
+  <div class="mapwrap">
+    <div id="map"></div>
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <!-- Faceted command bar. Type a field name then Tab to filter by it. -->
+    <div class="omni" id="omni">
+      <div class="omni__box">
+        <svg class="ic omni__icon"><use href="icons.svg#icon-search"/></svg>
+        <span class="chips" id="chips"></span>
+        <input id="omniInput" type="text" autocomplete="off" spellcheck="false"
+               placeholder="Search, or type builder, ward, corporation then Tab" />
+        <button id="omniClear" class="omni__clear" type="button" aria-label="Clear">
+          <svg class="ic"><use href="icons.svg#icon-close"/></svg>
+        </button>
+      </div>
+      <ul class="omni__list" id="omniList" hidden></ul>
+      <p class="omni__hint" id="omniHint"></p>
+    </div>
+
+    <!-- Hover card. A Leaflet tooltip cannot be moved onto, so this is a plain
+         element the pointer can travel to and click. -->
+    <div class="hovercard" id="hover" hidden></div>
+
+    <div class="mapfoot">
+      <span class="legend"><b>12</b> societies</span>
+      <span class="legend"><i class="dot dot--known"></i> sized</span>
+      <span class="legend"><i class="dot dot--unknown"></i> size unknown</span>
+      <span class="legend legend--zoom" id="zoomNote"></span>
+      <span class="legend legend--heat" id="heatNote"></span>
+    </div>
+  </div>
+
+  <div class="divider" id="divider" role="separator" aria-label="Resize map"><span></span></div>
+
+  <aside class="detail" id="detail" hidden>
+    <header class="detail__top">
+      <button id="detailBack" class="btn-ghost" type="button">
+        <svg class="ic"><use href="icons.svg#icon-arrow-left"/></svg> All societies
+      </button>
+      <button id="detailClose" class="icon-btn" type="button" aria-label="Close">
+        <svg class="ic"><use href="icons.svg#icon-close"/></svg>
+      </button>
+    </header>
+    <div class="detail__body" id="detailBody"></div>
+  </aside>
+
+  <section class="panel">
+    <div class="filters">
+      <label class="field"><span class="field__label">Min units</span>
+        <span class="picker">
+          <select id="minUnits" class="select">
+            <option value="0" selected>Any</option>
+            <option value="100">100</option>
+            <option value="150">150</option>
+            <option value="300">300</option>
+            <option value="500">500</option>
+            <option value="1000">1000</option>
+          </select>
+          <svg class="ic picker__chev"><use href="icons.svg#icon-chevron-down"/></svg>
+        </span>
+      </label>
+
+      <label class="field"><span class="field__label">Corporation</span>
+        <span class="picker">
+          <select id="corp" class="select">
+            <option value="">All five</option>
+            <option value="Bengaluru North">North</option>
+            <option value="Bengaluru South">South</option>
+            <option value="Bengaluru East">East</option>
+            <option value="Bengaluru West">West</option>
+            <option value="Bengaluru Central">Central</option>
+          </select>
+          <svg class="ic picker__chev"><use href="icons.svg#icon-chevron-down"/></svg>
+        </span>
+      </label>
+
+      <label class="check"><input type="checkbox" id="incidentsOnly" /><span>Incidents</span></label>
+
+      <p id="provenance" class="provenance"></p>
+
+      <button id="reset" class="btn-ghost" type="button">
+        <svg class="ic"><use href="icons.svg#icon-close"/></svg> Reset
+      </button>
+    </div>
+
+    <div class="tablewrap">
+      <table id="tbl">
+        <thead id="head"></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<!-- Full size viewer for the society photographs. -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb__close icon-btn" id="lbClose" type="button" aria-label="Close">
+    <svg class="ic"><use href="icons.svg#icon-close"/></svg>
+  </button>
+  <button class="lb__nav lb__prev" id="lbPrev" type="button" aria-label="Previous">
+    <svg class="ic"><use href="icons.svg#icon-arrow-left"/></svg>
+  </button>
+  <figure class="lb__frame">
+    <img id="lbImg" alt="" />
+    <figcaption id="lbCap"></figcaption>
+  </figure>
+  <button class="lb__nav lb__next" id="lbNext" type="button" aria-label="Next">
+    <svg class="ic"><use href="icons.svg#icon-arrow-right"/></svg>
+  </button>
+</div>
+
+<script src="vendor/leaflet.js"></script>
+<script src="vendor/markercluster.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

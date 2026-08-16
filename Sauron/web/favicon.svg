@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- The mySecurity mark, shifted up and left to make room for the badge, so a
+       Sauron tab is not mistaken for the site or the research library. -->
+  <g transform="translate(-1.4 -2.2) scale(0.92)" stroke="#D92D20" stroke-width="2.2"
+     stroke-linejoin="round" stroke-linecap="round">
+    <path d="M16 2.5 4.5 7.1v8.6c0 6.9 4.7 12.9 11.5 14.8 6.8-1.9 11.5-7.9 11.5-14.8V7.1L16 2.5Z"/>
+    <circle cx="16" cy="14.6" r="4.4"/>
+    <circle cx="16" cy="14.6" r="1.5" fill="#D92D20" stroke="none"/>
+    <path d="M16 21.6v4.2"/>
+  </g>
+  <circle cx="23" cy="23.4" r="8.4" fill="#0D0D0D"/>
+  <g stroke="#F0605B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M22.8 28.6s4-3.5 4-6.3a4 4 0 1 0-8 0c0 2.8 4 6.3 4 6.3Z"/>
+  </g>
+</svg>

@@ -1,0 +1,3557 @@
+{
+  "generated_at": "2026-08-16T13:03:08.352Z",
+  "checked": 591,
+  "with_builder_images": 116,
+  "images_saved": 1853,
+  "missing": 475,
+  "by_reason": {
+    "bot protection": 58,
+    "no builder known": 74,
+    "no matching page on the builder site": 163,
+    "builder site not in the map": 113,
+    "page found, no usable images": 26,
+    "no sitemap and no project links": 37,
+    "page 404": 4
+  },
+  "societies": [
+    {
+      "name": "Brigade Cornerstone Utopia",
+      "id": "osm:way/1069600855",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 4846,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Prestige Shantiniketan Residential Complex",
+      "id": "osm:way/122737532",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 4173,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Prestige Lakeside Habitat",
+      "id": "osm:way/266310354",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 3697,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Koramangala National Games Village",
+      "id": "osm:way/27931605",
+      "units": 2652,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Prestige Falcon City",
+      "id": "osm:way/775660995",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 2520,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Prestige Ferns Residency",
+      "id": "osm:way/174038181",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 2481,
+      "reason": "bot protection"
+    },
+    {
+      "name": "L&T South City",
+      "id": "osm:way/118907944",
+      "builder": "L&T Realty",
+      "domain": "lntrealty.com",
+      "units": 2453,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Salarpuria Greenage",
+      "id": "osm:way/236730838",
+      "builder": "Sattva Group",
+      "domain": "sattvagroup.in",
+      "units": 2440,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Phoenix One Bangalore West",
+      "id": "osm:way/640750836",
+      "builder": "Phoenix Mills",
+      "units": 2188,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Brigade Metropolis",
+      "id": "osm:way/122738032",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 2142,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Prestige Southern Star",
+      "id": "rera:12848",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 2130,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Prestige Song of the South",
+      "id": "osm:way/1070952273",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 2126,
+      "reason": "bot protection"
+    },
+    {
+      "name": "House of Hiranandani Queensgate",
+      "id": "osm:way/1079087284",
+      "builder": "House of Hiranandani",
+      "domain": "houseofhiranandani.com",
+      "units": 1884,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Platinum City",
+      "id": "osm:way/35901713",
+      "units": 1771,
+      "reason": "no builder known"
+    },
+    {
+      "name": "DLF New Town",
+      "id": "osm:way/334653051",
+      "builder": "DLF",
+      "page": "https://www.dlf.in/town-and-country-planning",
+      "units": 1676,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Prestige Raintree Park (u/c)",
+      "id": "osm:way/1238668652",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 1520,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Prestige Lavender Fields",
+      "id": "osm:way/766409580",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 1473,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Brigade Lakefront",
+      "id": "osm:way/229628369",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 1293,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Puravankara Provident Park Square",
+      "id": "osm:way/781680971",
+      "builder": "Puravankara",
+      "domain": "puravankara.com",
+      "units": 1292,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Purva Highlands Apartments",
+      "id": "osm:way/124779974",
+      "builder": "Puravankara",
+      "domain": "puravankara.com",
+      "units": 1283,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Aparna Wonderwoods",
+      "id": "rera:14519",
+      "builder": "Aparna Constructions and Estates Private Limited",
+      "domain": "aparnaconstructions.com",
+      "units": 1261,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Nagarjuna Meadows",
+      "id": "osm:way/628258489",
+      "builder": "Nagarjuna Construction",
+      "units": 1251,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Godrej Woodsman Estate Apartments",
+      "id": "osm:way/96707218",
+      "builder": "Godrej Properties",
+      "domain": "godrejproperties.com",
+      "units": 1237,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Candeur Signature",
+      "id": "osm:way/1128134238",
+      "builder": "Candeur",
+      "domain": "candeurlandmark.com",
+      "units": 1232,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "ETA Star The Gardens",
+      "id": "osm:way/138123923",
+      "units": 1212,
+      "reason": "no builder known"
+    },
+    {
+      "name": "The Magic Faraway Tree Total Environment",
+      "id": "osm:way/346150335",
+      "builder": "Total Environment",
+      "domain": "total-environment.com",
+      "units": 1172,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Myhna Vistara",
+      "id": "rera:14079",
+      "builder": "Myhna Properties Private Limited",
+      "domain": "myhnaproperties.com",
+      "units": 1127,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Brigade Eternia",
+      "id": "rera:13006",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 1124,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Purva Fountainsquare",
+      "id": "osm:way/172468949",
+      "builder": "Puravankara",
+      "domain": "puravankara.com",
+      "units": 1099,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Prestige Primrose Hills",
+      "id": "osm:way/1073988496",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 1090,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Sobha Silicon Oasis",
+      "id": "osm:way/781696171",
+      "builder": "Sobha",
+      "domain": "sobha.com",
+      "units": 1053,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Republic of Whitefield",
+      "id": "osm:way/698147979",
+      "builder": "Republic of Whitefield",
+      "units": 1052,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Suncity Apartments",
+      "id": "osm:way/450550412",
+      "units": 1047,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Golden Grand",
+      "id": "osm:way/46922189",
+      "units": 1027,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Abhee Aaria",
+      "id": "rera:13060",
+      "builder": "Abhee Ventures Private Limited",
+      "units": 1017,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Elita Promenade Phase 1",
+      "id": "osm:way/439843208",
+      "builder": "Puravankara",
+      "domain": "puravankara.com",
+      "units": 1012,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Prestige Kew Gardens",
+      "id": "osm:way/363104747",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 979,
+      "reason": "bot protection"
+    },
+    {
+      "name": "HM World City",
+      "id": "osm:way/118415617",
+      "builder": "HM Group",
+      "units": 969,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Prestige Bagamane Temple Bells",
+      "id": "osm:way/729214177",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 968,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Sun City Gloria",
+      "id": "osm:way/316015845",
+      "units": 928,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Karle Zenith",
+      "id": "osm:way/775230099",
+      "builder": "Karle Infra",
+      "units": 896,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Vaishnavi Serene",
+      "id": "osm:way/768997269",
+      "builder": "Vaishnavi Group",
+      "domain": "vaishnavigroup.com",
+      "units": 896,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Pashmina Waterfront Apartments",
+      "id": "osm:way/121981976",
+      "builder": "Pashmina Developers",
+      "units": 827,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Pebble Bay Apartments",
+      "id": "osm:way/95507930",
+      "units": 826,
+      "reason": "no builder known"
+    },
+    {
+      "name": "SNN Raj Eternia",
+      "id": "osm:way/781696178",
+      "builder": "SNN Raj",
+      "domain": "snncorp.com",
+      "units": 824,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "DivyaSree 77 Place",
+      "id": "osm:way/636489361",
+      "builder": "Divyasree",
+      "domain": "divyasree.com",
+      "units": 819,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Salarpuria Sattva Divinity",
+      "id": "osm:way/734148544",
+      "builder": "Sattva Group",
+      "domain": "sattvagroup.in",
+      "units": 816,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sattva SimpliCity (u/c)",
+      "id": "osm:way/1364433564",
+      "builder": "Sattva Group",
+      "domain": "sattvagroup.in",
+      "units": 815,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Brigade Gardenia Park",
+      "id": "osm:way/184387456",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 810,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Mantri Espana",
+      "id": "osm:way/628233557",
+      "builder": "Mantri Developers",
+      "domain": "mantri.in",
+      "units": 800,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Alembic Urban Forest",
+      "id": "osm:way/773145605",
+      "builder": "Shreno Limited",
+      "units": 798,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Century Indus",
+      "id": "osm:way/726342888",
+      "builder": "Century Real Estate",
+      "domain": "centuryrealestate.in",
+      "units": 796,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Godrej Eternity",
+      "id": "osm:way/1118557049",
+      "builder": "Godrej Properties",
+      "domain": "godrejproperties.com",
+      "units": 781,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Durga Petals",
+      "id": "osm:way/732010488",
+      "units": 781,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Orchid Life",
+      "id": "rera:11590",
+      "builder": "Goyal Hariyana Associates",
+      "units": 772,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Alpine Eco",
+      "id": "osm:way/219016893",
+      "builder": "Alpine Housing",
+      "units": 752,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "SJR Blue Waters",
+      "id": "osm:way/233202147",
+      "builder": "SJR Group",
+      "domain": "sjrgroup.in",
+      "units": 744,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Nikoo Homes IV",
+      "id": "osm:way/1267731667",
+      "builder": "Bhartiya City",
+      "page": "https://bhartiyacity.com/nikoo-homes/",
+      "units": 716,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Candeur Landmark",
+      "id": "osm:way/963384966",
+      "builder": "Candeur",
+      "domain": "candeurlandmark.com",
+      "units": 716,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Brigade Millennium",
+      "id": "osm:way/439843206",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 715,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Gokulam Apartments",
+      "id": "osm:way/117067887",
+      "units": 713,
+      "reason": "no builder known"
+    },
+    {
+      "name": "The Adwaith BY Sanjeevini",
+      "id": "rera:12864",
+      "builder": "Sanjeevini Properties Private Limited",
+      "page": "https://sanjeevinigroups.com/projects/the-adwaith/",
+      "units": 704,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Prestige Waterford",
+      "id": "osm:way/133630420",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 689,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Brigade Cosmopolis",
+      "id": "osm:way/513196700",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 674,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Elita Promenade Phase 2",
+      "id": "osm:way/145224051",
+      "builder": "Puravankara",
+      "domain": "puravankara.com",
+      "units": 674,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Prestige St. Johns Woods",
+      "id": "osm:way/131610639",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 666,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Sobha Indraprastha",
+      "id": "osm:way/775664763",
+      "builder": "Sobha",
+      "domain": "sobha.com",
+      "units": 663,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Orchid Piccadilly",
+      "id": "osm:way/1240800459",
+      "builder": "Goyal Hariyana Enterprises",
+      "units": 663,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Prestige West Woods",
+      "id": "osm:way/764600972",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 649,
+      "reason": "bot protection"
+    },
+    {
+      "name": "World of Gardens",
+      "id": "rera:13885",
+      "builder": "RLP Trendsquares Projects Private Limited",
+      "units": 648,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Memco Skyline - Jutaku",
+      "id": "rera:14536",
+      "builder": "Memco Skyline Private Limited",
+      "units": 647,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Gopalan Grandeur",
+      "id": "osm:way/84514506",
+      "builder": "Gopalan Enterprises",
+      "domain": "gopalanenterprises.com",
+      "units": 640,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Brigade Lakecrest",
+      "id": "rera:13429",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 604,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Down by the Water",
+      "id": "rera:12261",
+      "builder": "Total Environment",
+      "domain": "total-environment.com",
+      "units": 602,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "SNN Raj Serenity Apartments",
+      "id": "osm:way/194600686",
+      "builder": "SNN Raj",
+      "domain": "snncorp.com",
+      "units": 594,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Prestige Park Square",
+      "id": "osm:way/1075575787",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 586,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Prestige Lake Ridge",
+      "id": "osm:way/1118946154",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 585,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Prestige Kensington Gardens",
+      "id": "osm:way/46244855",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 583,
+      "reason": "bot protection"
+    },
+    {
+      "name": "SNN Estates Felicity",
+      "id": "rera:11686",
+      "builder": "SNN Raj",
+      "domain": "snncorp.com",
+      "units": 580,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Vaishnavi Terraces",
+      "id": "osm:way/440159716",
+      "builder": "Vaishnavi Group",
+      "domain": "vaishnavigroup.com",
+      "units": 579,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "SNN Raj Lake View",
+      "id": "osm:way/1218759007",
+      "builder": "SNN Raj",
+      "domain": "snncorp.com",
+      "units": 578,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "RMZ Latitude Residential",
+      "id": "osm:way/781852601",
+      "builder": "RMZ",
+      "units": 571,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Total Environment Windmills Of Your Mind",
+      "id": "osm:way/84271198",
+      "builder": "Total Environment",
+      "domain": "total-environment.com",
+      "units": 567,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Godrej Woods",
+      "id": "rera:14064",
+      "builder": "Godrej Properties",
+      "domain": "godrejproperties.com",
+      "units": 558,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Ozone Evengreen Apartments",
+      "id": "osm:way/24349879",
+      "builder": "Ozone Group",
+      "domain": "ozonegroup.com",
+      "units": 555,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Mantri Residency",
+      "id": "osm:way/94712245",
+      "builder": "Mantri Developers",
+      "domain": "mantri.in",
+      "units": 552,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Prestige Elysian",
+      "id": "osm:way/822777637",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 548,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Springfield Apartments",
+      "id": "osm:way/309688622",
+      "units": 543,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Meda East Winds",
+      "id": "rera:12471",
+      "builder": "Meda Projects",
+      "units": 542,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Prestige Park View",
+      "id": "osm:way/135167309",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 540,
+      "reason": "bot protection"
+    },
+    {
+      "name": "SNN Serenity Gardens",
+      "id": "osm:way/1199400833",
+      "builder": "SNN Raj",
+      "domain": "snncorp.com",
+      "units": 529,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Nikoo Homes 8, Bhartiya Garden Enclave, Phase-2",
+      "id": "rera:14521",
+      "builder": "Bhartiya City",
+      "domain": "bhartiyacity.com",
+      "units": 529,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "SJR Watermark",
+      "id": "osm:way/117757759",
+      "builder": "SJR Group",
+      "domain": "sjrgroup.in",
+      "units": 526,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sumadhura LNR Lake Breeze Apartments",
+      "id": "osm:way/627119951",
+      "builder": "Sumadhura",
+      "domain": "sumadhuragroup.com",
+      "units": 526,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Hiranandani Apartments",
+      "id": "osm:way/773825326",
+      "builder": "House of Hiranandani",
+      "domain": "houseofhiranandani.com",
+      "units": 523,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "CLPD Sunrise",
+      "id": "osm:way/1120161132",
+      "builder": "Corporate Leisure and Property Developments Private Limited",
+      "units": 520,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Nikoo Homes 8, Bhartiya Garden Enclave, Phase-1",
+      "id": "rera:14461",
+      "builder": "Bhartiya City",
+      "domain": "bhartiyacity.com",
+      "units": 518,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Mantri Elegance",
+      "id": "osm:way/577663649",
+      "builder": "Mantri Developers",
+      "domain": "mantri.in",
+      "units": 508,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Brigade Bricklane",
+      "id": "osm:way/1086438028",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 501,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Concorde Auriga",
+      "id": "osm:way/1427731858",
+      "builder": "Concorde Group",
+      "domain": "concorde.in",
+      "units": 501,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Akme Ballet",
+      "id": "osm:way/219000787",
+      "builder": "Akme Projects",
+      "domain": "akmeprojects.com",
+      "units": 500,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Divyashree Elan Apartments",
+      "id": "osm:way/232431133",
+      "units": 493,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Godrej Air",
+      "id": "osm:way/792488587",
+      "builder": "Godrej Properties",
+      "domain": "godrejproperties.com",
+      "units": 487,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Sumadhura Anandam",
+      "id": "osm:way/95214236",
+      "builder": "Sumadhura",
+      "domain": "sumadhuragroup.com",
+      "units": 480,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Peninsula Heights",
+      "id": "osm:way/1085144198",
+      "builder": "Goodhome Realty Limited",
+      "units": 476,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Prestige Acropolis",
+      "id": "osm:way/243554710",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 472,
+      "reason": "bot protection"
+    },
+    {
+      "name": "BSCPL Bollineni Silas",
+      "id": "osm:way/1311917069",
+      "units": 470,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Signature Splendor",
+      "id": "rera:9545",
+      "builder": "Signature Dwellings Private Limited",
+      "units": 464,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Brigade Omega",
+      "id": "osm:way/1118946161",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 463,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Mantri Lithos",
+      "id": "osm:way/403024944",
+      "builder": "Mantri Developers",
+      "domain": "mantri.in",
+      "units": 463,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Century Kindle Phase 1",
+      "id": "rera:14360",
+      "builder": "Hebbal Properties Private Limited",
+      "units": 458,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Golden Palms Apartments",
+      "id": "osm:way/118895504",
+      "units": 454,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Salarpuria Sattva Anugraha",
+      "id": "osm:way/1064408597",
+      "builder": "Sattva Group",
+      "domain": "sattvagroup.in",
+      "units": 451,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Prestige Willow Tree",
+      "id": "osm:way/1073988495",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 451,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Uber Verdant 2",
+      "id": "osm:way/1092941903",
+      "units": 450,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Sumadhura Edition PHASE-II",
+      "id": "rera:14044",
+      "builder": "Sumadhura",
+      "domain": "sumadhuragroup.com",
+      "units": 450,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sumadhura Edition PHASE-I",
+      "id": "rera:13629",
+      "builder": "Sumadhura",
+      "domain": "sumadhuragroup.com",
+      "units": 450,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sri Balaji Rose Woods",
+      "id": "rera:10459",
+      "builder": "Sri Balaji Ventures",
+      "domain": "sribalajiinfra.com",
+      "units": 449,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "DSR Evoq",
+      "id": "rera:13978",
+      "builder": "DSR Green Homes",
+      "page": "https://www.dsrinfra.com/property/dsr-evoq/",
+      "units": 448,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Nandi Meraki",
+      "id": "rera:10195",
+      "builder": "Nandi Housing Private Limited",
+      "units": 448,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Prestige Misty Waters",
+      "id": "osm:way/190144828",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 440,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Assetz Mizumi Reserve Tower A1 A2 A4",
+      "id": "rera:14178",
+      "builder": "Apg Community Development Private Limited",
+      "domain": "assetzproperty.com",
+      "units": 440,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Navami Landmark",
+      "id": "osm:way/734148549",
+      "units": 436,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Total Environment - Learning to Fly",
+      "id": "osm:way/334633607",
+      "builder": "Total Environment",
+      "domain": "total-environment.com",
+      "units": 435,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Salarpuria Luxuria Apartments",
+      "id": "osm:way/152426534",
+      "builder": "Sattva Group",
+      "domain": "sattvagroup.in",
+      "units": 431,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "SNN Clermont",
+      "id": "osm:way/194580931",
+      "builder": "SNN Raj",
+      "domain": "snncorp.com",
+      "units": 427,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Meda Heights",
+      "id": "osm:way/1089707940",
+      "builder": "Meda Constructions",
+      "units": 427,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Ajmera Green Acres",
+      "id": "osm:way/357144582",
+      "builder": "Ajmera Realty",
+      "domain": "ajmera.com",
+      "units": 426,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Concorde Neo",
+      "id": "rera:12142",
+      "builder": "Concorde Group",
+      "domain": "concorde.in",
+      "units": 424,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "The Five Summits Address",
+      "id": "osm:way/1083396839",
+      "units": 421,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Sumadhura Silver Ripples",
+      "id": "osm:way/494678973",
+      "builder": "Sumadhura",
+      "domain": "sumadhuragroup.com",
+      "units": 420,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Prestige South Ridge",
+      "id": "osm:way/1217326871",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 419,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Salarpuria Sattva Senorita",
+      "id": "osm:way/603173057",
+      "builder": "Sattva Group",
+      "domain": "sattvagroup.in",
+      "units": 419,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Natasha Golf View",
+      "id": "osm:way/1527836259",
+      "units": 419,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Sattva Aaranya",
+      "id": "rera:13784",
+      "builder": "Sattva Group",
+      "domain": "sattvagroup.in",
+      "units": 418,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Orchid Bloomsberry",
+      "id": "rera:11288",
+      "builder": "Goyal Hariyana Developers",
+      "units": 417,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "SMR Vinay Galaxy",
+      "id": "osm:way/83356936",
+      "builder": "SMR Holdings",
+      "units": 416,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "La Palazzo",
+      "id": "osm:way/779290477",
+      "units": 415,
+      "reason": "no builder known"
+    },
+    {
+      "name": "NCC Maple Heights",
+      "id": "osm:way/90177974",
+      "units": 413,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Sobha Jasmine",
+      "id": "osm:way/90817790",
+      "builder": "Sobha",
+      "domain": "sobha.com",
+      "units": 412,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Ranka Ankura",
+      "id": "rera:12582",
+      "builder": "Ranka Properties Private Limited",
+      "units": 410,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Sattva Forest Ridge",
+      "id": "rera:12687",
+      "builder": "Sattva Group",
+      "domain": "sattvagroup.in",
+      "units": 407,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sumadhura Capitol Residences (u/c)",
+      "id": "osm:way/1150896026",
+      "builder": "Sumadhura",
+      "domain": "sumadhuragroup.com",
+      "units": 405,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Karle Vario",
+      "id": "osm:way/775230118",
+      "builder": "Karle Infra",
+      "units": 404,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Prestige Gulmohar",
+      "id": "osm:way/1082662446",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 404,
+      "reason": "bot protection"
+    },
+    {
+      "name": "United Sun City",
+      "id": "rera:9674",
+      "builder": "United Projects Suncity",
+      "domain": "uniteddevelopers.in",
+      "units": 404,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Saritha Serene",
+      "id": "rera:10512",
+      "builder": "Saritha Developers",
+      "units": 397,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Akino",
+      "id": "rera:13205",
+      "builder": "Trendsquares Realty LLP",
+      "units": 394,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Shilpitha Sunflower",
+      "id": "osm:way/494678976",
+      "builder": "Shilpitha",
+      "units": 393,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "SSVR Niyaara",
+      "id": "rera:11509",
+      "builder": "SSVR Builders",
+      "units": 393,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "The Urban Forest",
+      "id": "rera:12974",
+      "builder": "Keya Homes",
+      "domain": "keyahomes.in",
+      "units": 391,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "NVG Rakshak",
+      "id": "rera:12246",
+      "builder": "At Homes Enterprises",
+      "units": 390,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Shoba Habitech Apartments",
+      "id": "osm:way/155147355",
+      "units": 388,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Nava Vajra",
+      "id": "rera:12075",
+      "builder": "Nava Jyothi Shelters Private Limited",
+      "units": 388,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Mantri Greens",
+      "id": "osm:way/38536361",
+      "builder": "Mantri Developers",
+      "domain": "mantri.in",
+      "units": 385,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Prestige Notting Hill",
+      "id": "osm:way/94718540",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 381,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Brigade Insignia",
+      "id": "rera:11989",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 379,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Salarpuria Magnifica Apartments",
+      "id": "osm:way/134987795",
+      "builder": "Sattva Group",
+      "domain": "sattvagroup.in",
+      "units": 378,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Jai Kings Land",
+      "id": "rera:12880",
+      "builder": "Jai Shelters",
+      "units": 378,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Sri Balaji Serene",
+      "id": "osm:way/1181417659",
+      "builder": "Sri Balaji Structures",
+      "domain": "sribalajiinfra.com",
+      "units": 376,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sobha Neopolis Phase 4 - 3, 4, 8 & 9",
+      "id": "rera:10540",
+      "builder": "Sobha",
+      "page": "https://www.sobha.com/bengaluru/sobha-neopolis-apartments-in-panathur/",
+      "units": 376,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Sobha Neopolis Phase 3 - W 1, 2, 10 & 11",
+      "id": "rera:10535",
+      "builder": "Sobha",
+      "page": "https://www.sobha.com/bengaluru/sobha-neopolis-apartments-in-panathur/",
+      "units": 376,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Vajram Vivera",
+      "id": "rera:13121",
+      "builder": "Vajram Estates Private Limited",
+      "domain": "vajramgroup.com",
+      "units": 375,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Assetz Canvas & Cove 2.0 – Block B & C",
+      "id": "rera:11385",
+      "builder": "Apg Habitat Private Limited",
+      "page": "https://www.assetzproperty.com/eastpoint/assetz-homes.htm",
+      "units": 373,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "SNN Raj Grandeur",
+      "id": "osm:way/1271883887",
+      "builder": "SNN Raj",
+      "domain": "snncorp.com",
+      "units": 372,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Prestige Jade Pavilion",
+      "id": "osm:way/618262040",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 370,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Mantri Alpyne",
+      "id": "osm:way/1118946153",
+      "builder": "Mantri Developers",
+      "domain": "mantri.in",
+      "units": 366,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "HM Symphony",
+      "id": "osm:way/512481162",
+      "builder": "HM Group",
+      "units": 366,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Esteem Enclave",
+      "id": "osm:way/142263405",
+      "units": 365,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Natures Lap By 5 Elements",
+      "id": "rera:13095",
+      "builder": "5 Elements Homes",
+      "units": 365,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Nikoo Homes VI - Phase - 1",
+      "id": "rera:11499",
+      "builder": "Bhartiya City",
+      "page": "https://bhartiyacity.com/nikoo-homes/",
+      "units": 365,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Pursuit of a Radical Rhapsody- Tower 8",
+      "id": "rera:9670",
+      "builder": "Total Environment",
+      "domain": "total-environment.com",
+      "units": 362,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Mantri Flora Apartments",
+      "id": "osm:way/232980250",
+      "builder": "Mantri Developers",
+      "domain": "mantri.in",
+      "units": 361,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Nava Skanda Bellavita",
+      "id": "rera:13645",
+      "builder": "Nava Skanda Projects",
+      "units": 360,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Trendsquares Ortus III",
+      "id": "rera:9899",
+      "builder": "M/s Trendsquares Constructions",
+      "units": 360,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Keerthi Royal Palms",
+      "id": "osm:way/628018590",
+      "builder": "Keerthi Estates",
+      "domain": "keerthiestates.com",
+      "units": 359,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "DNR Atmoshphere",
+      "id": "osm:way/482007061",
+      "builder": "DNR Group",
+      "domain": "dnrgroup.in",
+      "units": 359,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Embassy Habitat",
+      "id": "osm:way/38870577",
+      "builder": "Embassy Group",
+      "domain": "embassyindia.com",
+      "units": 356,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "DNR Parklink Phase 1",
+      "id": "rera:10861",
+      "builder": "DNR Corporation Private Limited",
+      "page": "https://dnrgroup.in/dnr-parklink/",
+      "units": 356,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Brigade Parkside North",
+      "id": "osm:way/1127727167",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 351,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Kumar iLife Urbana Apartments",
+      "id": "osm:way/1041856518",
+      "units": 351,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Akme Harmony",
+      "id": "osm:way/232430926",
+      "builder": "Akme Projects",
+      "domain": "akmeprojects.com",
+      "units": 350,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Golden Blossom",
+      "id": "osm:way/89797678",
+      "units": 346,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Godrej Tiara",
+      "id": "rera:12783",
+      "builder": "Godrej Properties",
+      "domain": "godrejproperties.com",
+      "units": 346,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Rohan Jharoka 2",
+      "id": "osm:way/1429653284",
+      "builder": "Rohan Builders",
+      "domain": "rohanbuilders.com",
+      "units": 341,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Brigade Altamont",
+      "id": "osm:way/507886812",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 338,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Purva Pavillion",
+      "id": "osm:way/1186508785",
+      "builder": "Puravankara",
+      "domain": "puravankara.com",
+      "units": 338,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Nitesh Caesar's Palace Apartments",
+      "id": "osm:way/138952985",
+      "builder": "Nitesh Estates",
+      "domain": "niteshestates.com",
+      "units": 337,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Devagiri Opal",
+      "id": "rera:11755",
+      "builder": "Devagiri Projects",
+      "units": 336,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Vanshika's Nature's Harmony",
+      "id": "rera:12609",
+      "builder": "Vanshika Life Spaces Private Limited",
+      "units": 335,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Century Immencity",
+      "id": "osm:way/1455433885",
+      "builder": "Century Real Estate",
+      "domain": "centuryrealestate.in",
+      "units": 334,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Oceanus Vista",
+      "id": "osm:way/508858641",
+      "builder": "Oceanus",
+      "units": 333,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Nikhar Celio",
+      "id": "rera:14442",
+      "builder": "Nikhar Estates LLP",
+      "units": 333,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "RNS Shanthi Nivas",
+      "id": "osm:way/665234777",
+      "units": 332,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Candeur Novo Gardenia",
+      "id": "rera:11633",
+      "builder": "Novolife Innovative Structures LLP",
+      "units": 332,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Godrej Athena",
+      "id": "rera:10355",
+      "builder": "Godrej Properties",
+      "domain": "godrejproperties.com",
+      "units": 330,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Incor Carmel Heights",
+      "id": "osm:way/1072283116",
+      "builder": "Incor Group",
+      "units": 329,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Sumadhura Solace PHASE-II",
+      "id": "rera:14056",
+      "builder": "Sumadhura",
+      "domain": "sumadhuragroup.com",
+      "units": 329,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Renaissance Temple Bells Apartments",
+      "id": "osm:way/96682580",
+      "builder": "Renaissance Holdings",
+      "domain": "renaissanceholdings.com",
+      "units": 328,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Bren Imperia",
+      "id": "osm:way/781696172",
+      "builder": "Bren Corporation",
+      "domain": "brencorporation.com",
+      "units": 327,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "GRC Brundavan",
+      "id": "osm:way/742634557",
+      "units": 326,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Salarpuria Sattva Gold Summit Apartments",
+      "id": "osm:way/141626681",
+      "builder": "Sattva Group",
+      "domain": "sattvagroup.in",
+      "units": 326,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Genesis Suncity",
+      "id": "osm:way/367605330",
+      "units": 325,
+      "reason": "no builder known"
+    },
+    {
+      "name": "In That Quiet Earth - Total Environment",
+      "id": "osm:way/1050475169",
+      "builder": "Total Environment",
+      "domain": "total-environment.com",
+      "units": 324,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Kanakashree Apartments",
+      "id": "osm:way/844928291",
+      "units": 324,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Sobha Sunscape Apartments",
+      "id": "osm:way/94960539",
+      "builder": "Sobha",
+      "domain": "sobha.com",
+      "units": 323,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "GM Infinite Daffodils",
+      "id": "osm:way/767631161",
+      "builder": "GM Infinite",
+      "units": 321,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Neeladri Sarovaram",
+      "id": "osm:way/1285817651",
+      "builder": "Neeladri Properties",
+      "units": 321,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Elegant Tranquility",
+      "id": "rera:10810",
+      "builder": "Elegant Altima",
+      "units": 321,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "RMZ Galleria Residences",
+      "id": "osm:way/774716176",
+      "builder": "RMZ",
+      "units": 320,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Kingston Legacy",
+      "id": "rera:10485",
+      "builder": "Kingston Ventures India Private Limited",
+      "units": 320,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Mantri Paradise",
+      "id": "osm:way/97087564",
+      "builder": "Mantri Developers",
+      "domain": "mantri.in",
+      "units": 319,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sumadhura Elysium Phase-I",
+      "id": "rera:14286",
+      "builder": "Sumadhura",
+      "domain": "sumadhuragroup.com",
+      "units": 319,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "TATA Aquila Heights Apartments",
+      "id": "osm:way/46228626",
+      "builder": "Tata Housing",
+      "domain": "tatahousing.in",
+      "units": 318,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Spectra Raaya",
+      "id": "osm:way/452723282",
+      "builder": "Spectra Group",
+      "domain": "spectra.co.in",
+      "units": 318,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Uber Verdant",
+      "id": "osm:way/628279699",
+      "builder": "Mana Projects",
+      "page": "https://www.manaprojects.com/project/mana-verdant-terraces/",
+      "units": 318,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Brigade Komarla Heights",
+      "id": "osm:way/1337111947",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 318,
+      "reason": "bot protection"
+    },
+    {
+      "name": "UKN Esperanza",
+      "id": "osm:way/90292572",
+      "builder": "UKN Properties",
+      "units": 316,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Habitat Eden Heights",
+      "id": "osm:way/353236629",
+      "builder": "Habitat Ventures",
+      "units": 314,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Samhita Rainbow MTB",
+      "id": "osm:way/139635565",
+      "units": 312,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Mangalya Prosper Apartments",
+      "id": "osm:way/368504780",
+      "units": 312,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Lorven Cascade Garden",
+      "id": "rera:12723",
+      "builder": "Lorven Ventures",
+      "units": 312,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Poetry of Earth",
+      "id": "rera:12337",
+      "builder": "Urban Excellence LLP",
+      "units": 312,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Prestige Green Gables",
+      "id": "osm:way/1455402459",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 311,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Tru Aquapolis",
+      "id": "rera:13314",
+      "builder": "Tru Infra Projects and Realty LLP",
+      "units": 310,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Elegant Takt",
+      "id": "rera:12516",
+      "builder": "Elegant Builders and Developers",
+      "units": 310,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Shriram Suhaana Apartments",
+      "id": "osm:way/153929118",
+      "builder": "Shriram Properties",
+      "domain": "shriramproperties.com",
+      "units": 309,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Unitech Heritage Estate",
+      "id": "osm:way/766720025",
+      "builder": "Unitech",
+      "units": 308,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "GRC Sapphire Spring - Phase -1",
+      "id": "rera:12810",
+      "builder": "GRC Infra Pvt. Ltd",
+      "domain": "grcinfra.com",
+      "units": 308,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Disha Central Park",
+      "id": "osm:way/702716215",
+      "builder": "Disha Dwellings PVT LTD",
+      "units": 306,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Prestige Somerville",
+      "id": "rera:11491",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 306,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Raja Aristos",
+      "id": "osm:way/1261426109",
+      "units": 305,
+      "reason": "no builder known"
+    },
+    {
+      "name": "DSR Woodwinds",
+      "id": "osm:way/613495763",
+      "builder": "DSR Infrastructure",
+      "domain": "dsrinfra.com",
+      "units": 305,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sobha Neopolis Phase 5 - W 5, 6 & 7",
+      "id": "rera:10538",
+      "builder": "Sobha",
+      "page": "https://www.sobha.com/bengaluru/sobha-neopolis-apartments-in-panathur/",
+      "units": 304,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Ittina Akkala",
+      "id": "osm:way/41752739",
+      "builder": "Ittina Properties",
+      "units": 302,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Ankuraa Meridian",
+      "id": "rera:11598",
+      "builder": "Ankuraa Developers",
+      "page": "https://ankuraagroup.com/projects/ankuraa-meridian",
+      "units": 300,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Bren Unity",
+      "id": "osm:way/414836215",
+      "builder": "Bren Corporation",
+      "domain": "brencorporation.com",
+      "units": 299,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Kumar Prince Town Apartments",
+      "id": "osm:way/142141356",
+      "units": 298,
+      "reason": "no builder known"
+    },
+    {
+      "name": "SJR Park Vista",
+      "id": "osm:way/232981267",
+      "builder": "SJR Group",
+      "domain": "sjrgroup.in",
+      "units": 297,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Mantri Pinnacle",
+      "id": "osm:way/668612934",
+      "builder": "Mantri Developers",
+      "domain": "mantri.in",
+      "units": 297,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "CityVille Valmark Phase 2B",
+      "id": "rera:13822",
+      "builder": "Valmark Developers Private Limited",
+      "domain": "valmark.in",
+      "units": 297,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sumadhura Pramoda",
+      "id": "rera:13074",
+      "builder": "Sumadhura",
+      "domain": "sumadhuragroup.com",
+      "units": 297,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "AKME Encore",
+      "id": "osm:way/91000291",
+      "builder": "Akme Projects",
+      "domain": "akmeprojects.com",
+      "units": 296,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "SM Art",
+      "id": "rera:9598",
+      "builder": "S & M Developers",
+      "units": 294,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Zonasha Paradiso",
+      "id": "osm:way/414821492",
+      "builder": "Zonasha",
+      "units": 293,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Bren Zahara",
+      "id": "osm:way/1270618158",
+      "builder": "Bren Corporation",
+      "domain": "brencorporation.com",
+      "units": 293,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Brigade Woods",
+      "id": "osm:way/765656003",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 292,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Orchid Lake View",
+      "id": "osm:way/628241697",
+      "units": 290,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Salarpuria Sattva Celesta",
+      "id": "osm:way/395084901",
+      "builder": "Sattva Group",
+      "domain": "sattvagroup.in",
+      "units": 289,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Prestige Sunnyside Oak",
+      "id": "osm:way/1314826758",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 288,
+      "reason": "bot protection"
+    },
+    {
+      "name": "BREN Trillium Apartments",
+      "id": "osm:way/1267842327",
+      "builder": "Bren Corporation",
+      "domain": "brencorporation.com",
+      "units": 287,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Axis Ekatva",
+      "id": "rera:14096",
+      "builder": "Axis Life Spaces",
+      "domain": "axisconcept.com",
+      "units": 287,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Prestige Whispering Winds",
+      "id": "osm:way/1151983248",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 285,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Jai Royal Park",
+      "id": "rera:9615",
+      "builder": "Jai Infrastructures",
+      "units": 285,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "SSVR Lotus Pond",
+      "id": "osm:way/1307991990",
+      "units": 282,
+      "reason": "no builder known"
+    },
+    {
+      "name": "DS Max Shresta",
+      "id": "rera:10653",
+      "builder": "DS Max Properties Private Limited",
+      "domain": "dsmaxproperties.com",
+      "units": 281,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Vaishno Serene",
+      "id": "rera:12011",
+      "builder": "Vaishno Builders",
+      "units": 280,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Salarpuria Serenity",
+      "id": "osm:way/236814188",
+      "builder": "Sattva Group",
+      "domain": "sattvagroup.in",
+      "units": 279,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Paramount Pilatus",
+      "id": "osm:way/334654790",
+      "units": 278,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Courtyard BY Vedanth Suraksha",
+      "id": "rera:14086",
+      "builder": "Vedanth Suraksha Properties",
+      "domain": "courtyardbyvs.com",
+      "units": 278,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Mantri Blossom",
+      "id": "osm:way/323852394",
+      "builder": "Mantri Developers",
+      "page": "https://mantri.in/residential/bangalore/mantri-blossom",
+      "units": 276,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Aryan Krishnaa Divine",
+      "id": "rera:10905",
+      "builder": "Aryan Ventures",
+      "domain": "aryanlandmarks.in",
+      "units": 276,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Assetz Canvas & Cove - Phase 1 Wing A & B",
+      "id": "rera:11360",
+      "builder": "Apg Habitat Private Limited",
+      "page": "https://www.assetzproperty.com/eastpoint/assetz-homes.htm",
+      "units": 273,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Sonestaa iWoods",
+      "id": "osm:way/627705620",
+      "builder": "Sonestaa",
+      "units": 272,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Suraksha Whispering Waves",
+      "id": "rera:14374",
+      "builder": "R K Suraksha Properties",
+      "units": 272,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "NCC Urban Lake Springs",
+      "id": "rera:11018",
+      "builder": "NCC Urban Infrastructure Limited",
+      "domain": "nccurban.com",
+      "units": 272,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Vajram Newtown - II",
+      "id": "rera:11768",
+      "builder": "Vajram Estates Private Limited",
+      "domain": "vajramgroup.com",
+      "units": 272,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Gopalan Residency",
+      "id": "osm:way/169817244",
+      "builder": "Gopalan Enterprises",
+      "domain": "gopalanenterprises.com",
+      "units": 271,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Prestige Pine Wood",
+      "id": "osm:way/779344653",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 271,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Rohan Ekanta Phase 3",
+      "id": "rera:11049",
+      "builder": "Rohan Builders",
+      "page": "https://rohanbuilders.com/bangalore-homes/ekanta/",
+      "units": 271,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Shriram Sadhana Apartments",
+      "id": "osm:way/46229454",
+      "builder": "Shriram Properties",
+      "domain": "shriramproperties.com",
+      "units": 270,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Godrej Platinum",
+      "id": "osm:way/732232660",
+      "builder": "Godrej Properties",
+      "domain": "godrejproperties.com",
+      "units": 268,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Nikoo Homes VI - Phase-2",
+      "id": "rera:11501",
+      "builder": "Bhartiya City",
+      "page": "https://bhartiyacity.com/nikoo-homes/",
+      "units": 267,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "SJR Brooklyn",
+      "id": "osm:way/90999557",
+      "builder": "SJR Group",
+      "domain": "sjrgroup.in",
+      "units": 266,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Krishna Mystiq",
+      "id": "osm:way/1327760561",
+      "units": 265,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Salarpuria Sanctity",
+      "id": "osm:way/90957022",
+      "builder": "Sattva Group",
+      "domain": "sattvagroup.in",
+      "units": 265,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sai Raghavendra's Tiara",
+      "id": "rera:11699",
+      "builder": "Sai Raghavendra Constructions and Developers",
+      "domain": "sairaghavendra.in",
+      "units": 265,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Mahaveer Tuscan",
+      "id": "osm:way/41744637",
+      "builder": "Mahaveer Group",
+      "domain": "mahaveergroup.in",
+      "units": 264,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Assetz Mizumi Reserve Tower A3 A5",
+      "id": "rera:14520",
+      "builder": "Apg Community Development Private Limited",
+      "domain": "assetzproperty.com",
+      "units": 264,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Habitat Crest",
+      "id": "osm:way/369870619",
+      "builder": "Habitat Ventures",
+      "units": 263,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Sobha Cinnamon & Sobha Saffron",
+      "id": "osm:way/97557678",
+      "builder": "Sobha",
+      "domain": "sobha.com",
+      "units": 262,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Prestige Ivy Terraces",
+      "id": "osm:way/723169818",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 262,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Sumadhura EPITOME-I",
+      "id": "rera:12081",
+      "builder": "Sumadhura",
+      "domain": "sumadhuragroup.com",
+      "units": 262,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Bren (SJR) Celestia",
+      "id": "osm:way/450523339",
+      "builder": "SJR Group",
+      "domain": "sjrgroup.in",
+      "units": 260,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "DSR Rainbow Heights",
+      "id": "osm:way/323642599",
+      "builder": "DSR Infrastructure",
+      "domain": "dsrinfra.com",
+      "units": 260,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Salarpuria Sattva Cadenza",
+      "id": "osm:way/1071061036",
+      "builder": "Sattva Group",
+      "domain": "sattvagroup.in",
+      "units": 259,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Vaishnavi Oasis",
+      "id": "osm:way/946132231",
+      "builder": "Vaishnavi Group",
+      "domain": "vaishnavigroup.com",
+      "units": 256,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Mantri Premero",
+      "id": "osm:way/116595473",
+      "builder": "Mantri Developers",
+      "domain": "mantri.in",
+      "units": 256,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sree Urban Orchids PHASE-II",
+      "id": "rera:10800",
+      "builder": "Sree Builders and Developers",
+      "domain": "vidhathridevelopers.com",
+      "units": 256,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "DS Max SKY Blossom",
+      "id": "rera:11896",
+      "builder": "DS-MAX Properties Private Limited",
+      "domain": "dsmaxproperties.com",
+      "units": 255,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "BM Glorietta",
+      "id": "osm:way/360343564",
+      "units": 254,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Candeur Carlisle",
+      "id": "osm:way/176770894",
+      "builder": "Candeur",
+      "domain": "candeurlandmark.com",
+      "units": 254,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Klassik Benchmark",
+      "id": "osm:way/94719031",
+      "builder": "Klassik",
+      "domain": "klassikbuild.com",
+      "units": 253,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sapthagiri Sandalwood",
+      "id": "osm:way/1188439504",
+      "builder": "Sapthagiri Shelters",
+      "units": 252,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Orchid Platinum",
+      "id": "rera:11293",
+      "builder": "Goyal Hariyana Constructions",
+      "units": 250,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Mahindra Eden PHASE-2",
+      "id": "rera:9783",
+      "builder": "Mahindra Lifespaces",
+      "page": "https://www.mahindralifespaces.com/residential/sold-out-projects/mahindra-eden/",
+      "units": 250,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Mantri Sarovar",
+      "id": "osm:way/232239478",
+      "builder": "Mantri Developers",
+      "domain": "mantri.in",
+      "units": 249,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Disha Harmony Gardens",
+      "id": "rera:12740",
+      "builder": "Dishahabitat Shelters LLP",
+      "domain": "dishahabitat.com",
+      "units": 247,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Zonasha Elegance",
+      "id": "osm:way/580931916",
+      "builder": "Zonasha",
+      "units": 246,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Skylark Esta",
+      "id": "osm:way/117350537",
+      "builder": "Skylark Group",
+      "domain": "skylarkgroup.in",
+      "units": 246,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Sterling Brookside",
+      "id": "osm:way/85392306",
+      "builder": "Sterling Developers",
+      "domain": "sterlingdevelopers.com",
+      "units": 245,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sri Tirumala Sarovar Apartment",
+      "id": "osm:way/1074881561",
+      "units": 245,
+      "reason": "no builder known"
+    },
+    {
+      "name": "The Formist Mandala",
+      "id": "rera:13782",
+      "builder": "Formist Realty Private Limited",
+      "domain": "theformistgroup.com",
+      "units": 245,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Keerthi Gardenia",
+      "id": "osm:way/366701247",
+      "builder": "Keerthi Estates",
+      "domain": "keerthiestates.com",
+      "units": 244,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Assetz Canvas & Cove 2.0 - Block A",
+      "id": "rera:12282",
+      "builder": "Apg Habitat Private Limited",
+      "page": "https://www.assetzproperty.com/eastpoint/assetz-homes.htm",
+      "units": 244,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Gopalan Apartments",
+      "id": "osm:way/122691467",
+      "builder": "Gopalan Enterprises",
+      "domain": "gopalanenterprises.com",
+      "units": 243,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Green's Square",
+      "id": "osm:way/1181417660",
+      "units": 243,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Sterling Shalom",
+      "id": "osm:way/117313552",
+      "builder": "Sterling Developers",
+      "domain": "sterlingdevelopers.com",
+      "units": 240,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Bren Paddington",
+      "id": "osm:way/448349260",
+      "builder": "Bren Corporation",
+      "domain": "brencorporation.com",
+      "units": 240,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Sobha Mayflower",
+      "id": "osm:way/90817457",
+      "builder": "Sobha",
+      "domain": "sobha.com",
+      "units": 240,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Platinum Lifestyle",
+      "id": "osm:way/1328835826",
+      "units": 240,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Rainbow Uno",
+      "id": "rera:14407",
+      "builder": "M/S. Rainvas Infraa",
+      "units": 240,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Grandus Sanctuary",
+      "id": "rera:13410",
+      "builder": "Grandus Infra Projects Private Limited",
+      "units": 240,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Elegant Hermitage",
+      "id": "rera:10893",
+      "builder": "Elegant Builders and Developers",
+      "units": 240,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Sumadhura Sawan",
+      "id": "osm:way/101677661",
+      "builder": "Sumadhura",
+      "domain": "sumadhuragroup.com",
+      "units": 239,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Purva Heights Apartments",
+      "id": "osm:way/285466414",
+      "builder": "Puravankara",
+      "domain": "puravankara.com",
+      "units": 238,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sipani Samuha",
+      "id": "rera:12983",
+      "builder": "Sipani Developers Private Limited",
+      "domain": "sipaniproperties.com",
+      "units": 237,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Klassik Landmark",
+      "id": "osm:way/1174316964",
+      "builder": "Klassik",
+      "domain": "klassikbuild.com",
+      "units": 236,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sai Green Woods",
+      "id": "rera:9876",
+      "builder": "United Infrastructures",
+      "domain": "uniteddevelopers.in",
+      "units": 236,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Oceanus Freesia Enclave",
+      "id": "osm:way/233094034",
+      "builder": "Oceanus",
+      "units": 234,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Century Novus",
+      "id": "rera:8721",
+      "builder": "Talreja Realty LLP",
+      "units": 234,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Sobha City",
+      "id": "osm:way/187767259",
+      "builder": "Sobha",
+      "domain": "sobha.com",
+      "units": 233,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sumadhura Solea",
+      "id": "rera:14270",
+      "builder": "Sumadhura",
+      "domain": "sumadhuragroup.com",
+      "units": 233,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Purva Sunshine",
+      "id": "osm:way/232978094",
+      "builder": "Puravankara",
+      "domain": "puravankara.com",
+      "units": 232,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Azur",
+      "id": "rera:11852",
+      "builder": "Lodha",
+      "page": "https://www.lodhagroup.in/projects/residential-property-in-bangalore/lodha-azur/about",
+      "units": 232,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Nitesh Hyde Park Apartments",
+      "id": "osm:way/94711583",
+      "builder": "Nitesh Estates",
+      "domain": "niteshestates.com",
+      "units": 231,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Navami Chamara Heights",
+      "id": "rera:11696",
+      "builder": "Navami Chamara Heights",
+      "domain": "navamibuilders.com",
+      "units": 231,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Saket Callipolis",
+      "id": "osm:way/627951452",
+      "builder": "Saket Engineers",
+      "units": 230,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Garden Square",
+      "id": "rera:9883",
+      "builder": "Sai Kiran Constructions",
+      "domain": "saireniit.co.in",
+      "units": 230,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sumadhura Nandanam",
+      "id": "osm:way/1123146960",
+      "builder": "Sumadhura",
+      "domain": "sumadhuragroup.com",
+      "units": 229,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Mahindra Zen",
+      "id": "rera:11375",
+      "builder": "Mahindra Lifespaces",
+      "page": "https://www.mahindralifespaces.com/newsroom/press-release/mahindra-lifespaces-launches-mahindra-zen-bengalurus-1st-net-zero-waste-energy-homes/",
+      "units": 228,
+      "reason": "page 404"
+    },
+    {
+      "name": "Sobha Neopolis Phase 2 - W 12 & 13",
+      "id": "rera:10530",
+      "builder": "Sobha",
+      "page": "https://www.sobha.com/bengaluru/sobha-neopolis-apartments-in-panathur/",
+      "units": 226,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Shapoorji Pallonji Parkwest",
+      "id": "osm:way/166611418",
+      "builder": "Shapoorji Pallonji",
+      "domain": "joyvillehomes.com",
+      "units": 225,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Brigade Gateway",
+      "id": "osm:way/133117493",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 225,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Mohan Tritone",
+      "id": "rera:12202",
+      "builder": "M/s Mohan Builders",
+      "units": 225,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "DS Max Senate",
+      "id": "rera:9665",
+      "builder": "DS Max Properties Private Limited",
+      "domain": "dsmaxproperties.com",
+      "units": 224,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Shanti Park Apartments",
+      "id": "osm:way/27994647",
+      "units": 223,
+      "reason": "no builder known"
+    },
+    {
+      "name": "SV Polaris",
+      "id": "rera:12583",
+      "builder": "SV Housing",
+      "units": 223,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Sobha Daisy",
+      "id": "osm:way/122278941",
+      "builder": "Sobha",
+      "domain": "sobha.com",
+      "units": 221,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Surya Humming Bird",
+      "id": "osm:way/1307058109",
+      "builder": "Surya Projects",
+      "units": 221,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Mahaveer Reveria",
+      "id": "osm:way/264885186",
+      "builder": "Mahaveer Group",
+      "domain": "mahaveergroup.in",
+      "units": 220,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Orchid Woods",
+      "id": "osm:way/525509298",
+      "units": 220,
+      "reason": "no builder known"
+    },
+    {
+      "name": "South Park phase 2",
+      "id": "rera:9596",
+      "builder": "Esteem South Parks Private Limited",
+      "domain": "esteemdevelopers.com",
+      "units": 219,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "August Park Apartments",
+      "id": "osm:way/141211672",
+      "units": 218,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Marvel Sequoia",
+      "id": "osm:way/773145606",
+      "units": 218,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Sai GREENWOODS-PHASE2",
+      "id": "rera:12543",
+      "builder": "United Infrastructures",
+      "domain": "uniteddevelopers.in",
+      "units": 217,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Shriram Surabhi",
+      "id": "osm:way/781680979",
+      "builder": "Shriram Properties",
+      "page": "https://www.shriramproperties.com/residential-property/bangalore/shriram-surabhi",
+      "units": 216,
+      "reason": "page 404"
+    },
+    {
+      "name": "Shriram Symphony",
+      "id": "osm:way/781680969",
+      "builder": "Shriram Properties",
+      "page": "https://www.shriramproperties.com/residential-property/bangalore/shriram-symphonye",
+      "units": 216,
+      "reason": "page 404"
+    },
+    {
+      "name": "Parth Atmosphere",
+      "id": "rera:12606",
+      "builder": "Parth Estates",
+      "units": 216,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Green Edge Signature",
+      "id": "rera:12043",
+      "builder": "Green Edge Ventures",
+      "units": 216,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Sun City Euphoria",
+      "id": "osm:way/97991407",
+      "units": 214,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Aparna Elina",
+      "id": "osm:way/772827143",
+      "builder": "Aparna Constructions",
+      "page": "https://www.aparnaconstructions.com/project/apartments/aparna-elina",
+      "units": 214,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Azur Phase 2",
+      "id": "rera:13597",
+      "builder": "Lodha",
+      "page": "https://www.lodhagroup.in/projects/residential-property-in-bangalore/lodha-azur/about",
+      "units": 214,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Brigade Laguna",
+      "id": "rera:9187",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 212,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Comfort Heights",
+      "id": "osm:way/1297667917",
+      "units": 210,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Eon Akash B & C",
+      "id": "rera:10496",
+      "builder": "Eco Life Developers",
+      "page": "https://www.ecolifedevelopers.com/EON-Akash-Block-B-C/",
+      "units": 210,
+      "reason": "page 404"
+    },
+    {
+      "name": "Adithya Sogni",
+      "id": "osm:way/626900500",
+      "units": 209,
+      "reason": "no builder known"
+    },
+    {
+      "name": "ELV Kingsland",
+      "id": "osm:way/1151983223",
+      "builder": "ELV Projects Pvt Ltd",
+      "domain": "elvconstructions.com",
+      "units": 209,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Spring Beauty",
+      "id": "osm:way/41748192",
+      "units": 208,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Salarpuria Sattva Signet",
+      "id": "osm:way/1186042559",
+      "builder": "Sattva Group",
+      "domain": "sattvagroup.in",
+      "units": 208,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "G R Lavender",
+      "id": "osm:way/196302460",
+      "units": 206,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Sumadhura Soham",
+      "id": "osm:way/1072344841",
+      "builder": "Sumadhura",
+      "domain": "sumadhuragroup.com",
+      "units": 206,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Brigade Avalon",
+      "id": "rera:13277",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 206,
+      "reason": "bot protection"
+    },
+    {
+      "name": "SMR Vinay Endevour",
+      "id": "osm:way/1429706365",
+      "builder": "SMR Holdings",
+      "units": 205,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Mahaveer Mapple",
+      "id": "osm:way/190387170",
+      "builder": "Mahaveer Group",
+      "domain": "mahaveergroup.in",
+      "units": 205,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "NR Windgates",
+      "id": "osm:way/773150264",
+      "builder": "M/S NR Greenwood Construction PVT LTD",
+      "units": 204,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Rainbow Residency",
+      "id": "osm:way/603163756",
+      "units": 202,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Provident Harmony",
+      "id": "osm:way/628286508",
+      "builder": "Puravankara",
+      "domain": "puravankara.com",
+      "units": 201,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Assetz East Point",
+      "id": "osm:way/343628951",
+      "builder": "Assetz Property",
+      "page": "https://www.assetzproperty.com/eastpoint/assetz-homes.htm",
+      "units": 201,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Balaji Elegance",
+      "id": "osm:way/137804510",
+      "units": 201,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Astro Redwood Regency",
+      "id": "osm:way/450523338",
+      "units": 200,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Sterling Residency",
+      "id": "osm:way/1118949274",
+      "builder": "Sterling Developers",
+      "domain": "sterlingdevelopers.com",
+      "units": 199,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "SLS Signature",
+      "id": "osm:way/1065099079",
+      "builder": "SLS Group",
+      "units": 199,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Banyan Tree Apartments",
+      "id": "osm:way/233006409",
+      "units": 198,
+      "reason": "no builder known"
+    },
+    {
+      "name": "DS Max Synergy",
+      "id": "osm:way/1279826125",
+      "builder": "DS Max Properties",
+      "domain": "dsmaxproperties.com",
+      "units": 198,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Prestige North Point",
+      "id": "osm:way/1153864194",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 198,
+      "reason": "bot protection"
+    },
+    {
+      "name": "High Life Towers",
+      "id": "rera:10194",
+      "builder": "Meenakshi Infrra Projects",
+      "units": 198,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "SV Signature",
+      "id": "osm:way/1084450381",
+      "units": 196,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Mukunda Gokulam",
+      "id": "rera:11887",
+      "builder": "Mukunda Builders",
+      "units": 196,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Trendsquare Ambience",
+      "id": "rera:10607",
+      "builder": "Trendsquares Constructions",
+      "units": 195,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Sobha Quartz",
+      "id": "osm:way/232333306",
+      "builder": "Sobha",
+      "domain": "sobha.com",
+      "units": 193,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Brigade Caladium",
+      "id": "osm:way/732232657",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 192,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Prestige Elm Park (u/c)",
+      "id": "osm:way/1190136201",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 192,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Janapriya Heavens",
+      "id": "osm:way/176341868",
+      "builder": "Janapriya",
+      "units": 191,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "South Park Phase 1",
+      "id": "rera:10469",
+      "builder": "Esteem South Parks Private Limited",
+      "domain": "esteemdevelopers.com",
+      "units": 191,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Confident Phoenix",
+      "id": "osm:way/24579799",
+      "builder": "Confident Group",
+      "domain": "confidentgroup.com",
+      "units": 190,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Affinity Brundaavana",
+      "id": "rera:9008",
+      "builder": "Affinity Projects",
+      "units": 190,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Golden Enclave",
+      "id": "osm:way/30800487",
+      "units": 189,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Amrutha Heights",
+      "id": "osm:way/1072674732",
+      "units": 188,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Sobha Windfall",
+      "id": "osm:way/1134275262",
+      "builder": "Sobha",
+      "domain": "sobha.com",
+      "units": 185,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "SLS Square",
+      "id": "osm:way/188893527",
+      "builder": "SLS Group",
+      "units": 184,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Kumar Platina",
+      "id": "rera:14473",
+      "builder": "Kumar Properties Private Limited",
+      "domain": "kumarworld.com",
+      "units": 184,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "BLUE MEADOWS Phase 2",
+      "id": "rera:13051",
+      "builder": "Yuva Infinity Developers",
+      "units": 184,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Gopalan Temple Trees Apartments",
+      "id": "osm:way/97200523",
+      "builder": "Gopalan Enterprises",
+      "domain": "gopalanenterprises.com",
+      "units": 183,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Brigade 7 Gardens",
+      "id": "osm:way/1118946160",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 182,
+      "reason": "bot protection"
+    },
+    {
+      "name": "SJR Redwoods",
+      "id": "osm:way/232981268",
+      "builder": "SJR Group",
+      "domain": "sjrgroup.in",
+      "units": 181,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Inspira Tropical Garden",
+      "id": "rera:10016",
+      "builder": "Iinspira Tropical Garden LLP",
+      "domain": "assetzproperty.com",
+      "units": 181,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Keerthi Signature",
+      "id": "osm:way/94119915",
+      "builder": "Keerthi Estates",
+      "domain": "keerthiestates.com",
+      "units": 180,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Innovative Oak Garden",
+      "id": "osm:way/1066396976",
+      "builder": "M/s.Innovative Developers",
+      "units": 180,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Suraksha Springs",
+      "id": "rera:11611",
+      "builder": "Auk Suraksha Properties",
+      "domain": "surakshagroup.com",
+      "units": 180,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Nava Gokulam",
+      "id": "rera:10018",
+      "builder": "Navajyothi Constructions",
+      "units": 180,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Anand Alpine",
+      "id": "osm:way/1291748394",
+      "builder": "Anand Group",
+      "domain": "anand-group.com",
+      "units": 179,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Udbhav Gokulam",
+      "id": "rera:12076",
+      "builder": "Udbhav Builders and Developers",
+      "units": 179,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Prestige Wellington Park",
+      "id": "osm:way/46245005",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 178,
+      "reason": "bot protection"
+    },
+    {
+      "name": "SJR Verity",
+      "id": "osm:way/24579798",
+      "builder": "SJR Group",
+      "domain": "sjrgroup.in",
+      "units": 178,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Renaissance Jagriti",
+      "id": "osm:way/93340455",
+      "builder": "Renaissance Holdings",
+      "domain": "renaissanceholdings.com",
+      "units": 177,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Krishna Dwellington",
+      "id": "osm:way/1232959531",
+      "units": 176,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Century Regalia (Project 1)",
+      "id": "rera:11858",
+      "builder": "Suruchi Properties Private Limited",
+      "units": 176,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Ark Oak Tree",
+      "id": "rera:9874",
+      "builder": "Ark Infra Developers Private Limited",
+      "units": 176,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Mars the Planet",
+      "id": "rera:9620",
+      "builder": "M/S Mars Builders",
+      "units": 176,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Navami Funique",
+      "id": "osm:way/1074881568",
+      "units": 175,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Legend Valencia",
+      "id": "rera:10090",
+      "builder": "Legend Property",
+      "domain": "legendproperty.com",
+      "units": 174,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Shilpitha Royal",
+      "id": "osm:way/1132098869",
+      "builder": "Shilpitha",
+      "units": 173,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Century Artizan",
+      "id": "osm:way/774719318",
+      "builder": "Century Real Estate",
+      "domain": "centuryrealestate.in",
+      "units": 172,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Mahaveer Rhyolite",
+      "id": "osm:way/1261422231",
+      "builder": "Mahaveer Group",
+      "domain": "mahaveergroup.in",
+      "units": 172,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Vars Parkwood",
+      "id": "osm:way/1242285290",
+      "units": 172,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Liberty Square",
+      "id": "osm:way/1189440581",
+      "units": 172,
+      "reason": "no builder known"
+    },
+    {
+      "name": "DSR White Lotus",
+      "id": "osm:way/1084450343",
+      "builder": "DSR Infrastructure",
+      "domain": "dsrinfra.com",
+      "units": 172,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Adarsh Primrose",
+      "id": "rera:12724",
+      "builder": "Akarsh Dwellings Private Limited",
+      "domain": "adarshdevelopers.com",
+      "units": 172,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Soulspring Phase 1",
+      "id": "rera:10169",
+      "builder": "Shankeshwar Landmark LLP",
+      "page": "https://svamitva.com/soulspring-site-visit-appointment/",
+      "units": 172,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Mantri Woodlands",
+      "id": "osm:way/1216164358",
+      "builder": "Mantri Developers",
+      "domain": "mantri.in",
+      "units": 171,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Krishna Ikon Apartments",
+      "id": "osm:way/628278126",
+      "units": 171,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Ankuraa Pristine Park",
+      "id": "rera:13946",
+      "builder": "Ankuraa Homes",
+      "page": "https://ankuraagroup.com/projects/ankuraa-pristine-park",
+      "units": 171,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Desai Empire",
+      "id": "rera:11556",
+      "builder": "DESAI Developers",
+      "units": 171,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Jain Heights - East Parade",
+      "id": "osm:way/799457104",
+      "builder": "Jain Housing",
+      "units": 170,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Soul Space Arista",
+      "id": "osm:way/1304298509",
+      "units": 170,
+      "reason": "no builder known"
+    },
+    {
+      "name": "4square Park Sierra",
+      "id": "rera:14211",
+      "builder": "4square Estates",
+      "units": 170,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "M R Serenity",
+      "id": "rera:13266",
+      "builder": "M R Developers",
+      "units": 170,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Pioneer KRS Park Royal Wing 2",
+      "id": "rera:10883",
+      "builder": "KRS Evergreen Structures",
+      "units": 170,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Mahaveer Dazzle",
+      "id": "osm:way/365273817",
+      "builder": "Mahaveer Group",
+      "domain": "mahaveergroup.in",
+      "units": 169,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Saiven Six Senses",
+      "id": "rera:13424",
+      "builder": "Saiven Developers and Constructions PVT LTD",
+      "domain": "saivendevelopers.com",
+      "units": 169,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Raheja Residency Apartments",
+      "id": "osm:way/32316800",
+      "builder": "Chalet Hotels Limited",
+      "domain": "chalethotels.com",
+      "units": 168,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Brigade Northridge",
+      "id": "osm:way/464678979",
+      "builder": "Brigade Group",
+      "domain": "brigadegroup.com",
+      "units": 168,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Keerthi Regalia",
+      "id": "osm:way/603174681",
+      "builder": "Keerthi Estates",
+      "domain": "keerthiestates.com",
+      "units": 168,
+      "reason": "no sitemap and no project links"
+    },
+    {
+      "name": "Innovative Palacia",
+      "id": "rera:12522",
+      "builder": "Shubankara Developers",
+      "units": 168,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Prestige Woodland Park",
+      "id": "osm:way/1175723658",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 166,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Disha Courtyard",
+      "id": "osm:way/773145599",
+      "builder": "Dishagarden View LLP",
+      "units": 166,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Ittina Arni Apartments",
+      "id": "osm:way/93738604",
+      "builder": "Ittina Properties",
+      "units": 166,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Shri Prakriti Apartment",
+      "id": "osm:way/238289646",
+      "units": 166,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Sobha Aquamarine",
+      "id": "osm:way/232333307",
+      "builder": "Sobha",
+      "domain": "sobha.com",
+      "units": 166,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Zen Indraprastha",
+      "id": "osm:way/772827163",
+      "units": 165,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Divine Green Leaf",
+      "id": "rera:11414",
+      "builder": "M/s GREEN LEAF PROJECTS",
+      "units": 165,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Manikchand Svamitva Soulspring Phase 2",
+      "id": "rera:10978",
+      "builder": "Shankeshwar Landmark LLP",
+      "domain": "svamitva.com",
+      "units": 165,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Trinity Meadows Apartments",
+      "id": "osm:way/125111017",
+      "units": 164,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Charitha Green Woods",
+      "id": "osm:way/469210803",
+      "units": 164,
+      "reason": "no builder known"
+    },
+    {
+      "name": "D C Capitol Phase – II",
+      "id": "rera:12570",
+      "builder": "D.C.HI-RISE LLP",
+      "units": 164,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "DB Lakven Visishta",
+      "id": "rera:10773",
+      "builder": "DB Infra Developers",
+      "units": 164,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Sonestaa Silver Oak",
+      "id": "osm:way/1075249162",
+      "builder": "Sonestaa",
+      "units": 163,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Elegant",
+      "id": "osm:way/1316664768",
+      "units": 162,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Celestial Greens Apartments",
+      "id": "osm:way/138222895",
+      "units": 161,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Satori Residence BY Genurise",
+      "id": "rera:14233",
+      "builder": "Max Global Developers",
+      "domain": "dsmaxproperties.com",
+      "units": 161,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "SV Brindhavan Apartments",
+      "id": "osm:way/1065205751",
+      "units": 160,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Sai Poorna Luxuria",
+      "id": "osm:way/958127995",
+      "units": 160,
+      "reason": "no builder known"
+    },
+    {
+      "name": "SB Urban Park",
+      "id": "rera:11727",
+      "builder": "SB Urbanscapes",
+      "domain": "sburbanscapes.com",
+      "units": 160,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sree Urban Pinnacle",
+      "id": "rera:9806",
+      "builder": "Virtue Infrastructures",
+      "units": 160,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Sri Balaji Signature",
+      "id": "rera:9288",
+      "builder": "Sri Balaji Structures",
+      "domain": "sribalajiinfra.com",
+      "units": 160,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Krishna Prakash Apartments",
+      "id": "osm:way/639368290",
+      "units": 159,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Prestige Fairfield",
+      "id": "osm:way/777638993",
+      "builder": "Prestige Group",
+      "domain": "prestigeconstructions.com",
+      "units": 158,
+      "reason": "bot protection"
+    },
+    {
+      "name": "Adithya",
+      "id": "osm:way/1414466902",
+      "builder": "Adithya Constructions",
+      "units": 156,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "G:Corp Residences",
+      "id": "osm:way/779344652",
+      "builder": "G Corp Spaces PVT LTD",
+      "units": 155,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Aura",
+      "id": "rera:14369",
+      "builder": "Blue SKY Properties",
+      "units": 154,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Rohan Ekanta Phase 2",
+      "id": "rera:10620",
+      "builder": "Rohan Builders",
+      "page": "https://rohanbuilders.com/bangalore-homes/ekanta/",
+      "units": 154,
+      "reason": "page found, no usable images"
+    },
+    {
+      "name": "Golden Star",
+      "id": "osm:way/84514507",
+      "units": 153,
+      "reason": "no builder known"
+    },
+    {
+      "name": "NCC Nagarjuna Premier Apartments",
+      "id": "osm:way/97200646",
+      "builder": "Nagarjuna Construction",
+      "units": 153,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Maya Indraprastha Apartments",
+      "id": "osm:way/97200769",
+      "units": 153,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Jeevan's Allure",
+      "id": "rera:12497",
+      "builder": "Jeevan Developers",
+      "domain": "jeevanprojects.com",
+      "units": 152,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Mukunda Nandanam",
+      "id": "rera:9488",
+      "builder": "Mukunda Infra",
+      "units": 152,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "GK Tropical Springs",
+      "id": "osm:way/1307058105",
+      "units": 151,
+      "reason": "no builder known"
+    },
+    {
+      "name": "Spectra Cypress",
+      "id": "osm:way/89933990",
+      "builder": "Spectra Group",
+      "domain": "spectra.co.in",
+      "units": 151,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Mantri Glades",
+      "id": "osm:way/370387413",
+      "builder": "Mantri Developers",
+      "domain": "mantri.in",
+      "units": 151,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Bens Sathya Enclave",
+      "id": "osm:way/37829851",
+      "units": 150,
+      "reason": "no builder known"
+    },
+    {
+      "name": "DS Max Sankalp Manor",
+      "id": "osm:way/1386054451",
+      "builder": "DS Max Properties",
+      "domain": "dsmaxproperties.com",
+      "units": 150,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "Sobha Primrose",
+      "id": "osm:way/627152144",
+      "builder": "Sobha",
+      "domain": "sobha.com",
+      "units": 150,
+      "reason": "no matching page on the builder site"
+    },
+    {
+      "name": "V2 Vajra Elegance",
+      "id": "rera:12428",
+      "builder": "V2 Holdings Housing Development Private Limited",
+      "units": 150,
+      "reason": "builder site not in the map"
+    },
+    {
+      "name": "Raj Etternia E Block (Building 4)",
+      "id": "rera:9391",
+      "builder": "SNN Raj",
+      "domain": "snncorp.com",
+      "units": 150,
+      "reason": "no matching page on the builder site"
+    }
+  ]
+}
