@@ -82,7 +82,25 @@ polygons: an edge shared by two wards is interior, an edge that appears once is
 on the outside. Runs are chained only through points where exactly two boundary
 edges meet, so nothing is ever joined across a junction.
 
-## 6. News, per society and per builder
+### 6. Nominatim, for the localities OSM and RERA left blank
+
+OSM's `addr:suburb` and `addr:neighbourhood` tags, plus RERA's project taluk,
+covered locality for 200 of 1,116 societies. The other 916 had a GPS point and
+nothing to say where it was. `scrape/14-nominatim.js` reverse geocodes each one,
+one request a second per Nominatim's usage policy, and takes the first of
+neighbourhood, quarter, suburb, residential or city district that is not just
+the society's own name echoed back. Suburb in this data is usually the GBA
+ward name, which in Bengaluru also works as the everyday locality name (Gunjur,
+Hoodi, Varthur), so it is a reasonable fallback once the finer grained fields
+are ruled out.
+
+Only fills a null: nothing here overwrites a value OSM or RERA already
+supplied. Street, postcode and full address are filled the same way where they
+were also missing. Result: all 1,116 societies now carry a locality. Every
+response is cached in `data/.cache-nominatim.json`, so a rerun only fetches
+what a future OSM or RERA join has not already covered.
+
+### 7. News, per society and per builder
 
 `scrape/13-news.js`. Two free, keyless sources, queried the same way for every
 society name and every builder name, each scoped to Bengaluru:
@@ -120,7 +138,6 @@ See the script's own header for the rest of the flags.
 | **Property portals** (Housing, 99acres, MagicBricks, NoBroker, CommonFloor) | Units, configurations, sizes, launch year, price per sq ft, amenities, builder, all on one page | Scraping is against their terms and they run bot protection. Needs licensed data, a portal partnership, or a small hand collected sample |
 | **Licensed data** (PropEquity, Liases Foras, CRE Matrix, PropTiger) | The same fields with clean provenance and real coverage | Roughly ₹1 lakh to ₹5 lakh a year for Bengaluru |
 | **Registrar of Cooperative Societies** | RWA names, registration numbers, office bearers, which is the buying committee | Partial: many apartment bodies register under the Apartment Ownership Act instead |
-| **Nominatim** | Full postal address per society | 1 request a second, so about 30 minutes for the current list |
 
 ## Known coverage gap
 

@@ -3,6 +3,25 @@
   "updated": "2026-08-16",
   "sources": [
     {
+      "id": "nominatim",
+      "name": "Nominatim reverse geocoding",
+      "url": "https://nominatim.openstreetmap.org/reverse",
+      "docs": "https://nominatim.org/release-docs/latest/api/Reverse/",
+      "policy": "https://operations.osmfoundation.org/policies/nominatim/",
+      "licence": "ODbL 1.0, OpenStreetMap contributors",
+      "gives": [
+        "locality",
+        "street",
+        "postcode",
+        "full postal address"
+      ],
+      "used_by": [
+        "scrape/14-nominatim.js"
+      ],
+      "cost": "free, no key, capped at 1 request/second by the usage policy",
+      "caveats": "Only fills a field that is still null; never overwrites a value OSM tags or RERA already supplied. Every response is cached by society id in data/.cache-nominatim.json so a rerun only fetches what is missing. 'Suburb' in this data is usually the GBA ward name, which doubles as the well known locality name here, so it is used as a fallback once neighbourhood and quarter are ruled out. Candidates that just echo the society's own OSM name back are discarded."
+    },
+    {
       "id": "osm-overpass",
       "name": "OpenStreetMap, via the Overpass API",
       "url": "https://overpass-api.de/api/interpreter",

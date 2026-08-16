@@ -74,6 +74,7 @@ node Sauron/scrape/02-gba-wards.js        # 369 GBA wards, police, fire, hospita
 node Sauron/scrape/03-societies.js        # classify, name builders, estimate units
 node Sauron/scrape/04-boundary.js         # the city outline, from the ward edges
 node Sauron/scrape/05-rera.js             # Karnataka RERA, names normalised
+node Sauron/scrape/14-nominatim.js        # locality, street, postcode where still blank
 ```
 
 Overpass responses are cached in `data/.cache-*.json`. Delete a cache file to
