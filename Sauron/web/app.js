@@ -708,6 +708,7 @@ function apply() {
 
   // The count lives in the layer dropdown's label, not in a separate readout.
   el('layer').options[0].textContent = `${VIEW.length.toLocaleString('en-IN')} societies`;
+  el('mapCount').textContent = VIEW.length.toLocaleString('en-IN');
 
   // And the line under the filters describes the current selection, rather than
   // repeating a number from the file that never moves.
@@ -1311,7 +1312,7 @@ window.addEventListener('mouseup', () => {
 
 ['minUnits', 'corp', 'incidentsOnly'].forEach((id) => el(id).addEventListener('input', apply));
 
-el('reset').addEventListener('click', () => {
+function resetFilters() {
   el('minUnits').value = '0';
   el('corp').value = '';
   el('incidentsOnly').checked = false;
@@ -1320,6 +1321,22 @@ el('reset').addEventListener('click', () => {
   sort = null;
   localStorage.removeItem('sauron-sort');
   header(); renderOmni(); apply();
+}
+
+el('reset').addEventListener('click', resetFilters);
+
+/* The logo is the "start over" control: same filter reset as the Reset
+ * button, plus everything Reset leaves alone because it is a view rather
+ * than a filter: an open profile, the satellite and crash layers, and
+ * wherever the map has been panned or zoomed to. */
+el('brand').addEventListener('click', () => {
+  if (!el('detail').hidden) closeDetail();
+  for (const label of ['Satellite imagery', 'Road crashes by jurisdiction']) {
+    const a = document.querySelector(`a[data-label="${label}"]`);
+    if (a?.closest('.satbtn')?.classList.contains('on')) a.click();
+  }
+  resetFilters();
+  loadCity('bengaluru');
 });
 
 el('rows').addEventListener('click', (e) => {

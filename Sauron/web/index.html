@@ -19,7 +19,7 @@
 <body data-split="rows">
 
 <header class="topbar">
-  <span class="brand" aria-label="Sauron">
+  <button id="brand" class="brand" type="button" aria-label="Sauron, reset to the starting view">
     <!-- The mySecurity mark: shield, aperture, signal sweep. -->
     <svg class="brand__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
       <path d="M16 2.5 4.5 7.1v8.6c0 6.9 4.7 12.9 11.5 14.8 6.8-1.9 11.5-7.9 11.5-14.8V7.1L16 2.5Z"
@@ -29,7 +29,7 @@
       <path d="M16 21.6v4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
     </svg>
     <span class="brand__word">Sauron <em>society intelligence</em></span>
-  </span>
+  </button>
 
   <div class="picker picker--city">
     <svg class="ic picker__icon"><use href="icons.svg#icon-pin"/></svg>
@@ -96,7 +96,7 @@
     <div class="hovercard" id="hover" hidden></div>
 
     <div class="mapfoot">
-      <span class="legend"><b>12</b> societies</span>
+      <span class="legend"><b id="mapCount">0</b> societies</span>
       <span class="legend"><i class="dot dot--known"></i> sized</span>
       <span class="legend"><i class="dot dot--unknown"></i> size unknown</span>
       <span class="legend legend--zoom" id="zoomNote"></span>
