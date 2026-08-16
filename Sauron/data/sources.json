@@ -200,10 +200,10 @@
         "news articles by keyword and date, back to 2017, with publisher, date and URL"
       ],
       "used_by": [
-        "planned: scrape/13-news.js"
+        "scrape/13-news.js"
       ],
       "cost": "free, no key",
-      "caveats": "One request every 5 seconds. Results are noisy: a Bengaluru query returned Delhi stories, so every hit has to be re-checked against the society name and the city before it is kept."
+      "caveats": "One request every 5 seconds, and in practice often unreachable or rate limited straight to a 429 from a shared network. Results are noisy: a Bengaluru query can return Delhi stories, so every hit is stored unreviewed until a person reads it. scrape/13-news.js keeps going on Google News RSS alone when GDELT is down."
     },
     {
       "id": "google-news-rss",
@@ -214,10 +214,10 @@
         "headline, publisher, date and link for a query"
       ],
       "used_by": [
-        "planned: scrape/13-news.js"
+        "scrape/13-news.js"
       ],
       "cost": "free, no key",
-      "caveats": "Rate limited in practice. Use as a second opinion alongside GDELT rather than the only source."
+      "caveats": "The more reliable of the two in practice, since GDELT is often unreachable. Titles are Google's own headline plus publisher, dates are RSS pubDate."
     },
     {
       "id": "bcp-contacts",
@@ -302,10 +302,9 @@
       "status": "your call"
     },
     {
-      "name": "News for security incidents: Google News RSS, GDELT 2.0, Deccan Herald, TOI Bengaluru, The Hindu, Bangalore Mirror",
-      "url": "https://api.gdeltproject.org/api/v2/doc/doc",
-      "why_not": "Not built yet. Planned as step 7, with publisher, date, URL and snippet kept per incident and nothing asserted without a link.",
-      "status": "planned"
+      "name": "News: Deccan Herald, TOI Bengaluru, The Hindu, Bangalore Mirror direct",
+      "why_not": "GDELT and Google News RSS already index these outlets, so a per publisher scrape would mostly duplicate scrape/13-news.js for more engineering effort. Revisit only if a publisher's stories are not turning up through either.",
+      "status": "not needed yet"
     },
     {
       "name": "Bengaluru City Police",

@@ -1017,6 +1017,7 @@ let IMAGES = {};
 let LIGHTS = {};   // corporation and ward number -> street lighting for that ward
 let CRASHES = [];  // traffic police jurisdictions, with their crash series
 let PARTS = {};    // parent society id -> the enclaves inside it
+let NEWS = { societies: {}, builders: {} }; // scrape/13-news.js: society id and builder name -> articles
 
 /* GBA ward numbers restart in each of the five corporations, so ward 49 exists
    five times over. Anything keyed on the number alone silently collides. */
@@ -1035,6 +1036,42 @@ fetch('../data/streetlights.json', { cache: 'no-store' })
   .catch(() => {});
 
 fetch('assets/img/societies/index.json', { cache: 'no-store' }).then((r) => (r.ok ? r.json() : {})).then((j) => { IMAGES = j || {}; }).catch(() => {});
+
+fetch('../data/news.json', { cache: 'no-store' })
+  .then((r) => (r.ok ? r.json() : null))
+  .then((j) => { if (j) NEWS = j; })
+  .catch(() => {});
+
+const newsDate = (iso) => (iso ? new Date(iso).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }) : null);
+const NEWS_CATEGORY = { crime: 'Crime', accident: 'Accident', award: 'Award', legal: 'Legal', civic: 'Civic' };
+
+function newsList(articles) {
+  if (!articles?.length) return '';
+  return `<ul class="news">${articles.map((a) => `
+    <li>
+      <a class="news__item" href="${esc(a.link)}" target="_blank" rel="noopener">
+        ${a.image
+          ? `<img class="news__thumb" src="${esc(a.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" />`
+          : `<span class="news__thumb news__thumb--empty"><svg class="ic"><use href="icons.svg#icon-alert"/></svg></span>`}
+        <span class="news__body">
+          <span class="news__title">${esc(a.title)}</span>
+          <span class="news__meta">
+            <span class="news__dot${a.reviewed ? '' : ' unread'}" title="${a.reviewed ? 'reviewed' : 'not yet reviewed'}"></span>
+            ${a.category ? `<span class="news__cat news__cat--${esc(a.category)}">${esc(NEWS_CATEGORY[a.category] || a.category)}</span>` : ''}
+            <span>${esc(a.source || 'unknown source')}${newsDate(a.published_at) ? ` &middot; ${newsDate(a.published_at)}` : ''}</span>
+          </span>
+        </span>
+      </a>
+    </li>`).join('')}</ul>`;
+}
+
+// og:image links can 404 or block hotlinking; fall back to the placeholder
+// rather than showing a broken image icon.
+el('detailBody').addEventListener('error', (e) => {
+  if (e.target.matches?.('.news__thumb')) {
+    e.target.outerHTML = '<span class="news__thumb news__thumb--empty"><svg class="ic"><use href="icons.svg#icon-alert"/></svg></span>';
+  }
+}, true);
 
 const stat = (label, value, hint) =>
   `<div class="stat"${hint ? ` title="${esc(hint)}"` : ''}>
@@ -1128,7 +1165,31 @@ function openDetail(s) {
           <span>${esc(short)}</span>${u ? `<i>${u}</i>` : ''}</button>`;
       }).join('')}</div>` : ''}
 
-    ${s.location.address_full ? `<h3>Address</h3><p class="detail__list">${esc(s.location.address_full)}</p>` : ''}
+    ${s.location.address_full ? `<h3>Address</h3>
+      <div class="addr">
+        <p class="addr__text">${esc(s.location.address_full)}</p>
+        <a class="addr__maps" href="https://www.google.com/maps/search/?api=1&query=${s.location.lat},${s.location.lon}"
+           target="_blank" rel="noopener" title="Open in Google Maps">
+          <svg class="ic"><use href="icons.svg#icon-pin"/></svg> Maps
+        </a>
+      </div>` : ''}
+
+    ${(() => {
+      const societyNews = NEWS.societies?.[s.id]?.articles || [];
+      const seen = new Set(societyNews.map((a) => a.link));
+      const builderNews = s.builder ? (NEWS.builders?.[s.builder]?.articles || []).filter((a) => !seen.has(a.link)) : [];
+      if (!societyNews.length && !builderNews.length) {
+        return `<h3>News</h3><p class="detail__note">Nothing found for this society or its builder yet.</p>`;
+      }
+      return `
+        <h3>News <b>${societyNews.length}</b></h3>
+        ${societyNews.length ? newsList(societyNews)
+          : '<p class="detail__note">Nothing found for this society by name yet.</p>'}
+        <p class="detail__note">Matched by name against the query, not a confirmed identification &mdash;
+          <span class="news__dot unread" style="display:inline-block;vertical-align:middle"></span> marks anything not yet read.</p>
+        ${builderNews.length ? `<h3>${esc(s.builder)} news <b>${builderNews.length}</b></h3>${newsList(builderNews)}` : ''}
+      `;
+    })()}
 
     <h3>Sources</h3>
     <ul class="srcs">

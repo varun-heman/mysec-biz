@@ -639,6 +639,18 @@ body:not([data-view="detail"]) .detail { display: none; }
 .shots::-webkit-scrollbar-thumb:hover { background: var(--muted); }
 
 .detail__list { margin: 0; font-size: .85rem; color: var(--text); }
+
+.addr { display: flex; align-items: flex-end; justify-content: space-between; gap: .75rem; }
+.addr__text { margin: 0; font-size: .74rem; line-height: 1.5; color: var(--muted); }
+.addr__maps {
+  display: inline-flex; align-items: center; gap: .3rem; flex: none; white-space: nowrap;
+  background: none; border: 1px solid var(--border); border-radius: var(--r-md);
+  color: var(--muted); font-family: var(--body); font-size: .74rem; padding: .3rem .55rem;
+  text-decoration: none;
+  transition: color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.addr__maps:hover { color: var(--display); border-color: var(--border-strong); }
+.addr__maps .ic { width: 12px; height: 12px; }
 .detail__note { margin: 1.2rem 0 0; font-size: .76rem; color: var(--faint); line-height: 1.6; }
 .detail__note code {
   font-family: var(--mono); font-size: .7rem; background: var(--surface-2);
@@ -651,6 +663,43 @@ body:not([data-view="detail"]) .detail { display: none; }
   padding: .3rem 0; border-bottom: 1px solid var(--border-subtle); color: var(--text);
 }
 .srcs span { font-family: var(--mono); font-size: .6rem; text-transform: uppercase; color: var(--faint); }
+
+.news { margin: 0 0 .5rem; padding: 0; list-style: none; display: flex; flex-direction: column; gap: .4rem; }
+.news__item {
+  display: flex; gap: .6rem; align-items: flex-start;
+  padding: .5rem .6rem; border: 1px solid var(--border-subtle); border-radius: var(--r-sm);
+  background: var(--bg); text-decoration: none;
+  transition: border-color var(--dur) var(--ease);
+}
+.news__item:hover { border-color: var(--accent); }
+.news__thumb {
+  flex: none; width: 56px; height: 56px; border-radius: var(--r-sm);
+  object-fit: cover; background: var(--surface-2); border: 1px solid var(--border-subtle);
+}
+.news__thumb--empty { display: grid; place-items: center; color: var(--faint); }
+.news__thumb--empty .ic { width: 18px; height: 18px; }
+.news__body { min-width: 0; flex: 1; }
+.news__title {
+  display: block; font-family: var(--body); font-size: .82rem; line-height: 1.35;
+  color: var(--display); overflow-wrap: anywhere;
+}
+.news__meta {
+  display: flex; align-items: center; flex-wrap: wrap; gap: .4rem; margin-top: .3rem;
+  font-family: var(--mono); font-size: .6rem;
+  text-transform: uppercase; letter-spacing: .06em; color: var(--faint);
+}
+.news__dot {
+  flex: none; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--border-strong);
+}
+.news__dot.unread { background: var(--accent); }
+.news__cat {
+  display: inline-block; padding: .05rem .35rem; border-radius: var(--r-sm);
+  font-family: var(--mono); font-size: .58rem; letter-spacing: .06em; text-transform: uppercase;
+  background: var(--surface-2); color: var(--muted); border: 1px solid var(--border);
+}
+.news__cat--crime, .news__cat--accident { background: var(--warn-tint); color: var(--warn-text); border-color: transparent; }
+.news__cat--award { background: var(--accent-tint); color: var(--accent-text); border-color: transparent; }
 
 /* ------------------------------------------------------------ hover card */
 

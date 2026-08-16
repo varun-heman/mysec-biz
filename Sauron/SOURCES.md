@@ -82,6 +82,37 @@ polygons: an edge shared by two wards is interior, an edge that appears once is
 on the outside. Runs are chained only through points where exactly two boundary
 edges meet, so nothing is ever joined across a junction.
 
+## 6. News, per society and per builder
+
+`scrape/13-news.js`. Two free, keyless sources, queried the same way for every
+society name and every builder name, each scoped to Bengaluru:
+[GDELT 2.0](https://api.gdeltproject.org/api/v2/doc/doc) for full text search
+back to 2017, and Google News RSS as a second opinion, since GDELT is often
+unreachable or rate limited straight to a 429 in practice.
+
+Neither source knows what a society or a builder is: it is keyword search
+against a name, and "Prestige" and "Brigade" are also English words. So every
+article is stored with its publisher, date, link and the exact query that
+found it, marked `reviewed: false`, and stays that way until a person reads it
+and says otherwise. Nothing here is a confirmed incident on its own.
+
+Builder news is queried once per builder (about 260 of them) and shared across
+every society that builder built, rather than repeated per society. Results
+land in `data/news.json`, keyed by society id and by builder name.
+
+Meant to run periodically. Rerunning merges in whatever is new; anything
+already on file, and its reviewed flag, is left alone. A full pass over all
+1,116 societies plus every builder is a couple of hours, almost all of it
+GDELT's 5 second throttle, so split it with `--start`/`--limit` across cron
+windows if that is too long in one sitting:
+
+```bash
+node Sauron/scrape/13-news.js                        # everything
+node Sauron/scrape/13-news.js --start 0 --limit 400   # a batch
+```
+
+See the script's own header for the rest of the flags.
+
 ## Not yet run
 
 | Source | Gives us | Standing |
@@ -89,7 +120,6 @@ edges meet, so nothing is ever joined across a junction.
 | **Property portals** (Housing, 99acres, MagicBricks, NoBroker, CommonFloor) | Units, configurations, sizes, launch year, price per sq ft, amenities, builder, all on one page | Scraping is against their terms and they run bot protection. Needs licensed data, a portal partnership, or a small hand collected sample |
 | **Licensed data** (PropEquity, Liases Foras, CRE Matrix, PropTiger) | The same fields with clean provenance and real coverage | Roughly ₹1 lakh to ₹5 lakh a year for Bengaluru |
 | **Registrar of Cooperative Societies** | RWA names, registration numbers, office bearers, which is the buying committee | Partial: many apartment bodies register under the Apartment Ownership Act instead |
-| **Google News RSS, GDELT, Deccan Herald, TOI Bengaluru, The Hindu, Bangalore Mirror** | Security incidents with a citable link | Name matching gives false positives. Every row keeps publisher, date, URL and snippet, and stays unconfirmed until a person reads it |
 | **Nominatim** | Full postal address per society | 1 request a second, so about 30 minutes for the current list |
 
 ## Known coverage gap
