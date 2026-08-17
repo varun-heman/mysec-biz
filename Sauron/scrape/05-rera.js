@@ -13,8 +13,10 @@
  *
  * A RERA row is attached to an existing society when the names match after
  * normalising, or when the coordinates are within 400 m and the names are
- * close. Anything left over with 150 units or more is added as a society in its
- * own right, which is how projects that OSM never mapped get in.
+ * close. Anything left over with a coordinate is added as a society in its
+ * own right, which is how projects that OSM never mapped get in. No size
+ * floor: a filing with no unit count in the mirror still gets added, just
+ * with units left unknown rather than dropped for lacking a number.
  *
  * Usage: node 05-rera.js  ->  rewrites ../data/societies.json
  */
@@ -235,7 +237,7 @@ const num = (v) => {
       }
       if (!match.location.address_full && rera.address) match.location.address_full = rera.address;
       match.confidence = units ? 'RERA filing' : match.confidence;
-    } else if (units && units >= MIN_UNITS && lat && lon) {
+    } else if (lat && lon) {
       added++;
       leftovers.push({
         id: `rera:${r.project_id || r.reg_number}`,
@@ -290,13 +292,46 @@ const num = (v) => {
     return inside;
   };
 
-  let placed = 0;
+  /* The March 2026 GBA notification is a boundary, not a market definition:
+     Sarjapur, Attibele and Anekal outskirts carry real Bengaluru apartment
+     launches that simply sit past the drawn line. A RERA filing that misses
+     every ward polygon still gets the nearest one, as long as it is close
+     enough to be the same metro rather than a different Karnataka city (a
+     15 km slack is generous for the edge of the notified area, and nowhere
+     near enough to reach Mysuru or Hubli). A padded bounding box per ward
+     keeps this from comparing every leftover against every ring vertex. */
+  const NEAR_KM = 15;
+  const PAD_DEG = 0.25;
+  const wardBoxes = wards.map((w) => {
+    let s = 90, n = -90, e = 180, wst = -180;
+    for (const ring of w.rings) for (const [lat, lon] of ring) {
+      if (lat < s) s = lat; if (lat > n) n = lat;
+      if (lon < e) e = lon; if (lon > wst) wst = lon;
+    }
+    return { ward: w, s, n, w_: e, e_: wst };
+  });
+  function nearestWard(lat, lon) {
+    let best = null;
+    for (const b of wardBoxes) {
+      if (lat < b.s - PAD_DEG || lat > b.n + PAD_DEG || lon < b.w_ - PAD_DEG || lon > b.e_ + PAD_DEG) continue;
+      for (const ring of b.ward.rings) for (const [plat, plon] of ring) {
+        const km = metres({ lat, lon }, { lat: plat, lon: plon }) / 1000;
+        if (!best || km < best.km) best = { ward: b.ward, km };
+      }
+    }
+    return best && best.km <= NEAR_KM ? best.ward : null;
+  }
+
+  let placed = 0, nearBoundary = 0;
   for (const s of leftovers) {
     const { lat, lon } = s.location;
-    const w = wards.find((x) => x.rings.some((r) => inRing(lat, lon, r)));
+    let w = wards.find((x) => x.rings.some((r) => inRing(lat, lon, r)));
+    let approx = false;
+    if (!w) { w = nearestWard(lat, lon); approx = !!w; }
     if (!w) continue;
     placed++;
-    s.ward = { ward_no: w.ward_no, name: w.name, corporation: `Bengaluru ${w.corporation}`, assembly: w.assembly };
+    if (approx) nearBoundary++;
+    s.ward = { ward_no: w.ward_no, name: w.name, corporation: `Bengaluru ${w.corporation}`, assembly: w.assembly, approx };
     const pool = [...w.facilities.inside, ...w.facilities.nearest_outside.police,
                   ...w.facilities.nearest_outside.fire, ...w.facilities.nearest_outside.hospital];
     for (const kind of ['police', 'fire', 'hospital']) {
@@ -306,7 +341,7 @@ const num = (v) => {
     }
   }
 
-  // A RERA project outside the GBA boundary is not our market.
+  // Still nothing within 15 km of the notified area is a different city, not our market.
   const keep = leftovers.filter((s) => s.ward);
   const merged = [...societies, ...keep];
 
@@ -338,7 +373,7 @@ const num = (v) => {
   console.log('\n--- RERA join ---');
   console.log(`joined to an existing society   ${joined}`);
   console.log(`  of which gave a unit count    ${filledUnits}`);
-  console.log(`added as new societies          ${keep.length} (${added - keep.length} fell outside the GBA boundary)`);
+  console.log(`added as new societies          ${keep.length} (${nearBoundary} within 15 km of the notified boundary, ${added - keep.length} further than that)`);
   console.log(`names normalised                ${renamed}`);
   console.log(`\ntotal societies                 ${standalone.length}`);
   console.log(`  with a sourced unit count     ${sourced.length}`);

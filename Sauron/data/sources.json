@@ -101,7 +101,7 @@
         "scrape/05-rera.js"
       ],
       "cost": "free",
-      "caveats": "Post 2017 registrations only. Unit counts populated on 34 percent of rows, coordinates on 46 percent. The official portal is slow and often unreachable, which is why the mirror is used."
+      "caveats": "Post 2017 registrations only. Unit counts populated on 34 percent of rows, coordinates on 46 percent; a filing with no unit count is still added rather than dropped. The official portal is slow and often unreachable, which is why the mirror is used. A filing outside every GBA ward polygon but within 15 km of the notified boundary still gets the nearest ward, flagged ward.approx: true, since the March 2026 notification does not yet reach every real Bengaluru launch (Sarjapur, Attibele, Anekal outskirts)."
     },
     {
       "id": "carto-basemaps",
@@ -211,10 +211,25 @@
       "caveats": "District and commissionerate granularity at best. Station level tables exist only inside the Crime Review PDFs."
     },
     {
+      "id": "bing-news-rss",
+      "name": "Bing News RSS",
+      "url": "https://www.bing.com/news/search?format=rss",
+      "licence": "Internal, non-commercial RSS aggregation only",
+      "gives": [
+        "headline, snippet, publisher, publication date and article link for an exact-name query"
+      ],
+      "used_by": [
+        "scrape/13-news.js",
+        ".github/workflows/sauron-daily-news.yml"
+      ],
+      "cost": "free, no key",
+      "caveats": "Primary daily source. Bing redirect links are unwrapped to publisher URLs. Results are retained only when the entity name is visible in the headline or RSS snippet. The RSS response limits use to private, non-commercial aggregation, which matches this internal tool."
+    },
+    {
       "id": "gdelt",
       "name": "GDELT 2.0 Document API",
       "url": "https://api.gdeltproject.org/api/v2/doc/doc",
-      "licence": "Free for research and non commercial use",
+      "licence": "Unlimited and unrestricted academic, commercial or governmental use with citation",
       "gives": [
         "news articles by keyword and date, back to 2017, with publisher, date and URL"
       ],
@@ -222,7 +237,7 @@
         "scrape/13-news.js"
       ],
       "cost": "free, no key",
-      "caveats": "One request every 5 seconds, and in practice often unreachable or rate limited straight to a 429 from a shared network. Results are noisy: a Bengaluru query can return Delhi stories, so every hit is stored unreviewed until a person reads it. scrape/13-news.js keeps going on Google News RSS alone when GDELT is down."
+      "caveats": "One request every 5 seconds, and in practice sometimes unreachable or rate limited from a shared network. It is the daily fallback when Bing RSS is unavailable. Results are retained only when the entity name is visible in the headline or snippet."
     },
     {
       "id": "google-news-rss",

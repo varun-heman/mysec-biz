@@ -1,7 +1,11 @@
 # Sauron: data sources
 
-Target: every Bengaluru apartment society with 150 units or more, with the
-metadata needed to size a security deployment and find the buying committee.
+Target: every Bengaluru apartment society, with the metadata needed to size a
+security deployment and find the buying committee. No unit floor is applied
+anywhere in the pipeline: a 20 unit complex is as much a customer as a 2,000
+unit township, it just needs a smaller deployment. `150 units or more` still
+shows up as a badge and a default table sort, since that is the segment worth
+looking at first, not as a cutoff for what gets collected.
 
 ## What has run
 
@@ -42,17 +46,19 @@ apartment tagging, so they are neighbourhoods rather than societies.
 
 **Names the builder.** A dictionary of about 90 Bengaluru developers is matched
 against the society name, and a second Overpass pass searches OSM by builder
-name, which adds 276 societies mapped as a single building or a point rather
+name, which adds 185 societies mapped as a single building or a point rather
 than as a landuse polygon.
 
 **Estimates units.** Built area is footprint area times floor count for every
 OSM building inside the polygon, times 0.82 for circulation, divided by 130 sq m
 per dwelling. The range uses 165 and 105 sq m as the bounds. This is derived,
 carries its inputs, and is shown in the table with a tilde and an `estimated`
-badge. It is not a fact and is never presented as one.
+badge. It is not a fact and is never presented as one. No size floor is
+applied: a society estimated well under 150 units is kept, not dropped.
 
-**Result after RERA: 1,083 societies, 591 of them at 150 units or more, and 319
-with a unit count from a real source rather than an estimate.**
+**Result before RERA: 1,120 societies, 390 of them estimated at 150 units or
+more, and 340 with the unit count unknown rather than estimated (no built
+form for OSM to measure).**
 
 ### 4. Karnataka RERA, through a mirror
 
@@ -64,11 +70,19 @@ which scrapes the portal into 8,791 projects and 174 columns and publishes them
 under ODbL.
 
 Bengaluru Urban and Rural only, residential project types only, which leaves
-3,331 of the 8,791. Of those, 214 matched a society we already had and 190 were
-added as societies in their own right, inside the GBA boundary. RERA supplies
-promoter, registration number and status, unit count, tower count, land and
-covered area, FAR, parking, completion date, project cost and fire fighting
-status.
+3,331 of the 8,791. Of those, 248 matched a society we already had and 1,163
+were added as societies in their own right: every filing with a coordinate,
+whatever its unit count says, is in. RERA supplies promoter, registration
+number and status, unit count, tower count, land and covered area, FAR,
+parking, completion date, project cost and fire fighting status.
+
+A filing lands inside a GBA ward polygon, or it does not: 603 of the 1,163
+added this way sit outside every ward but within 15 km of the notified
+boundary, which is Sarjapur, Attibele and Anekal outskirts carrying real
+Bengaluru launches that the March 2026 notification simply does not reach yet.
+Those get the nearest ward instead of no ward, flagged `ward.approx: true` so
+its police, fire and hospital distances are read as approximate. Only 30
+filings, further than that, are a different city and stay out.
 
 It only covers registrations from 2017 onward, so older societies still depend
 on the built form estimate.
@@ -85,8 +99,8 @@ edges meet, so nothing is ever joined across a junction.
 ### 6. Nominatim, for the localities OSM and RERA left blank
 
 OSM's `addr:suburb` and `addr:neighbourhood` tags, plus RERA's project taluk,
-covered locality for 200 of 1,116 societies. The other 916 had a GPS point and
-nothing to say where it was. `scrape/14-nominatim.js` reverse geocodes each one,
+cover locality for a minority of societies; most have a GPS point and nothing
+to say where it was. `scrape/14-nominatim.js` reverse geocodes each one,
 one request a second per Nominatim's usage policy, and takes the first of
 neighbourhood, quarter, suburb, residential or city district that is not just
 the society's own name echoed back. Suburb in this data is usually the GBA
@@ -96,33 +110,32 @@ are ruled out.
 
 Only fills a null: nothing here overwrites a value OSM or RERA already
 supplied. Street, postcode and full address are filled the same way where they
-were also missing. Result: all 1,116 societies now carry a locality. Every
-response is cached in `data/.cache-nominatim.json`, so a rerun only fetches
-what a future OSM or RERA join has not already covered.
+were also missing. Result: every society in the file carries a locality.
+Every response is cached in `data/.cache-nominatim.json`, so a rerun only
+fetches what a future OSM or RERA join has not already covered.
 
 ### 7. News, per society and per builder
 
-`scrape/13-news.js`. Two free, keyless sources, queried the same way for every
-society name and every builder name, each scoped to Bengaluru:
-[GDELT 2.0](https://api.gdeltproject.org/api/v2/doc/doc) for full text search
-back to 2017, and Google News RSS as a second opinion, since GDELT is often
-unreachable or rate limited straight to a 429 in practice.
+`scrape/13-news.js`. Three free, keyless sources can be queried for every
+society name and every builder name, each scoped to Bengaluru. Bing News RSS is
+the daily primary source, GDELT 2.0 is the fallback, and Google News RSS remains
+available for manual comparison.
 
-Neither source knows what a society or a builder is: it is keyword search
-against a name, and "Prestige" and "Brigade" are also English words. So every
-article is stored with its publisher, date, link and the exact query that
-found it, marked `reviewed: false`, and stays that way until a person reads it
-and says otherwise. Nothing here is a confirmed incident on its own.
+None of the sources knows what a society or a builder is. The scraper accepts a
+result only when the exact entity name is visible in the headline or RSS
+snippet, and stores which field matched. Known generic collisions such as
+"Aura" and "Adarsh Nagar" are suppressed at society level. Every retained
+article stores its publisher, date, direct link and exact query, and remains
+`reviewed: false` until a person reads it.
 
 Builder news is queried once per builder (about 260 of them) and shared across
 every society that builder built, rather than repeated per society. Results
 land in `data/news.json`, keyed by society id and by builder name.
 
-Meant to run periodically. Rerunning merges in whatever is new; anything
-already on file, and its reviewed flag, is left alone. A full pass over all
-1,116 societies plus every builder is a couple of hours, almost all of it
-GDELT's 5 second throttle, so split it with `--start`/`--limit` across cron
-windows if that is too long in one sitting:
+The GitHub Actions workflow runs Bing daily at 07:05 IST and falls back to
+GDELT only if Bing is unavailable. Rerunning merges new articles while keeping
+existing review state. A manual all-source pass takes a couple of hours because
+of GDELT's five-second throttle, so it can be split into batches:
 
 ```bash
 node Sauron/scrape/13-news.js                        # everything
@@ -142,9 +155,12 @@ See the script's own header for the rest of the flags.
 ## Known coverage gap
 
 OSM knows the large, older, well mapped societies well and the newer ones
-poorly. Prestige returns 110 societies and Sobha 73, but SNR returns none,
-Shapoorji Pallonji one and Godrej five. That gap is exactly what licensed data or
-a portal partnership buys. It is not a bug in the pipeline.
+poorly. Prestige returns 122 societies and Sobha 100, but Shapoorji Pallonji
+returns one and SNR one. RERA's no-floor join now closes most of that gap by
+name rather than by polygon, which is why Godrej went from 5 to 20, but a
+builder RERA has not filed under recently is still thin. That residual gap is
+exactly what licensed data or a portal partnership buys. It is not a bug in
+the pipeline.
 
 ## Society imagery
 

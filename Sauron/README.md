@@ -80,6 +80,23 @@ node Sauron/scrape/14-nominatim.js        # locality, street, postcode where sti
 Overpass responses are cached in `data/.cache-*.json`. Delete a cache file to
 force a fresh pull. Step 3 depends on the output of steps 1 and 2.
 
+## Daily news updates
+
+`.github/workflows/sauron-daily-news.yml` runs at 07:05 IST every day and can
+also be started manually from GitHub Actions. It checks every named society and
+builder with Bing News RSS, falling back to GDELT when that feed is unavailable.
+It merges new articles into `data/news.json` and
+commits that file so Netlify publishes the update. Articles are keyed by society
+ID and tagged as crime, accident, award, legal, civic or general news. Existing articles
+and their review state are preserved.
+
+The first run backfills one year. Later runs request a two-day lookback. Bing's
+nearest RSS interval is one week, and deduplication prevents that overlap from
+creating repeated articles. Transient failures are retried three times.
+If a lookup still fails, its previous results and last successful check remain
+intact, the partial update is committed, and the workflow fails visibly with the
+affected society names recorded under `last_run.failures`.
+
 ## Imagery
 
 ```bash

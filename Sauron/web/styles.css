@@ -677,11 +677,6 @@ body:not([data-view="detail"]) .detail { display: none; }
   font-family: var(--mono); font-size: .6rem;
   text-transform: uppercase; letter-spacing: .06em; color: var(--faint);
 }
-.news__dot {
-  flex: none; width: 6px; height: 6px; border-radius: 50%;
-  background: var(--border-strong);
-}
-.news__dot.unread { background: var(--accent); }
 .news__cat {
   display: inline-block; padding: .05rem .35rem; border-radius: var(--r-sm);
   font-family: var(--mono); font-size: .58rem; letter-spacing: .06em; text-transform: uppercase;

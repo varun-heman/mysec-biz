@@ -1043,20 +1043,27 @@ fetch('../data/news.json', { cache: 'no-store' })
   .catch(() => {});
 
 const newsDate = (iso) => (iso ? new Date(iso).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' }) : null);
-const NEWS_CATEGORY = { crime: 'Crime', accident: 'Accident', award: 'Award', legal: 'Legal', civic: 'Civic' };
+const NEWS_CATEGORY = { crime: 'Crime', accident: 'Accident', award: 'Award', legal: 'Legal', civic: 'Civic', general: 'General' };
 
-function newsList(articles) {
+// Chrome/Edge scroll to and highlight this text on arrival. Firefox and
+// Safari just ignore the fragment and open the article normally.
+function withHighlight(url, text) {
+  if (!text) return url;
+  const frag = `:~:text=${encodeURIComponent(text)}`;
+  return `${url.includes('#') ? url : `${url}#`}${frag}`;
+}
+
+function newsList(articles, highlight) {
   if (!articles?.length) return '';
   return `<ul class="news">${articles.map((a) => `
     <li>
-      <a class="news__item" href="${esc(a.link)}" target="_blank" rel="noopener">
+      <a class="news__item" href="${esc(withHighlight(a.link, highlight))}" target="_blank" rel="noopener">
         ${a.image
           ? `<img class="news__thumb" src="${esc(a.image)}" alt="" loading="lazy" referrerpolicy="no-referrer" />`
-          : `<span class="news__thumb news__thumb--empty"><svg class="ic"><use href="icons.svg#icon-alert"/></svg></span>`}
+          : `<span class="news__thumb news__thumb--empty"><svg class="ic"><use href="icons.svg#icon-image"/></svg></span>`}
         <span class="news__body">
           <span class="news__title">${esc(a.title)}</span>
           <span class="news__meta">
-            <span class="news__dot${a.reviewed ? '' : ' unread'}" title="${a.reviewed ? 'reviewed' : 'not yet reviewed'}"></span>
             ${a.category ? `<span class="news__cat news__cat--${esc(a.category)}">${esc(NEWS_CATEGORY[a.category] || a.category)}</span>` : ''}
             <span>${esc(a.source || 'unknown source')}${newsDate(a.published_at) ? ` &middot; ${newsDate(a.published_at)}` : ''}</span>
           </span>
@@ -1069,7 +1076,7 @@ function newsList(articles) {
 // rather than showing a broken image icon.
 el('detailBody').addEventListener('error', (e) => {
   if (e.target.matches?.('.news__thumb')) {
-    e.target.outerHTML = '<span class="news__thumb news__thumb--empty"><svg class="ic"><use href="icons.svg#icon-alert"/></svg></span>';
+    e.target.outerHTML = '<span class="news__thumb news__thumb--empty"><svg class="ic"><use href="icons.svg#icon-image"/></svg></span>';
   }
 }, true);
 
@@ -1183,11 +1190,9 @@ function openDetail(s) {
       }
       return `
         <h3>News <b>${societyNews.length}</b></h3>
-        ${societyNews.length ? newsList(societyNews)
+        ${societyNews.length ? newsList(societyNews, s.name)
           : '<p class="detail__note">Nothing found for this society by name yet.</p>'}
-        <p class="detail__note">Matched by name against the query, not a confirmed identification &mdash;
-          <span class="news__dot unread" style="display:inline-block;vertical-align:middle"></span> marks anything not yet read.</p>
-        ${builderNews.length ? `<h3>${esc(s.builder)} news <b>${builderNews.length}</b></h3>${newsList(builderNews)}` : ''}
+        ${builderNews.length ? `<h3>${esc(s.builder)} news <b>${builderNews.length}</b></h3>${newsList(builderNews, s.builder)}` : ''}
       `;
     })()}
 

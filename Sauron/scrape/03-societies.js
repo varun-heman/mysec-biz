@@ -13,10 +13,10 @@
  *    name so societies mapped as a single building or a point, rather than as a
  *    landuse polygon, are not missed.
  *
- * 3. Estimate unit count, so the 150 unit floor can be applied before anyone
- *    pays for licensed data. Built area comes from OSM building footprints and
+ * 3. Estimate unit count. Built area comes from OSM building footprints and
  *    floor counts inside each polygon. This is an estimate with a stated range,
- *    marked `derived`, and it is never presented as a fact.
+ *    marked `derived`, and it is never presented as a fact. No size floor is
+ *    applied: every apartment complex is kept, however small.
  *
  * Also joins each society to its Greater Bengaluru Authority ward and to the
  * nearest police station, fire station and hospital.
@@ -336,7 +336,7 @@ out tags center;
   /* ---- classify ---- */
 
   const kept = [];
-  const dropped = { government: 0, layout: 0, too_small: 0, no_signal: 0 };
+  const dropped = { government: 0, layout: 0, no_signal: 0 };
 
   for (const r of rows) {
     if (GOVERNMENT.test(r.name)) { dropped.government++; continue; }
@@ -352,9 +352,7 @@ out tags center;
     // Nothing vertical, no builder, no apartment tagging: not an apartment society.
     if (!builder && !vertical && !gated && r.apartment_blocks < 2) { dropped.no_signal++; continue; }
 
-    const units = r.units_estimated?.mid ?? null;
-    if (units != null && r.units_estimated.high < MIN_UNITS) { dropped.too_small++; continue; }
-
+    // No size floor: every apartment complex is kept, however small.
     kept.push(r);
   }
 
@@ -533,7 +531,6 @@ out tags center;
   console.log(`dropped government      ${dropped.government}`);
   console.log(`dropped layouts         ${dropped.layout}`);
   console.log(`dropped no signal       ${dropped.no_signal}`);
-  console.log(`dropped under 150 units ${dropped.too_small}`);
   console.log(`added by builder name   ${added}`);
   console.log(`kept                    ${kept.length}`);
   console.log(`  estimated 150+ units  ${over150.length}`);
